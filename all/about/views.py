@@ -3,21 +3,21 @@ from django.shortcuts import render
 # Create your views here.
 from django.shortcuts import render
 from .models import *
-# from ..home.models import *
+from ..service.models import *
+from ..main.models import *
 
 
-# Create your views here.
 
 def about(request):
-    # section1 = Section_One.objects.all().first()
-    # advantage = Advantage.objects.all()
+    section1 = Section_One.objects.all().first()
+    service_List = Service_List.objects.all()
+
+
+
+    context = {
+        'section1': section1,
+
+        'service_List': service_List,
     #
-    # section2 = Section_Two.objects.all().first()
-    #
-    # context = {
-    #     'section1': section1,
-    #     'section2': section2,
-    #     'advantage': advantage,
-    #
-    # }
-    return render(request, 'top/about.html')
+    }
+    return render(request, 'others/about.html', context)

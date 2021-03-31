@@ -5,10 +5,10 @@ from .models import *
 
 # Create your views here.
 def students(request):
-    # galleries=Gallery.objects.all()
+    students=Students.objects.all()
 
     context={
-        # 'galleries':galleries
+        'students':students
 
     }
-    return render(request , 'top/students.html' , context)
+    return render(request , 'others/students.html' , context)

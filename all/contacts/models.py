@@ -3,6 +3,7 @@ from django.db import models
 
 class Contact(models.Model):
     phone = models.CharField(max_length=1000, verbose_name='Phone', blank=True)
+    phone1 = models.CharField(max_length=1000, verbose_name='Phone1', blank=True)
     telegram = models.CharField(max_length=1000, verbose_name='Telegram', blank=True)
     facebook = models.CharField(max_length=1000, verbose_name='Facebook', blank=True)
     instagram =models.CharField(max_length=1000, verbose_name='Instagram', blank=True)
@@ -23,7 +24,7 @@ class Contact_Form(models.Model):
     name = models.CharField(max_length=100, verbose_name='Name', blank=True)
     phone = models.CharField(max_length=100, default='+998', verbose_name='Phone', blank=True)
     content = models.CharField(max_length=100, verbose_name='Content', blank=True)
-
+    date = models.DateTimeField(auto_now_add=True, verbose_name='Added_date', null=True)
     def __str__(self):
         return self.name
 
@@ -34,8 +35,9 @@ class Contact_Form(models.Model):
 
 
 
-level = (('Начинающий (А1-А2)',1), ('Средний (В1-В2),2',('Продвинутый(С1-С2)')))
-study= (('Бакалавр',1),("Foundation",2),('Магистр',1))
+level = (('Начинающий (А1-А2)','Начинающий (А1-А2)'), ('Средний (В1-В2)','Средний (В1-В2)'),('Продвинутый(С1-С2)','Продвинутый(С1-С2)'))
+
+study= (('Бакалавр','Бакалавр'),("Foundation","Foundation"),('Магистратура','Магистратура'))
 
 class Consulting(models.Model):
     name = models.CharField(max_length=1000, verbose_name='Name', blank=True)
@@ -48,12 +50,15 @@ class Consulting(models.Model):
     study = models.CharField(max_length=1000,choices=study, blank=True, verbose_name='Study status')
     description = models.TextField(verbose_name='Info')
     take_date= models.DateTimeField(verbose_name='Taking date',blank=True)
+    date = models.DateTimeField(auto_now_add=True, verbose_name='Added_date' , null=True)
     def __str__(self):
         return self.name
 
     class Meta:
         verbose_name = 'Заявка'
         verbose_name_plural = 'Заявка'
+
+
 
 
 

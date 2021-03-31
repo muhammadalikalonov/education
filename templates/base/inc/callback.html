@@ -1,0 +1,26 @@
+{% load i18n %}
+ <div class="popup popup_callback">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"> <span class="btn disabled"><span class="btn__icon _crst"></span><span class="btn__dec"></span><span class="btn__txt"></span></span></div>
+            <div class="form-call">
+                <h3 class="form-call__title">{%trans 'Связатся с нами'%}</h3>
+                <div class="form-call__subtitle">
+                    {%trans 'Оставьте свои данные и наш специалист обязательно свяжемся с Вами в течение дня'%}
+                    </div>
+
+
+
+                <form method="POST"  action="{% url 'contact_mobile' %}" class="form-call__form form">
+                   {%csrf_token%}
+                    {{ formi.name }}
+                    {{ formi.phone }}
+                    {{ formi.content }}
+
+
+                    <button type="submit" class="form__btn btn big"><span class="btn__icon _ar"></span><span class="btn__dec"></span><span class="btn__txt">{%trans 'Отправить'%}</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

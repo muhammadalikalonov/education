@@ -6,7 +6,7 @@ class Section_One(models.Model):
     content = models.TextField(blank=True, verbose_name='Content')
 
     def __str__(self):
-        return self.title
+        return self.content
 
     class Meta:
         verbose_name = 'О нас'

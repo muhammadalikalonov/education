@@ -1,0 +1,62 @@
+{% load i18n %}
+<section class="cb">
+    <div class="cb__content _container">
+        <div class="cb__spec-wrap">
+            <div class="cb__spec">
+                <div class="cb__spec-txt .txt">
+
+                    <span id='nameSpecCb' class="txt-bold">{{ specialist.name }}</span> {{ specialist.status }}
+                </div>
+                <picture>
+
+                    <img src="{{ specialist.image.url }}" alt="#" />
+
+            </div>
+        </div>
+        <div class="cb__box">
+            <div class="form-call">
+                <picture><source srcset="/static/img/caran.webp" type="image/webp"><img src="/static/img/caran.png" alt="#" class="cb__caran" height="100"></picture>
+                <h3 class="form-call__title">{% trans 'Связатся с нами' %}</h3>
+                <div class="form-call__subtitle">
+                    {% trans 'Оставьте свои данные и наш специалист обязательно свяжемся с Вами в течение дня' %}</div>
+                <form  action="{% url 'contacts' %}"  method="POST" class="form-call__form form">
+                    {%csrf_token%}
+                    {{ form.name }}
+                    {{ form.phone }}
+                    {{ form.content }}
+                    <button type="submit" class="form__btn btn big"><span class="btn__icon _ar"></span><span class="btn__dec"></span><span class="btn__txt">{% trans 'Отправить' %}</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+                <section class="gtc">
+    <div class="gtc__content _container">
+        <h2 class="gtc__title t">
+
+            {% trans ' Остались вопросы?' %}
+        </h2>
+        <div class="gtc__subt txt subt">
+            {% trans ' Свяжитесь с нами и мы ответим на все ваши вопросы' %}
+
+        </div>
+        <div class="gtc__body">
+            <div class="gtc__card">
+                <div class="gtc__phones">
+                    <div class="gtc__item-title gtc__item-title_tel">{% trans 'Телефоны' %}</div>
+                    <a href="tel:{{ contact.phone}}" class="gtc__phones-tel">{{ contact.phone}}</a>
+                    <a href="tel:{{ contact.phone1}}" class="gtc__phones-tel">{{ contact.phone1}}</a>
+                </div>
+                <div class="gtc__adres">
+                    <div class="gtc__item-title gtc__item-title_map">{% trans 'Адрес' %}</div>
+                    <a href="#" class="gtc__phones-adress">{{ contact.address}}</a>
+                </div>
+                <div class="gtc__time">
+                    <div class="gtc__item-title gtc__item-title_time">{% trans 'Время работы' %}</div>
+                    <div class="gtc__phones-time">{{ contact.working_time}}</div>
+                </div>
+                <a href="#callback" class="gtc__btn btn big _popup-link"><span class="btn__icon _call"></span><span class="btn__dec"></span><span class="btn__txt">{% trans 'Связаться с нами' %}</span></a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,16 @@
+.header__lang-item .select {
+    display: none;
+}
+
+.lang__link._active input {
+    font-weight: 600;
+    color: #52BFFF;
+    background: none;
+}
+
+.lang__link input {
+    font-weight: 600;
+    color: #999999;
+    background: none;
+    cursor: pointer;
+}

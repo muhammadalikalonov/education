@@ -7,7 +7,6 @@ class Country(models.Model):
     image = models.ImageField(upload_to='counrties/images', blank=True, verbose_name='Country Images')
     slug = models.SlugField(unique=True)
     banner = models.BooleanField(default=False, verbose_name='Banner')
-    quantity = models.CharField(max_length=100, verbose_name='Quantity')
 
     def __str__(self):
         return self.name
@@ -16,9 +15,8 @@ class Country(models.Model):
         verbose_name = 'Страны'
         verbose_name_plural = 'Страны'
 
-
-class Bachelor(models.Model):
-    name = models.CharField(max_length=100, verbose_name='Faculty', blank=True)
+class Faculty(models.Model):
+    name = models.CharField(max_length=100, verbose_name='Faculty_name', blank=True)
     study_year = models.CharField(max_length=100, blank=True, verbose_name='Study_year')
     slug = models.SlugField(unique=True)
 
@@ -29,24 +27,36 @@ class Bachelor(models.Model):
         return reverse('single', kwargs={'slug': self.slug})
 
     class Meta:
-        verbose_name = 'Bachelor'
-        verbose_name_plural = 'Bachelor'
+        verbose_name = 'Faculty'
+        verbose_name_plural = 'Faculty'
 
 
-class Masters(models.Model):
-    name = models.CharField(max_length=100, verbose_name='Faculty', blank=True)
-    study_year = models.CharField(max_length=100, blank=True, verbose_name='Study_year')
-    slug = models.SlugField(unique=True)
+class Study_form(models.Model):
+    name = models.CharField(max_length=100, verbose_name='Название Форма обучения', blank=True)
+    faculty =models.ManyToManyField(Faculty,related_name='facult', blank=True)
 
     def __str__(self):
         return self.name
 
-    def get_url(self):
-        return reverse('single', kwargs={'slug': self.slug})
 
     class Meta:
-        verbose_name = 'Masters'
-        verbose_name_plural = 'Masters'
+        verbose_name = 'Форма обучения'
+        verbose_name_plural = 'Форма обучения'
+
+
+
+
+class Rating(models.Model):
+    number = models.IntegerField(verbose_name='Rating',null=True, blank=True, default=0)
+
+
+    def __str__(self):
+        return str(self.number)
+
+
+    class Meta:
+        verbose_name = 'Rating'
+        verbose_name_plural = 'Rating'
 
 
 
@@ -55,35 +65,38 @@ class Masters(models.Model):
 class University(models.Model):
     name = models.CharField(max_length=100, verbose_name='University Name', blank=True)
     university_city = models.CharField(max_length=100, verbose_name='University_city', blank=True)
-    country = models.ForeignKey(Country, on_delete=models.PROTECT, blank=True)
-    star = models.PositiveIntegerField(verbose_name='Star', default='0')
-    faculty_bachelor = models.ManyToManyField(Bachelor, related_name='faculty_name', verbose_name='Faculties bachelor', blank=True)
-    masters_bachelor = models.ManyToManyField(Masters, related_name='faculty_name', verbose_name='Masters bachelor', blank=True)
+    study_form  = models.ManyToManyField(Study_form  , related_name='studing', verbose_name="Форма обучения")
+    country = models.ForeignKey(Country, on_delete=models.PROTECT, blank=True, related_name='country')
+    language = models.CharField('Language' , max_length=200 , null=True)
+    year = models.CharField('Year founded' , max_length=200 , null=True)
+    rating = models.ForeignKey(Rating, on_delete=models.CASCADE , null =True, blank=True)
+    faculty = models.ManyToManyField(Faculty, related_name='faculting',verbose_name='Faculty', blank=True)
     content = models.TextField(blank=True, verbose_name='Content')
-    map = models.CharField(max_length=10000, blank=True, verbose_name='Map')
     intake = models.CharField(max_length=100, verbose_name='All_Intake_months', blank=True)
-    intake_number = models.CharField(max_length=10, default=0, verbose_name='Intake_times')
-    video_banner = models.CharField(max_length=1000, blank=True, verbose_name='Video_banner', default='IFRAME VIDEO')
     gallery1 = models.ImageField(upload_to='university_images/images', blank=True, verbose_name='University_Image1')
     image2 = models.ImageField(upload_to='university_images/images', blank=True, verbose_name='University_Image2')
     image3 = models.ImageField(upload_to='university_images/images', blank=True, verbose_name='University_Image3')
     image4 = models.ImageField(upload_to='university_images/images', blank=True, verbose_name='University_Image4')
-    foundation = models.CharField(max_length=100, verbose_name='Foundation', blank=True)
-    bachelor = models.CharField(max_length=100, verbose_name='Bachelor', blank=True)
-    masters = models.CharField(max_length=100, verbose_name='Masters', blank=True)
-    year_tuition_fee = models.CharField(max_length=100, verbose_name='Year_tuition_Fee', blank=True)
+    year_tuition_fee = models.CharField(max_length=100, verbose_name='Semester price', blank=True)
     on_campus_yearly = models.CharField(max_length=100, verbose_name='On_campus_yearly', blank=True)
     slug = models.SlugField(unique=True)
+    top_universities = models.BooleanField(verbose_name='Top University', default=False)
 
     def __str__(self):
         return self.name
 
-    def get_absolute_url(self):
-        return reverse('lists', kwargs={'slug': self.slug})
 
     class Meta:
         verbose_name = 'Университеты'
         verbose_name_plural = 'Университеты'
 
 
+class Document(models.Model):
+    name = models.CharField(max_length=100, verbose_name='Name', blank=True)
+    need = models.BooleanField(default=False)
+    def __str__(self):
+        return self.name
 
+    class Meta:
+        verbose_name = 'Документы для поступления'
+        verbose_name_plural = 'Документы для поступления'
