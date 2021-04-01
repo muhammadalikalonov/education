@@ -1,0 +1,244 @@
+resources:
+    regions:
+        - key: uzb
+            user-pick-able: false
+            name:
+                ru: Узбекистан
+                uz-lat: Uzbekistan
+                uz-kir: Uzbekistan
+            regions:
+
+                - key: region1_tash
+                    user-pick-able: false
+                    name:
+                        ru: Ташкент
+                        uz-lat: Ташкент
+                        uz-kir: Ташкент
+                    regions:
+                        - key: region1_tash1
+                            user-pick-able: true
+                            name:
+                                ru: Сергелийский район
+                                uz-lat: Сергелийский район
+                                uz-kir: Сергелийский район
+                        - key: region1_tash2
+                            user-pick-able: true
+                            name:
+                                ru: Мирзо-Улугбекский район
+                                uz-lat: Мирзо-Улугбекский район
+                                uz-kir: Мирзо-Улугбекский район
+                        - key: region1_tash3
+                            user-pick-able: true
+                            name:
+                                ru: Мирабадский район
+                                uz-lat: Мирабадский район
+                                uz-kir: Мирабадский район
+                        - key: region1_tash4
+                            user-pick-able: true
+                            name:
+                                ru: Бектемирский район
+                                uz-lat: Бектемирский район
+                                uz-kir: Бектемирский район
+                        - key: region1_tash5
+                            user-pick-able: true
+                            name:
+                                ru: Алмазарский
+                                uz-lat: Алмазарский
+                                uz-kir: Алмазарский
+                        - key: region1_tash6
+                            user-pick-able: true
+                            name:
+                                ru: Яшнободский
+                                uz-lat: Яшнободский
+                                uz-kir: Яшнободский
+                        - key: region1_tash7
+                            user-pick-able: true
+                            name:
+                                ru: Юнусабадский район
+                                uz-lat: Юнусабадский район
+                                uz-kir: Юнусабадский район
+                        - key: region1_tash8
+                            user-pick-able: true
+                            name:
+                                ru: Учтепинский район
+                                uz-lat: Учтепинский район
+                                uz-kir: Учтепинский район
+                        - key: region1_tash9
+                            user-pick-able: true
+                            name:
+                                ru: Шайхантахурский район
+                                uz-lat: Шайхантахурский район
+                                uz-kir: Шайхантахурский район
+                        - key: region1_tash10
+                            user-pick-able: true
+                            name:
+                                ru: Чиланзарский район
+                                uz-lat: Чиланзарский район
+                                uz-kir: Чиланзарский район
+                        - key: region1_tash11
+                            user-pick-able: true
+                            name:
+                                ru: Яккасарайский район
+                                uz-lat: Яккасарайский район
+                                uz-kir: Яккасарайский район
+
+
+
+                - key: region2_tash_obl
+                    user-pick-able: false
+                    name:
+                        ru: Ташкентская область
+                        uz-lat: Ташкентская область
+                        uz-kir: Ташкентская область
+                    regions:
+                        - key: angren
+                            user-pick-able: true
+                            name:
+                                ru: Аккурганский район
+                                uz-lat: Аккурганский район
+                                uz-kir: Аккурганский район
+                        - key: angren
+                            user-pick-able: true
+                            name:
+                                ru: Ангрен
+                                uz-lat: Ангрен
+                                uz-kir: Ангрен
+                        - key: angren
+                            user-pick-able: true
+                            name:
+                                ru: Ангрен
+                                uz-lat: Ангрен
+                                uz-kir: Ангрен
+
+                        - key: angren
+                            user-pick-able: true
+                            name:
+                                ru: Ангрен
+                                uz-lat: Ангрен
+                                uz-kir: Ангрен
+                        - key: angren
+                            user-pick-able: true
+                            name:
+                                ru: Ангрен
+                                uz-lat: Ангрен
+                                uz-kir: Ангрен
+                        - key: angren
+                            user-pick-able: true
+                            name:
+                                ru: Ангрен
+                                uz-lat: Ангрен
+                                uz-kir: Ангрен
+                        - key: angren
+                            user-pick-able: true
+                            name:
+                                ru: Ангрен
+                                uz-lat: Ангрен
+                                uz-kir: Ангрен
+                        - key: angren
+                            user-pick-able: true
+                            name:
+                                ru: Ангрен
+                                uz-lat: Ангрен
+                                uz-kir: Ангрен
+                        - key: angren
+                            user-pick-able: true
+                            name:
+                                ru: Ангрен
+                                uz-lat: Ангрен
+                                uz-kir: Ангрен
+                        - key: angren
+                            user-pick-able: true
+                            name:
+                                ru: Ангрен
+                                uz-lat: Ангрен
+                                uz-kir: Ангрен
+
+
+                - key: region3_samar
+                    user-pick-able: false
+                    name:
+                        ru: Самаркандская область
+                        uz-lat: Самаркандская область
+                        uz-kir: Самаркандская область
+                    regions:
+                        - key: samar
+                          user-pick-able: true
+                          name:
+                              ru: Самарканд
+                              uz-lat: Samarqand
+                              uz-kir: Самарканд
+
+
+                - key: samar_obl
+                    user-pick-able: false
+                    name:
+                        ru: Самаркандская область
+                        uz-lat: Самаркандская область
+                        uz-kir: Самаркандская область
+                    regions:
+                        - key: samar
+                          user-pick-able: true
+                          name:
+                              ru: Самарканд
+                              uz-lat: Samarqand
+                              uz-kir: Самарканд
+
+
+                - key: samar_obl
+                    user-pick-able: false
+                    name:
+                        ru: Самаркандская область
+                        uz-lat: Самаркандская область
+                        uz-kir: Самаркандская область
+                    regions:
+                        - key: samar
+                          user-pick-able: true
+                          name:
+                              ru: Самарканд
+                              uz-lat: Samarqand
+                              uz-kir: Самарканд
+
+
+                - key: samar_obl
+                    user-pick-able: false
+                    name:
+                        ru: Самаркандская область
+                        uz-lat: Самаркандская область
+                        uz-kir: Самаркандская область
+                    regions:
+                        - key: samar
+                          user-pick-able: true
+                          name:
+                              ru: Самарканд
+                              uz-lat: Samarqand
+                              uz-kir: Самарканд
+
+
+                - key: samar_obl
+                    user-pick-able: false
+                    name:
+                        ru: Самаркандская область
+                        uz-lat: Самаркандская область
+                        uz-kir: Самаркандская область
+                    regions:
+                        - key: samar
+                          user-pick-able: true
+                          name:
+                              ru: Самарканд
+                              uz-lat: Samarqand
+                              uz-kir: Самарканд
+
+
+                - key: samar_obl
+                    user-pick-able: false
+                    name:
+                        ru: Самаркандская область
+                        uz-lat: Самаркандская область
+                        uz-kir: Самаркандская область
+                    regions:
+                        - key: samar
+                          user-pick-able: true
+                          name:
+                              ru: Самарканд
+                              uz-lat: Samarqand
+                              uz-kir: Самарканд

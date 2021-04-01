@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 {%load static%}
-
+{% load i18n %}
 <html lang="ru">
 <head>
     {%block title%}
@@ -23,12 +23,21 @@
 {%endblock content%}
 
     {%include 'base/inc/callback.html'%}
+
+    <script>
+        const time = `{% trans 'Время чтения:' %}`;
+        const minute = `{% trans 'минут' %}`;
+    </script>
+
      <script src="/static/js/vendors.min.js"></script>
     <script src="/static/js/app.min.js"></script>
     <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+
     <script type="text/javascript" src="{% static 'js/product-header.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/product-filter.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/ajax.js' %}"></script>
+
+
 </body>
 
 </html>

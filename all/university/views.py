@@ -12,7 +12,6 @@ from django.core.serializers import serialize
 def country_view(request):
     univer = University.objects.all().order_by('-id')
     if request.method =='GET':
-        print('hello')
         try:
             decrease = request.GET.get('decrease')
             univer = univer.all().order_by('-on_campus_yearly')

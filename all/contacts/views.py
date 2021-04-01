@@ -13,20 +13,7 @@ bot = telebot.TeleBot(token)
 
 
 
-# def load_more(request):
-#     print('hello')
-#     offset=int(request.POST['offset'])
-#     limit=1
-#     univer=University.objects.all()[offset:limit+offset]
-#     totalData=University.objects.count()
-#     data={}
-#     posts_json=serializers.serialize('json',univer)
-#     print(univer)
-#     print(totalData)
-#     return JsonResponse(data={
-#         'univer':posts_json,
-#         'totalResult':totalData
-#     })
+
 
 def page(request):
     print('hello')
