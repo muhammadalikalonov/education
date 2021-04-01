@@ -7,5 +7,5 @@ from modeltranslation.admin import TranslationAdmin
 @admin.register(Service_List)
 class Service_ListAdmin(TranslationAdmin):
 
-    list_display = ('content', )
-    list_filter =('content',)
+    list_display = ('content', 'id')
+    list_filter =('content','id')

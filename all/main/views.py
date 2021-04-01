@@ -14,24 +14,25 @@ from django.db.models import Max,Min
 
 def filter_data(request):
     # minmaxPrice =University.objects.aggregate(Min('price'),Max('price'))
-    countrys =request.GET.getlist('country[]')
-    study =request.GET.getlist('study[]')
-    faculty =request.GET.getlist('faculty[]')
-
     # # minPrice = request.GET['minPrice']
     # # maxPrice = request.GET['maxPrice']
     # 	allProducts=allProducts.filter(productattribute__price__gte=minPrice)
     # 	allProducts=allProducts.filter(productattribute__price__lte=maxPrice)
+    countrys =request.GET.getlist('country[]')
+    study =request.GET.getlist('study[]')
+    faculty =request.GET.getlist('faculty[]')
+
+
     allProducts = University.objects.all()
     if len(countrys)>0:
         allProducts=allProducts.filter(country__name__in =countrys).distinct()
+
     if len(study)>0:
         allProducts=allProducts.filter(study_form__name__in=study).distinct()
 
     if len(faculty)>0:
         allProducts=allProducts.filter(faculty__name__in=faculty).distinct()
-    else:
-        allProducts = University.objects.all()
+
     t = render_to_string('blog/ajax/univers.html',{'univer':allProducts})
     return JsonResponse({'univer':t})
 
@@ -102,7 +103,6 @@ def load(request):
 
 
 def loadding(request,*args,**kwargs):
-    print(kwargs)
     upper =kwargs.get('num_posts')
     lower =upper -3
     news = list(News.objects.values()[lower:upper])
@@ -124,7 +124,7 @@ def search(request):
     univer =University.objects.filter(name__contains=search_text)
     print(univer)
 
-    t = render_to_string('blog/search.html', {'univer': univer})
+    t = render_to_string('blog/search.html', {'univer': univer,'search_text':search_text})
 
     return JsonResponse({'data': t})
 

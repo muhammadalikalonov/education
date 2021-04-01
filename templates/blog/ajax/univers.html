@@ -1,170 +1,163 @@
 
-{% load  i18n %}
 {% load static %}
-
+{% load i18n %}
 
 {% if univer %}
 
-            {% for i in univer %}
-                <div href="{% url 'uninfo' i.slug %}" class="uni__card card-tmp post-box" >
-                    <div class="uni__lbox card-tmp__lbox">
-                        <div class="uni__slider card-tmp__slider _swiper">
-                            <div class="uni__slide card-tmp__slide">
-                                <img src="{{ i.gallery1.url }}" alt="#"
-                                     class="uni__slide-img card-tmp__slide-img">
-                            </div>
-                            <div class="uni__slide card-tmp__slide">
-                                <img src="{{ i.image2.url }}" alt="#"
-                                     class="uni__slide-img card-tmp__slide-img">
-                            </div>
-                        </div>
-                        <span class="card-tmp__slider-btn_next card-tmp__slider-btn"></span>
-                        <span class="card-tmp__slider-btn_prev card-tmp__slider-btn"></span>
+{% for i in univer %}
+    <div href="{% url 'uninfo' i.slug %}" class="uni__card card-tmp post-box">
+        <div class="uni__lbox card-tmp__lbox">
+            <div class="uni__slider card-tmp__slider _swiper">
+                <div class="uni__slide card-tmp__slide swiper-wrapper">
+
+                    <img src="{{ i.gallery1.url }}" alt="#"
+                         class="uni__slide-img card-tmp__slide-img">
+                </div>
+                <div class="uni__slide card-tmp__slide">
+                    <img src="{{ i.image2.url }}" alt="#"
+                         class="uni__slide-img card-tmp__slide-img">
+                </div>
+            </div>
+            <span class="card-tmp__slider-btn_next card-tmp__slider-btn"></span>
+            <span class="card-tmp__slider-btn_prev card-tmp__slider-btn"></span>
+        </div>
+        <div class="uni__rbox card-tmp__rbox">
+            <div class="dleft">
+                <a href="{% url 'uninfo' i.slug %}"
+                   class="uni__title-t card-tmp__title ">{{ i.name }}</a>
+                <div class="uni__lists">
+                    <div class="uni__item-line-top">
+                        <ul class="uni__list uni__list_1 card-tmp__list card-tmp__list_stud">
+                            {% for j in i.study_form.all %}
+
+                                <li class="uni__item card-tmp__item card-tmp__item">{{ j.name }}</li>
+                            {% endfor %}
+                        </ul>
+                        <ul class="uni__list uni__list_2 card-tmp__list card-tmp__list_book">
+
+
+                            {% for j in  i.faculty.all %}
+
+
+                                <li class="uni__item card-tmp__item card-tmp__item">{{ j.name }}</li>
+                            {% endfor %}
+
+                            <li class="uni__item card-tmp__item card-tmp__item"><a
+                                    href="{% url 'uninfo' i.slug %}"
+                                    class="uni__next-link">Еще <span class="all-count">30</span>
+                                ...</a></li>
+                        </ul>
                     </div>
-                    <div class="uni__rbox card-tmp__rbox">
-                        <div class="dleft">
-                            <a href="{% url 'uninfo' i.slug %}"
-                               class="uni__title-t card-tmp__title ">{{ i.name }}</a>
-                            <div class="uni__lists">
-                                <div class="uni__item-line-top">
-                                    <ul class="uni__list uni__list_1 card-tmp__list card-tmp__list_stud">
-                                        {% for j in i.study_form.all %}
+                    <ul class="uni__list uni__list_3 card-tmp__list card-tmp__list_flag">
+                        <li class="uni__item card-tmp__item card-tmp__item"><span
+                                class="txt-bold">{{ i.university_city }},</span>
+                            {{ i.country }}</li>
 
-                                            <li class="uni__item card-tmp__item card-tmp__item">{{ j.name }}</li>
-                                        {% endfor %}
-                                    </ul>
-                                    <ul class="uni__list uni__list_2 card-tmp__list card-tmp__list_book">
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="uni__rbox-r">
+                <div class="uni__raiting">
+                    {% if i.rating.number == 1 %}
+                        <span class="uni__raiting-item"><svg width="14" height="14"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg"><path
+                                d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
+                                fill="#F4C005"/></svg></span>
 
+                    {% elif i.rating.number == 2 %}
+                        <span class="uni__raiting-item"><svg width="14" height="14"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg"><path
+                                d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
+                                fill="#F4C005"/></svg></span>
+                        <span class="uni__raiting-item"><svg width="14" height="14"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg"><path
+                                d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
+                                fill="#F4C005"/></svg></span>
+                    {% elif i.rating.number == 3 %}
+                        <span class="uni__raiting-item"><svg width="14" height="14"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg"><path
+                                d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
+                                fill="#F4C005"/></svg></span>
+                        <span class="uni__raiting-item"><svg width="14" height="14"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg"><path
+                                d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
+                                fill="#F4C005"/></svg></span>
+                        <span class="uni__raiting-item"><svg width="14" height="14"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg"><path
+                                d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
+                                fill="#F4C005"/></svg></span>
 
-                                        {% for j in  i.faculty.all %}
+                    {% elif i.rating.number == 4 %}
+                        <span class="uni__raiting-item"><svg width="14" height="14"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg"><path
+                                d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
+                                fill="#F4C005"/></svg></span>
+                        <span class="uni__raiting-item"><svg width="14" height="14"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg"><path
+                                d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
+                                fill="#F4C005"/></svg></span>
+                        <span class="uni__raiting-item"><svg width="14" height="14"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg"><path
+                                d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
+                                fill="#F4C005"/></svg></span>
+                        <span class="uni__raiting-item"><svg width="14" height="14"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg"><path
+                                d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
+                                fill="#F4C005"/></svg></span>
 
+                    {% else %}
+                        <span class="uni__raiting-item"><svg width="14" height="14"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg"><path
+                                d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
+                                fill="#F4C005"/></svg></span>
+                        <span class="uni__raiting-item"><svg width="14" height="14"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg"><path
+                                d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
+                                fill="#F4C005"/></svg></span>
+                        <span class="uni__raiting-item"><svg width="14" height="14"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg"><path
+                                d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
+                                fill="#F4C005"/></svg></span>
+                        <span class="uni__raiting-item"><svg width="14" height="14"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg"><path
+                                d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
+                                fill="#F4C005"/></svg></span>
+                        <span class="uni__raiting-item"><svg width="14" height="14"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg"><path
+                                d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
+                                fill="#F4C005"/></svg></span>
 
-                                            <li class="uni__item card-tmp__item card-tmp__item">{{ j.name }}</li>
-                                        {% endfor %}
+                    {% endif %}
 
-                                        <li class="uni__item card-tmp__item card-tmp__item"><a
-                                                href="{% url 'uninfo' i.slug %}"
-                                                class="uni__next-link">Еще <span class="all-count">30</span>
-                                            ...</a></li>
-                                    </ul>
-                                </div>
-                                <ul class="uni__list uni__list_3 card-tmp__list card-tmp__list_flag">
-                                    <li class="uni__item card-tmp__item card-tmp__item"><span
-                                            class="txt-bold">{{ i.university_city }},</span>
-                                        {{ i.country }}</li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <a href="#" class="uni__rbox-r">
-                            <div class="uni__raiting">
-                                {% if i.rating.number == 1 %}
-                                    <span class="uni__raiting-item"><svg width="14" height="14"
-                                                                         fill="none"
-                                                                         xmlns="http://www.w3.org/2000/svg"><path
-                                            d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
-                                            fill="#F4C005"/></svg></span>
-
-                                {% elif i.rating.number == 2 %}
-                                    <span class="uni__raiting-item"><svg width="14" height="14"
-                                                                         fill="none"
-                                                                         xmlns="http://www.w3.org/2000/svg"><path
-                                            d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
-                                            fill="#F4C005"/></svg></span>
-                                    <span class="uni__raiting-item"><svg width="14" height="14"
-                                                                         fill="none"
-                                                                         xmlns="http://www.w3.org/2000/svg"><path
-                                            d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
-                                            fill="#F4C005"/></svg></span>
-                                {% elif i.rating.number == 3 %}
-                                    <span class="uni__raiting-item"><svg width="14" height="14"
-                                                                         fill="none"
-                                                                         xmlns="http://www.w3.org/2000/svg"><path
-                                            d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
-                                            fill="#F4C005"/></svg></span>
-                                    <span class="uni__raiting-item"><svg width="14" height="14"
-                                                                         fill="none"
-                                                                         xmlns="http://www.w3.org/2000/svg"><path
-                                            d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
-                                            fill="#F4C005"/></svg></span>
-                                    <span class="uni__raiting-item"><svg width="14" height="14"
-                                                                         fill="none"
-                                                                         xmlns="http://www.w3.org/2000/svg"><path
-                                            d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
-                                            fill="#F4C005"/></svg></span>
-
-                                {% elif i.rating.number == 4 %}
-                                    <span class="uni__raiting-item"><svg width="14" height="14"
-                                                                         fill="none"
-                                                                         xmlns="http://www.w3.org/2000/svg"><path
-                                            d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
-                                            fill="#F4C005"/></svg></span>
-                                    <span class="uni__raiting-item"><svg width="14" height="14"
-                                                                         fill="none"
-                                                                         xmlns="http://www.w3.org/2000/svg"><path
-                                            d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
-                                            fill="#F4C005"/></svg></span>
-                                    <span class="uni__raiting-item"><svg width="14" height="14"
-                                                                         fill="none"
-                                                                         xmlns="http://www.w3.org/2000/svg"><path
-                                            d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
-                                            fill="#F4C005"/></svg></span>
-                                    <span class="uni__raiting-item"><svg width="14" height="14"
-                                                                         fill="none"
-                                                                         xmlns="http://www.w3.org/2000/svg"><path
-                                            d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
-                                            fill="#F4C005"/></svg></span>
-
-                                {% else %}
-                                    <span class="uni__raiting-item"><svg width="14" height="14"
-                                                                         fill="none"
-                                                                         xmlns="http://www.w3.org/2000/svg"><path
-                                            d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
-                                            fill="#F4C005"/></svg></span>
-                                    <span class="uni__raiting-item"><svg width="14" height="14"
-                                                                         fill="none"
-                                                                         xmlns="http://www.w3.org/2000/svg"><path
-                                            d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
-                                            fill="#F4C005"/></svg></span>
-                                    <span class="uni__raiting-item"><svg width="14" height="14"
-                                                                         fill="none"
-                                                                         xmlns="http://www.w3.org/2000/svg"><path
-                                            d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
-                                            fill="#F4C005"/></svg></span>
-                                    <span class="uni__raiting-item"><svg width="14" height="14"
-                                                                         fill="none"
-                                                                         xmlns="http://www.w3.org/2000/svg"><path
-                                            d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
-                                            fill="#F4C005"/></svg></span>
-                                    <span class="uni__raiting-item"><svg width="14" height="14"
-                                                                         fill="none"
-                                                                         xmlns="http://www.w3.org/2000/svg"><path
-                                            d="M13.98 5.394a.41.41 0 00-.331-.28l-4.34-.63L7.368.55a.41.41 0 00-.736 0l-1.94 3.933-4.34.63a.41.41 0 00-.228.7l3.14 3.061-.741 4.323a.41.41 0 00.595.432L7 11.59l3.882 2.04a.41.41 0 00.595-.432l-.742-4.323 3.141-3.06a.41.41 0 00.104-.421z"
-                                            fill="#F4C005"/></svg></span>
-
-                                {% endif %}
-
-
-                            </div>
-                            <div class="uni__price">
-                                от <span class="uni__price-num ">{{ i.year_tuition_fee }} </span>
-                                <span class="uni__price-period">{% trans 'за семестр' %}</span>
-                            </div>
-                        </a>
-
-                    </div>
 
                 </div>
-            {% endfor %}
+                <div class="uni__price">
+                    от <span class="uni__price-num ">{{ i.year_tuition_fee }} </span>
+                    <span class="uni__price-period">{% trans 'за семестр' %}</span>
+                </div>
+            </a>
 
-{%else%}
-    <center>
-    Sorry no universities</center>
+        </div>
+
+    </div>
+{% endfor %}
+    {% else %}
+
+    <center><h1>Sorry no universities </h1></center>
 {% endif %}
-
-
-
-
-
-
 

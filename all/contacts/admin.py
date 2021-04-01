@@ -27,7 +27,11 @@ class Contact_FormAdmin(admin.ModelAdmin):
     # list_editable =
     # readonly_fields = ('image',)
 
-admin.site.register(Contact)
 
 
-# Register your models here.
+
+@admin.register(Contact)
+class ContactAdmin(admin.ModelAdmin):
+    list_display  =('phone','telegram','facebook','instagram','working_time','address')
+    search_fields =('phone',)
+    save_on_top =True

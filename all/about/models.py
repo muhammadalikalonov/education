@@ -6,11 +6,11 @@ class Section_One(models.Model):
     content = models.TextField(blank=True, verbose_name='Content')
 
     def __str__(self):
-        return self.content
+        return f'{self.id} Описание о нас'
 
     class Meta:
-        verbose_name = 'О нас'
-        verbose_name_plural = 'О нас'
+        verbose_name = '1. О нас'
+        verbose_name_plural = '1. О нас'
 
 
 

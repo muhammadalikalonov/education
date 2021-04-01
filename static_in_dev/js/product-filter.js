@@ -155,11 +155,11 @@
 
 
 const postBox =document.getElementById('posts-box');
-const spinnerBox =document.getElementById('spinner-box');
+
 const loadBtn =document.getElementById('load-btn');
 const loadBox =document.getElementById('loading-box');
 
-console.log('hello world');
+
 let visible =3;
 
 
@@ -171,14 +171,38 @@ const handleGetData =() =>{
             success: function(response){
                 // console.log(response.max)
                 max_size =response.max;
+                console.log(max_size)
                 const news =response.news;
 
-                news.map(news=>{
+
+                setTimeout(() =>{
+
+                     news.map(news=>{
                     console.log(news.id);
-                })
-                if(max_size){
-                    console.log('done');
+                    postBox.innerHTML+=
+             `<div class="news__body body-crd"><a href="{% url 'article' news.slug %}" class="news__card card-tmp">
+                <div class="news__lbox card-tmp__lbox">
+                    <div class="news__img-box card-tmp__img-ns-box">
+                        <img src="${ news.image.url }" alt="#" class="news__img card-tmp__img-ns">
+                    </div>
+                </div>
+                <div class="news__rbox card-tmp__rbox">
+                        <div class="news__title-m card-tmp__title ">${news.name }</div>
+                    <p class="news__txt card-tmp__txt">
+                        ${news.description }
+                    </p>
+             
+                    <ul class="news__list card-tmp__list card-tmp__list_clock">
+                        <li class="news__item card-tmp__item card-tmp__item">{% trans 'Время чтения:' %} <span class="txt-bold">${ news.time } {% trans 'минут' %}</span></li>
+                    </ul>
+                </div>
+            </a></div>`
+                                                    })
+                     if(max_size){
+
+                    loadBox.innerHTML="<center><h4>no news</h4></center>"
                 }
+                },500)
 
             },
             error:function(error) {
@@ -187,10 +211,16 @@ const handleGetData =() =>{
             },
         });
 }
+handleGetData()
 
 
-handleGetData();
-// loadBtn.addEventListener('click',()=>{
-//     visible +=3;
-//     handleGetData;
-// })
+// var el = document.getElementById('overlayBtn');
+// if(el){
+//   el.addEventListener('click', swapper, false);
+// }
+
+
+loadBtn.addEventListener('click',()=>{
+    visible +=3
+    handleGetData()
+})

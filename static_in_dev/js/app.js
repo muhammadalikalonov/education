@@ -1871,10 +1871,10 @@ if (link) {
 
 	window.addEventListener('scroll', function (el) {
 		let old_current_link = document.querySelectorAll('._goto-block._active');
-		if (old_current_link) {
+		if (old_filteredUnicurrent_link) {
 			for (let index = 0; index < old_current_link.length; index++) {
 				let el = old_current_link[index];
-				el.classList.remove('_active');
+                    el.classList.remove('_active');
 			}
 		}
 		for (let index = 0; index < blocks.length; index++) {

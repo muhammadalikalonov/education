@@ -10,14 +10,15 @@ from django.core.serializers import serialize
 
 
 def country_view(request):
-
-    univer = University.objects.all()
-    # paginator = Paginator(univer, 5)
-    # page_number = request.GET.get('page')
-    # posts_obj = paginator.get_page(page_number)
-    univer_popular = univer.all().order_by('-id')
-    univer_increase = univer.all().order_by('on_campus_yearly')
-    univer_decrease = univer.all().order_by('-on_campus_yearly')
+    univer = University.objects.all().order_by('-id')
+    if request.method =='GET':
+        print('hello')
+        try:
+            decrease = request.GET.get('decrease')
+            univer = univer.all().order_by('-on_campus_yearly')
+        except:
+            uncrease = request.GET.get('uncrease')
+            univer = univer.all().order_by('on_campus_yearly')
     countries = Country.objects.all()
     faculty = Faculty.objects.all()
     study = Study_form.objects.all()
@@ -123,6 +124,10 @@ def universtate(request, country_slug):
 
 
 def popular(request):
+
+
+
+
     # univer = University.objects.all()
     # paginator = Paginator(univer, 5)
     # page_number = request.GET.get('page')
@@ -143,22 +148,5 @@ def popular(request):
     #
     # }
     return request(render, 'others/pop.html')
-
-
-
-def maximum(request):
-    univer = University.objects.all()
-    context = {
-        'univer': univer,
-    }
-    return request(render, 'blog/univers.html',context)
-
-
-def minimum(request):
-    univer = University.objects.all()
-    context={
-        'univer': univer,
-    }
-    return request(render, 'blog/univers.html',context)
 
 

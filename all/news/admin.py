@@ -15,12 +15,13 @@ from modeltranslation.admin import TranslationAdmin
 @admin.register(News)
 class NewsAdmin(TranslationAdmin):
     # form = NewsAdminForm
-    list_display = ('name', 'banner', 'top_news')
-    list_filter =('name','banner','top_news')
-
-    search_fields = ('name','description','id')
+    list_display = ('name','banner', 'top_news','date')
+    list_filter =('name','banner','top_news','date')
+    ordering = ('-id',)
+    search_fields = ('name','description','id','date')
     save_on_top =True
     save_as_continue =True
+    prepopulated_fields = {'slug':('name',)}
     # list_editable =('description','name')
     # readonly_fields = ('image',)
 

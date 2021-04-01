@@ -1,11 +1,15 @@
 
 {% load static %}
 {% load i18n %}
+
+{% if univer %}
+
 {% for i in univer %}
-    <div href="{% url 'uninfo' i.slug %}" class="uni__card card-tmp post-box"           >
+    <div href="{% url 'uninfo' i.slug %}" class="uni__card card-tmp post-box">
         <div class="uni__lbox card-tmp__lbox">
             <div class="uni__slider card-tmp__slider _swiper">
-                <div class="uni__slide card-tmp__slide">
+                <div class="uni__slide card-tmp__slide swiper-wrapper">
+
                     <img src="{{ i.gallery1.url }}" alt="#"
                          class="uni__slide-img card-tmp__slide-img">
                 </div>
@@ -151,5 +155,7 @@
         </div>
 
     </div>
-
 {% endfor %}
+    {% else %}
+    <center>Sorry no universities '{{ search_text}}'</center>
+{% endif %}

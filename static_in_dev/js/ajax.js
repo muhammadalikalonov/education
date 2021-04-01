@@ -18,9 +18,11 @@
 
         });
 
+        
+
     });
 
 function searchSuccess(data, textStatus, jqXHR) {
-    console.log(data)
+    // console.log(data)
     $('#filteredUni').html(data.data);
 }

@@ -6,8 +6,8 @@ from modeltranslation.admin import TranslationAdmin
 
 
 class Section_OneAdminForm(forms.ModelForm):
-    content_ru = forms.CharField(label='Описание', widget=CKEditorUploadingWidget())
-    content_uz = forms.CharField(label='Описание', widget=CKEditorUploadingWidget())
+    content_ru = forms.CharField(label='Описание на рус', widget=CKEditorUploadingWidget())
+    content_uz = forms.CharField(label='Описание на узб', widget=CKEditorUploadingWidget())
     class Meta:
         model = Section_One
         fields = '__all__'
@@ -17,7 +17,6 @@ class Section_OneAdminForm(forms.ModelForm):
 class AdvantageAdmin(TranslationAdmin):
     form = Section_OneAdminForm
 
-    list_display  =('content',)
     # search_fields =
     save_on_top =True
     # save_as_continue =True

@@ -10,9 +10,7 @@ urlpatterns = [
 
     path('p/', popular, name='popular'),
 
-    path('m', maximum, name='max'),
 
-    path('m', minimum, name='min'),
 
 
     # path('country/<str:slug>/', lists.as_view(), name='lists' ),
