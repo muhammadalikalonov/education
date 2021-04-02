@@ -12,10 +12,10 @@ class ContactFormForm(TranslationModelForm):
         widgets = {
             'name': forms.TextInput(
                 attrs={'class': "input form__input _name _req", 'id': 'form_id_afasfas','data-value': "Ваше имя", 'name': "form[]",
-                       'type': "text", 'autocomplete': "off"}),
+                       'type': "text",'required': '', 'autocomplete': "off"}),
             'phone': forms.TextInput(
                 attrs={'class': "input form__input _phone _req _tel",'id': 'form_id_namewefwef', 'data-value': "+998 (93) 563-55-09",
-                       'name': "form[]", 'type': "text", 'autocomplete': "off"}),
+                       'name': "form[]", 'type': "text",'required': '', 'autocomplete': "off"}),
             'content': forms.Textarea(
                 attrs={'class': "form__input input _msg", 'id': 'form_id_namehhj','data-value': "Дополнительные комментарии", 'rows': "10",
                        'cols': "30", 'name': "txt", 'required': '', 'placeholder': 'Text'}),
@@ -30,10 +30,10 @@ class ContactFormForm2(TranslationModelForm):
         widgets = {
             'name': forms.TextInput(
                 attrs={'class': "input form__input _name _req", 'id': 'form_id_afasfas','data-value': "Ваше имя", 'name': "form[]",
-                       'type': "text", 'autocomplete': "off"}),
+                       'type': "text",'required': '', 'autocomplete': "off"}),
             'phone': forms.TextInput(
                 attrs={'class': "input form__input _phone _req _tel",'id': 'form_id_namewefwef', 'data-value': "+998 (93) 563-55-09",
-                       'name': "form[]", 'type': "text", 'autocomplete': "off"}),
+                       'name': "form[]", 'type': "text",'required': '', 'autocomplete': "off"}),
             'content': forms.Textarea(
                 attrs={'class': "form__input input _msg", 'id': 'form_id_namehhj','data-value': "Дополнительные комментарии", 'rows': "10",
                        'cols': "30", 'name': "txt", 'required': '', 'placeholder': 'Text'}),
@@ -51,14 +51,14 @@ study = (('Бакалавр', 'Бакалавр'), ("Foundation", "Foundation"),
 
 
 class PageForms(TranslationModelForm):
-    english = level,
+    english = forms.CharField(  label='Study form', help_text='He забудьте задать рубрику!',
+                                  widget=forms.RadioSelect(choices=level, attrs={ 'name': "1" ,'data-value':""}))
 
-    study = forms.ChoiceField(choices=study,
+
+
+    study = forms.CharField(
                               label='Study form', help_text='He забудьте задать рубрику!',
-                              widget=forms.RadioSelect(attrs={'data-value': "", 'type': 'radio'})),
-
-    CHOICES = [('M', 'Male'), ('F', 'Female')]
-    gender = forms.CharField(label='Gender', widget=forms.RadioSelect(choices=CHOICES))
+                              widget=forms.RadioSelect(choices=study))
 
     class Meta:
         model = Consulting

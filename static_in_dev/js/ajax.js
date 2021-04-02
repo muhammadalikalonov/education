@@ -43,3 +43,4 @@ function searchSuccess(data, textStatus, jqXHR) {
     // console.log(data)
     $('#filteredUni').html(data.data);
 }
+

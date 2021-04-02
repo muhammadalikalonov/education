@@ -551,7 +551,7 @@ if(document.querySelector('#map')) {
             zoom: 15,
             mapId: '5deee1e64511f506',
         });
-        const iconBase = "./img/icons/map/";
+        const iconBase = "static/img/icons/map/";
     
         const icons = {
     

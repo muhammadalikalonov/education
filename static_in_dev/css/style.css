@@ -5447,7 +5447,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .cons__radio-item:before {
-  content: "";
+  
   display: inline-block;
   border-radius: 50%;
   border: 2px solid #cdedff;

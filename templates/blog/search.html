@@ -8,16 +8,22 @@
     <div href="{% url 'uninfo' i.slug %}" class="uni__card card-tmp post-box">
         <div class="uni__lbox card-tmp__lbox">
             <div class="uni__slider card-tmp__slider _swiper">
-                <div class="uni__slide card-tmp__slide swiper-wrapper">
+                    <div class="swiper-wrapper">
+                        <div class="uni__slide card-tmp__slide swiper-slide swiper-slide-active">
+                            <img src="{{ i.gallery1.url }}" alt="#" class="uni__slide-img card-tmp__slide-img">
+                        </div>
+                        <div class="uni__slide card-tmp__slide swiper-slide swiper-slide-next">
+                            <img src="{{ i.image2.url }}" alt="#" class="uni__slide-img card-tmp__slide-img">
+                        </div>
+                          <div class="uni__slide card-tmp__slide swiper-slide swiper-slide-next">
+                            <img src="{{ i.image3.url }}" alt="#" class="uni__slide-img card-tmp__slide-img">
+                        </div>
+                          <div class="uni__slide card-tmp__slide swiper-slide swiper-slide-next">
+                            <img src="{{ i.image4.url }}" alt="#" class="uni__slide-img card-tmp__slide-img">
+                        </div>
 
-                    <img src="{{ i.gallery1.url }}" alt="#"
-                         class="uni__slide-img card-tmp__slide-img">
+                    </div>
                 </div>
-                <div class="uni__slide card-tmp__slide">
-                    <img src="{{ i.image2.url }}" alt="#"
-                         class="uni__slide-img card-tmp__slide-img">
-                </div>
-            </div>
             <span class="card-tmp__slider-btn_next card-tmp__slider-btn"></span>
             <span class="card-tmp__slider-btn_prev card-tmp__slider-btn"></span>
         </div>

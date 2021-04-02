@@ -6,7 +6,7 @@ urlpatterns = [
     path('success/', error, name='error'),
     path('filter/', filter_data, name='filter_data'),
     path('loading/<int:num_posts>/', loadding, name='loading'),
-    path('load-more', load ,name='load_more'),
+    path('load_students/<int:num_posts>/', load_students, name='load_students'),
     path('search/',search , name='search'),
 
 

@@ -32,7 +32,6 @@ def filter_data(request):
 
     if len(faculty)>0:
         allProducts=allProducts.filter(faculty__name__in=faculty).distinct()
-
     t = render_to_string('blog/ajax/univers.html',{'univer':allProducts})
     return JsonResponse({'univer':t})
 
@@ -59,10 +58,7 @@ def index(request):
 
 
     context = {
-        # 'message': message,
-        # 'testimonials': testimonials,
-        # 'column1': column1,
-        # 'column2': column2,
+
         'students': students,
         'faq':faq,
 
@@ -91,15 +87,7 @@ def page(request):
     return render(request, 'others/cons.html', context)
 
 
-def load(request):
-    offset =int(request.POST['offset'])
-    limit= 2
-    posts = University.objects.all()[offset:offset+limit]
-    totalData = University.objects.count()
-    data={}
-    posts_json =serializers.serialize('json',posts)
-    return JsonResponse(data={'posts':posts_json,
-                              'totalResult':totalData})
+
 
 
 def loadding(request,*args,**kwargs):
@@ -109,6 +97,16 @@ def loadding(request,*args,**kwargs):
     news_size =len(News.objects.all())
     size =True if upper>=news_size else False
     return JsonResponse({'news':news,'max':size}, safe=False)
+
+
+
+def load_students(request,*args,**kwargs):
+    upper = kwargs.get('num_posts')
+    lower = upper - 3
+    univer = list(University.objects.values()[lower:upper])
+    univer_size = len(Students.objects.all())
+    slize = True if upper >= univer_size else False
+    return JsonResponse({'max': slize, 'univer': univer}, safe=False)
 
 
 

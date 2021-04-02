@@ -10,17 +10,27 @@ from django.core.serializers import serialize
 
 
 def country_view(request):
-    univer = University.objects.all().order_by('-id')
+
     if request.method =='GET':
         try:
-            decrease = request.GET.get('decrease')
-            univer = univer.all().order_by('-on_campus_yearly')
+            if request.GET.get('decrease'):
+                print('dec')
+                univer = University.objects.all().order_by('-year_tuition_fee')
+            elif request.GET.get('increase'):
+                print('inc')
+                univer = University.objects.all().order_by('year_tuition_fee')
         except:
-            uncrease = request.GET.get('uncrease')
-            univer = univer.all().order_by('on_campus_yearly')
+            univer = University.objects.all().order_by('year_tuition_fee')
+
+    univer = University.objects.all().order_by('-id')
+
     countries = Country.objects.all()
     faculty = Faculty.objects.all()
     study = Study_form.objects.all()
+    for i in univer:
+        k= i.faculty.all()[:5]
+
+
 
     context = {
 
@@ -29,6 +39,7 @@ def country_view(request):
         'countries': countries,
         'study':study,
         'univer':univer,
+        'k':k,
 
     }
     return render(request, 'blog/univers.html', context)

@@ -204,7 +204,7 @@ const handleGetData = () => {
                 })
                 if (max_size) {
 
-                    loadBox.innerHTML = "<center><h4>no news</h4></center>"
+                    loadBox.innerHTML = "<center><h4></h4></center>"
                 }
             }, 500)
 
@@ -224,3 +224,7 @@ if (loadBtn) {
         handleGetData()
     })
 }
+
+
+
+
