@@ -78,7 +78,7 @@ class University(models.Model):
     image3 = models.ImageField(upload_to='university_images/images', blank=True, verbose_name='University_Image3')
     image4 = models.ImageField(upload_to='university_images/images', blank=True, verbose_name='University_Image4')
     year_tuition_fee = models.CharField(max_length=100, verbose_name='Цена/семестр', blank=True)
-    on_campus_yearly = models.CharField(max_length=100, verbose_name='Цена/проживание', blank=True)
+    on_campus_yearly = models.PositiveBigIntegerField(verbose_name='Цена/проживание', blank=True,null=True)
     slug = models.SlugField(unique=True)
     top_universities = models.BooleanField(verbose_name='Top Университет', default=False)
 

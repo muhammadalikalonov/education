@@ -102,3 +102,14 @@ $(document).ready(function(){
 	// }
 
 });
+
+// document.getElementById('zor').addEventListener('click', function () {
+// 		let heroTxtTimer = document.getElementById('hero_txt_timer');
+// 			function removeLoader() {
+// 				heroTxtTimer.style.display = 'none';
+// 			}
+// 			setInterval (removeLoader, 500)
+// 			console.log(heroTxtTimer)
+// 			console.log('jjh')
+//
+// })

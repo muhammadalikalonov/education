@@ -27,6 +27,8 @@ DEBUG = True
 import os
 ALLOWED_HOSTS = []
 
+# ALLOWED_HOSTS = ['www.callan.uz','callan.uz']
+#
 
 # Application definition
 
@@ -94,6 +96,19 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+#
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'user',
+#         'USER': 'user',
+#         'PASSWORD': 'X8f702p3',
+#         'HOST': 'localhost'
+#     }
+# }
+
+
 
 
 # Password validation

@@ -11,18 +11,29 @@ from django.core.serializers import serialize
 
 def country_view(request):
 
-    if request.method =='GET':
+    univer = University.objects.all().order_by('-id')[:10]
+    active = False
+    if univer.count() > 5:
+        active = True
+    if request.method == 'POST':
+        univer = University.objects.all().order_by('-id').all()
+        active = False
+
+    if request.method =='POST':
+
+        a=request.POST('popular')
+        print(a)
         try:
-            if request.GET.get('decrease'):
-                print('dec')
+            if request.POST.get('decrease'):
                 univer = University.objects.all().order_by('-year_tuition_fee')
-            elif request.GET.get('increase'):
+                print('decrease')
+            if request.GET.get('increase'):
                 print('inc')
                 univer = University.objects.all().order_by('year_tuition_fee')
         except:
-            univer = University.objects.all().order_by('year_tuition_fee')
+            univer = University.objects.all().order_by('-id')
 
-    univer = University.objects.all().order_by('-id')
+
 
     countries = Country.objects.all()
     faculty = Faculty.objects.all()
@@ -40,6 +51,7 @@ def country_view(request):
         'study':study,
         'univer':univer,
         'k':k,
+        'active':active
 
     }
     return render(request, 'blog/univers.html', context)
@@ -65,6 +77,8 @@ def country_view(request):
 #         return queryset
 
 from django.shortcuts import get_object_or_404
+
+
 
 def uninfo(request, slug):
 
@@ -114,11 +128,14 @@ def uninfo(request, slug):
 def universtate(request, country_slug):
 
     country = Country.objects.get(slug=country_slug)
-    univer = University.objects.filter(country=country)
-    univer_popular = univer.all().order_by('-id')
-    univer_increase = univer.all().order_by('on_campus_yearly')
-    univer_decrease = univer.all().order_by('-on_campus_yearly')
 
+    univer = University.objects.filter(country=country)[:10]
+    active =False
+    if univer.count() >10:
+        active =True
+    if request.method == 'POST':
+        univer = univer = University.objects.filter(country=country).all()
+        active = False
 
     document = Document.objects.all()
     study_form = Study_form.objects.all()
@@ -127,6 +144,7 @@ def universtate(request, country_slug):
         'country':country,
         'study_form': study_form,
         'document': document,
+        'active':active
 
     }
     return render(request, 'others/universtate.html', context)

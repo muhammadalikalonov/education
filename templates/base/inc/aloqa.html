@@ -7,7 +7,7 @@
 
                     <span id='nameSpecCb' class="txt-bold">{{ specialist.name }}</span> {{ specialist.status }}
                 </div>
-                <picture>
+
 
                     <img src="{{ specialist.image.url }}" alt="#" />
 
@@ -24,7 +24,7 @@
                     {{ form.name }}
                     {{ form.phone }}
                     {{ form.content }}
-                    <button type="submit" class="form__btn btn big"><span class="btn__icon _ar"></span><span class="btn__dec"></span><span class="btn__txt">{% trans 'Отправить' %}</span></button>
+                    <button type="submit" id="zor" class="form__btn btn big"><span class="btn__icon _ar"></span><span class="btn__dec"></span><span class="btn__txt">{% trans 'Отправить' %}</span></button>
                 </form>
             </div>
         </div>
@@ -44,8 +44,8 @@
             <div class="gtc__card">
                 <div class="gtc__phones">
                     <div class="gtc__item-title gtc__item-title_tel">{% trans 'Телефоны' %}</div>
-                    <a href="tel:{{ contact.phone}}" class="gtc__phones-tel">{{ contact.phone}}</a>
-                    <a href="tel:{{ contact.phone1}}" class="gtc__phones-tel">{{ contact.phone1}}</a>
+                    <a href="tel:{{ contact.phone}}" id="123123" class="gtc__phones-tel">{{ contact.phone}}</a>
+                    <a href="tel:{{ contact.phone1}}" id="12qwe" class="gtc__phones-tel">{{ contact.phone1}}</a>
                 </div>
                 <div class="gtc__adres">
                     <div class="gtc__item-title gtc__item-title_map">{% trans 'Адрес' %}</div>
