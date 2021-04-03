@@ -32,9 +32,10 @@ def country_view(request):
     countries = Country.objects.all()
     faculty = Faculty.objects.all()
     study = Study_form.objects.all()
+
     for i in univer:
         k= i.faculty.all()[:5]
-
+    print(k)
 
 
     context = {
@@ -131,14 +132,21 @@ def universtate(request, country_slug):
         univer = univer = University.objects.filter(country=country).all()
         active = False
 
+
+
     document = Document.objects.all()
     study_form = Study_form.objects.all()
+    for i in univer:
+        k= i.faculty.all()[:5]
+
+
     context={
         'univer':univer,
         'country':country,
         'study_form': study_form,
         'document': document,
-        'active':active
+        'active':active,
+        'k':k
 
     }
     return render(request, 'others/universtate.html', context)

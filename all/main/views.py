@@ -138,11 +138,9 @@ def filter_univer(request):
     if len(study)>0:
         allProducts=allProducts.filter(study_form__name__in=study).distinct()
 
-
-
     if len(faculty)>0:
         allProducts=allProducts.filter(faculty__name__in=faculty).distinct()
-
+        print(allProducts)
     t = render_to_string('blog/ajax/univers.html',{'univer':allProducts})
     return JsonResponse({'univer':t})
 
@@ -153,13 +151,13 @@ def filter_univer(request):
 def search_univer(request):
     if request.method == 'GET':
         search_text = request.GET.get('search_text')
+
     else:
         search_text = ''
-
+    
     univer = University.objects.filter(country__name='USA')
     univer = univer.filter(name__contains =search_text)
-    print(univer)
-    # univer = University.objects.filter(name__contains=search_text)
+
     if univer.count() > 5:
         active = True
 
