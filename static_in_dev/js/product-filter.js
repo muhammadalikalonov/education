@@ -188,7 +188,7 @@ const handleGetData = () => {
                     console.log(news);
                     let html = `
                         
-                        <a href="/ru/news/${news.slug}" class="news__card card-tmp">
+                        <a href="/news/${news.slug}" class="news__card card-tmp">
                             <div class="news__lbox card-tmp__lbox">
                                 <div class="news__img-box card-tmp__img-ns-box">
                                     <img src="/media/${news.image}" alt="#" class="news__img card-tmp__img-ns">
