@@ -7,6 +7,11 @@ from ..news.models import *
 from .models import *
 from django.core import serializers
 
+
+def error_404_view(request,exception):
+    return render(request, 'others/404.html')
+
+
 # Create your views here.
 def news(request):
     news = News.objects.all()

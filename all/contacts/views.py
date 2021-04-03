@@ -11,6 +11,10 @@ token = "1715097196:AAGBr9vZEhRxT1x8PnhrnfZY-mDA6Cj94i0"
 
 bot = telebot.TeleBot(token)
 
+def error_404_view(request,exception):
+    return render(request, 'others/404.html')
+
+
 def page(request):
     print('hello')
     forming = PageForms()

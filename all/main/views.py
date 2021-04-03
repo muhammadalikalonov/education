@@ -12,32 +12,28 @@ from django.http import JsonResponse
 from django.template.loader import render_to_string
 from django.db.models import Max,Min
 
+def error_404_view(request,exception):
+    return render(request, 'others/404.html')
+
+
 def filter_data(request):
-    # minmaxPrice =University.objects.aggregate(Min('price'),Max('price'))
-    # # minPrice = request.GET['minPrice']
-    # # maxPrice = request.GET['maxPrice']
-    # 	allProducts=allProducts.filter(productattribute__price__gte=minPrice)
-    # 	allProducts=allProducts.filter(productattribute__price__lte=maxPrice)
 
     countrys =request.GET.getlist('country[]')
     study =request.GET.getlist('study[]')
     faculty =request.GET.getlist('faculty[]')
-    print(countrys)
-
     allProducts = University.objects.all()
     if len(countrys)>0:
         allProducts=allProducts.filter(country__name__in =countrys).distinct()
-        active = False
+
 
     if len(study)>0:
         allProducts=allProducts.filter(study_form__name__in=study).distinct()
-        allProducts = allProducts.filter(country__name__in=countrys).distinct()
-        active = False
+
+
 
     if len(faculty)>0:
         allProducts=allProducts.filter(faculty__name__in=faculty).distinct()
-        allProducts = allProducts.filter(country__name__in=countrys).distinct()
-        active = False
+
     t = render_to_string('blog/ajax/univers.html',{'univer':allProducts})
     return JsonResponse({'univer':t})
 
@@ -49,16 +45,10 @@ def index(request):
     university = University.objects.all().count()
     countries =Country.objects.filter(banner=True)
     country = countries.count()
-    # for i in countries:
-    #     print(i)
-    #     coun = University.objects.filter(country = '')
 
-    # message = Contact.objects.all().first()
     testimonials = Testimonials.objects.all()
     faq = FAQ.objects.all()
-    # number = FAQ.objects.all().count()
-    # column1 = FAQ.objects.all()[:number // 2]
-    # column2 = FAQ.objects.all()[number // 2:]
+
 
     advantage = Advantage.objects.all()
 
@@ -134,3 +124,45 @@ def search(request):
     return JsonResponse({'data': t})
 
 
+def filter_univer(request):
+
+    countrys =request.GET.getlist('country[]')
+    print(countrys)
+    study =request.GET.getlist('study[]')
+    print(study)
+    faculty =request.GET.getlist('faculty[]')
+    print(faculty)
+    allProducts = University.objects.all()
+    if len(countrys)>0:
+        allProducts=allProducts.filter(country__name__in =countrys).distinct()
+    if len(study)>0:
+        allProducts=allProducts.filter(study_form__name__in=study).distinct()
+
+
+
+    if len(faculty)>0:
+        allProducts=allProducts.filter(faculty__name__in=faculty).distinct()
+
+    t = render_to_string('blog/ajax/univers.html',{'univer':allProducts})
+    return JsonResponse({'univer':t})
+
+
+
+
+
+def search_univer(request):
+    if request.method == 'GET':
+        search_text = request.GET.get('search_text')
+    else:
+        search_text = ''
+
+    univer = University.objects.filter(country__name='USA')
+    univer = univer.filter(name__contains =search_text)
+    print(univer)
+    # univer = University.objects.filter(name__contains=search_text)
+    if univer.count() > 5:
+        active = True
+
+    t = render_to_string('blog/search.html', {'univer': univer, 'search_text': search_text})
+
+    return JsonResponse({'data': t})

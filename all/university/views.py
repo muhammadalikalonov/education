@@ -7,33 +7,27 @@ from django.views.generic import ListView
 from django.core.serializers import serialize
 
 
-
+def error_404_view(request,exception):
+    return render(request, 'others/404.html')
 
 def country_view(request):
-
-    univer = University.objects.all().order_by('-id')[:10]
-    active = False
-    if univer.count() > 5:
-        active = True
-    if request.method == 'POST':
+    univer = University.objects.all().order_by('-id').all()
+    if request.method =='POST':
         univer = University.objects.all().order_by('-id').all()
         active = False
-
-    if request.method =='POST':
-
-        a=request.POST('popular')
-        print(a)
-        try:
-            if request.POST.get('decrease'):
-                univer = University.objects.all().order_by('-year_tuition_fee')
-                print('decrease')
-            if request.GET.get('increase'):
-                print('inc')
-                univer = University.objects.all().order_by('year_tuition_fee')
-        except:
+        a=request.POST.get('popular')
+        if request.POST.get('decrease'):
+            univer = University.objects.all().order_by('-year_tuition_fee')
+            print('decrease')
+        if request.GET.get('increase'):
+            print('inc')
+            univer = University.objects.all().order_by('year_tuition_fee')
+        else:
             univer = University.objects.all().order_by('-id')
 
-
+    active = False
+    if univer.count() > 10:
+        active = True
 
     countries = Country.objects.all()
     faculty = Faculty.objects.all()

@@ -8,6 +8,9 @@ urlpatterns = [
     path('loading/<int:num_posts>/', loadding, name='loading'),
     path('load_students/<int:num_posts>/', load_students, name='load_students'),
     path('search/',search , name='search'),
+    path('search_univer/',search_univer,name='search_univer'),
+    path('filter_univer/',filter_univer,name='filter_univer'),
+
 
 
 

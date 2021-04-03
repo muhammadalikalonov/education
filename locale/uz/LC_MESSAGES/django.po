@@ -167,7 +167,7 @@ msgstr "Xammasini ko'rish"
 
 #: .\templates\base\index.html:187
 msgid "вузов"
-msgstr "universitetlar"
+msgstr "universitet"
 
 #: .\templates\base\index.html:201
 msgid "Отзывы наших студентов"

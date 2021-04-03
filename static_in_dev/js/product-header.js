@@ -1,3 +1,7 @@
+//filter by checking
+
+
+
 $(document).ready(function(){
 	$(".ajaxLoader").hide();
  $(".checkbox__input").on('click',function(){

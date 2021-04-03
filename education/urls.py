@@ -40,6 +40,15 @@ urlpatterns += i18n_patterns(
 )
 
 
+
+handler404 ='all.about.views.error_404_view'
+handler404 ='all.contacts.views.error_404_view'
+handler404 ='all.service.views.error_404_view'
+handler404 ='all.students.views.error_404_view'
+handler404 ='all.university.views.error_404_view'
+handler404 ='all.news.views.error_404_view'
+handler404 ='all.main.views.error_404_view'
+
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
     urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)

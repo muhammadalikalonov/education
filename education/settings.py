@@ -25,7 +25,7 @@ SECRET_KEY = '%1@_aj)6pawq+u5i39pqx1)qvt=o&97p_)8-7-4o^ia3=5@=)l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 import os
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ ]
 
 # ALLOWED_HOSTS = ['www.callan.uz','callan.uz']
 #

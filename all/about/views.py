@@ -6,7 +6,8 @@ from .models import *
 from ..service.models import *
 from ..main.models import *
 
-
+def error_404_view(request,exception):
+    return render(request, 'others/404.html')
 
 def about(request):
     section1 = Section_One.objects.all().first()

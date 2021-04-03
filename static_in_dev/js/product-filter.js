@@ -154,6 +154,11 @@
 // });
 
 
+
+
+
+// load more button in news
+
 const postBox = document.querySelector('.news__body.body-crd');
 
 const loadBtn = document.getElementById('load-btn');
