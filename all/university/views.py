@@ -30,10 +30,10 @@ def country_view(request):
     countries = Country.objects.all()
     faculty = Faculty.objects.all()
     study = Study_form.objects.all()
+    if univer:
+        for i in univer:
+            k= i.faculty.all()[:5]
 
-    for i in univer:
-        k= i.faculty.all()[:5]
-    print(k)
 
 
     context = {
@@ -83,15 +83,21 @@ def universtate(request, country_slug):
 
     if request.method == 'GET':
         cou = request.GET.get('country_1')
-        print(cou)
+        country_view= request.GET.get('country_view')
+        print(country_view)
+        print('hello')
     if request.method == 'POST':
         univer = univer = University.objects.filter(country=c).all()
         active = False
 
     document = Document.objects.all()
     study_form = Study_form.objects.all()
-    for i in univer:
-        k= i.faculty.all()[:5]
+    k=None
+    if univer.exists():
+        print('----')
+        print(univer)
+        for i in univer:
+            k= i.faculty.all()[:5]
 
 
     context={
@@ -104,7 +110,7 @@ def universtate(request, country_slug):
         'c':c
 
     }
-    return render(request, 'blog/univers.html', context)
+    return render(request, 'others/universtate.html', context)
 
 
 
