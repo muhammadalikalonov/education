@@ -34,7 +34,7 @@ urlpatterns += i18n_patterns(
     path('contact/' , include('all.contacts.urls')),
     path('services/' , include('all.service.urls')),
     path('students/' , include('all.students.urls')),
-    path('university/', include('all.university.urls')),
+    path('university', include('all.university.urls')),
     path('news/', include('all.news.urls')),
     path('', include('all.main.urls')),
 )
@@ -42,12 +42,12 @@ urlpatterns += i18n_patterns(
 
 
 handler404 ='all.about.views.error_404_view'
-handler404 ='all.contacts.views.error_404_view'
-handler404 ='all.service.views.error_404_view'
-handler404 ='all.students.views.error_404_view'
-handler404 ='all.university.views.error_404_view'
-handler404 ='all.news.views.error_404_view'
-handler404 ='all.main.views.error_404_view'
+handler4041 ='all.contacts.views.error_404_view'
+handler4042 ='all.service.views.error_404_view'
+handler4043 ='all.students.views.error_404_view'
+handler4044 ='all.university.views.error_404_view'
+handler4045 ='all.news.views.error_404_view'
+handler4046 ='all.main.views.error_404_view'
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
