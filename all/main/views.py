@@ -16,12 +16,42 @@ def error_404_view(request,exception):
     return render(request, 'others/404.html')
 
 
+
+
 def filter_data(request):
+    allProducts = University.objects.all()
+
+
+    search_text = request.GET.get('search_text')
+
+    if search_text:
+        allProducts = University.objects.filter(name__contains=search_text)
+
+
+    if allProducts.count() > 5:
+        active = True
+
 
     countrys =request.GET.getlist('country[]')
     study =request.GET.getlist('study[]')
-    faculty =request.GET.getlist('faculty[]')
-    allProducts = University.objects.all()
+    facultys =request.GET.getlist('faculty[]')
+
+
+    if request.GET.get('minPrice') == 'true':
+        allProducts = allProducts.order_by('year_tuition_fee')
+
+    if request.GET.get('maxPrice') == 'true':
+        allProducts = allProducts.order_by('-year_tuition_fee')
+
+    if request.GET.get('popPrice') == 'true':
+        allProducts = allProducts.order_by('-rating_id')
+
+
+    if len(facultys)>0:
+
+        allProducts=allProducts.filter(faculty__name__in = facultys).distinct()
+
+
     if len(countrys)>0:
         allProducts=allProducts.filter(country__name__in =countrys).distinct()
 
@@ -31,11 +61,13 @@ def filter_data(request):
 
 
 
-    if len(faculty)>0:
-        allProducts=allProducts.filter(faculty__name__in=faculty).distinct()
 
-    t = render_to_string('blog/ajax/univers.html',{'univer':allProducts})
+
+    t = render_to_string('blog/ajax/univers.html',{'univer':allProducts, 'search_text': search_text })
+
+
     return JsonResponse({'univer':t})
+
 
 
 
@@ -85,7 +117,6 @@ def page(request):
 
 
 
-
 def loadding(request,*args,**kwargs):
     upper =kwargs.get('num_posts')
     lower =upper -3
@@ -96,73 +127,5 @@ def loadding(request,*args,**kwargs):
 
 
 
-def load_students(request,*args,**kwargs):
-    upper = kwargs.get('num_posts')
-    lower = upper - 3
-    univer = list(University.objects.values()[lower:upper])
-    univer_size = len(Students.objects.all())
-    slize = True if upper >= univer_size else False
-    return JsonResponse({'max': slize, 'univer': univer}, safe=False)
 
 
-
-
-def search(request):
-    if request.method == 'GET':
-        search_text = request.GET.get('search_text')
-
-    else:
-        search_text = ''
-
-
-    univer =University.objects.filter(name__contains=search_text)
-    if univer.count() > 5:
-        active = True
-
-    t = render_to_string('blog/search.html', {'univer': univer,'search_text':search_text})
-
-    return JsonResponse({'data': t})
-
-
-def filter_univer(request):
-
-    countrys =request.GET.getlist('country[]')
-    print(countrys)
-    study =request.GET.getlist('study[]')
-    print(study)
-    faculty =request.GET.getlist('faculty[]')
-    print(faculty)
-    allProducts = University.objects.all()
-    if len(countrys)>0:
-        allProducts=allProducts.filter(country__name__in =countrys).distinct()
-    if len(study)>0:
-        allProducts=allProducts.filter(study_form__name__in=study).distinct()
-
-
-
-    if len(faculty)>0:
-        allProducts=allProducts.filter(faculty__name__in=faculty).distinct()
-
-    t = render_to_string('blog/ajax/univers.html',{'univer':allProducts})
-    return JsonResponse({'univer':t})
-
-
-
-
-
-def search_univer(request):
-    if request.method == 'GET':
-        search_text = request.GET.get('search_text')
-    else:
-        search_text = ''
-
-    univer = University.objects.filter(country__name='USA')
-    univer = univer.filter(name__contains =search_text)
-    print(univer)
-    # univer = University.objects.filter(name__contains=search_text)
-    if univer.count() > 5:
-        active = True
-
-    t = render_to_string('blog/search.html', {'univer': univer, 'search_text': search_text})
-
-    return JsonResponse({'data': t})
