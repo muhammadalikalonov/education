@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-02 21:59+0500\n"
+"POT-Creation-Date: 2021-04-06 08:28+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,8 +31,12 @@ msgid "Связатся с нами"
 msgstr "Biz bilan bog'lanish"
 
 #: .\templates\base\inc\aloqa.html:21 .\templates\base\inc\callback.html:9
-msgid "Оставьте свои данные и наш специалист обязательно свяжемся с Вами в течение дня"
-msgstr "Ma'lumotlaringizni qoldiring, shunda mutaxassisimiz kun davomida albatta siz bilan bog'lanadi"
+msgid ""
+"Оставьте свои данные и наш специалист обязательно свяжемся с Вами в течение "
+"дня"
+msgstr ""
+"Ma'lumotlaringizni qoldiring, shunda mutaxassisimiz kun davomida albatta siz "
+"bilan bog'lanadi"
 
 #: .\templates\base\inc\aloqa.html:27 .\templates\base\inc\callback.html:21
 #: .\templates\others\cons.html:84
@@ -61,15 +65,15 @@ msgstr "Manzil"
 msgid "Время работы"
 msgstr "Ish vaqti"
 
-#: .\templates\base\inc\aloqa.html:58 .\templates\base\index.html:114
+#: .\templates\base\inc\aloqa.html:58 .\templates\base\index.html:127
 #: .\templates\blog\uninfo.html:95 .\templates\others\contacts.html:55
 msgid "Связаться с нами"
 msgstr "Biz bilan bog'lanish"
 
 #: .\templates\base\inc\footer.html:10 .\templates\base\inc\header.html:24
-#: .\templates\base\index.html:50 .\templates\blog\article.html:21
+#: .\templates\base\index.html:53 .\templates\blog\article.html:21
 #: .\templates\blog\news.html:19 .\templates\blog\uninfo.html:18
-#: .\templates\blog\univers.html:18 .\templates\others\about.html:16
+#: .\templates\blog\univers.html:20 .\templates\others\about.html:16
 #: .\templates\others\cons.html:19 .\templates\others\contacts.html:18
 #: .\templates\others\students.html:18 .\templates\others\universtate.html:17
 #: .\templates\others\uslugi.html:22
@@ -77,116 +81,115 @@ msgid "Главная"
 msgstr "Bosh sahifa"
 
 #: .\templates\base\inc\footer.html:11 .\templates\base\inc\header.html:25
-#: .\templates\base\index.html:51 .\templates\others\about.html:17
+#: .\templates\base\index.html:55 .\templates\others\about.html:17
 #: .\templates\others\about.html:25
 msgid "О нас"
 msgstr "Biz haqimizda"
 
-#: .\templates\base\inc\footer.html:12 .\templates\base\inc\header.html:26
-#: .\templates\base\index.html:52 .\templates\others\about.html:43
+#: .\templates\base\inc\footer.html:12 .\templates\base\inc\header.html:27
+#: .\templates\base\index.html:58 .\templates\others\about.html:43
 #: .\templates\others\uslugi.html:23 .\templates\others\uslugi.html:30
 msgid "Услуги"
 msgstr "Xizmatlar"
 
-#: .\templates\base\inc\footer.html:13 .\templates\base\inc\header.html:27
-#: .\templates\base\index.html:53 .\templates\blog\uninfo.html:19
-#: .\templates\blog\univers.html:19 .\templates\blog\univers.html:25
+#: .\templates\base\inc\footer.html:13 .\templates\base\inc\header.html:29
+#: .\templates\base\index.html:60 .\templates\blog\uninfo.html:19
+#: .\templates\blog\univers.html:21 .\templates\blog\univers.html:32
 #: .\templates\others\universtate.html:24
 msgid "Университеты"
 msgstr "Universitetlar"
 
-#: .\templates\base\inc\footer.html:14 .\templates\base\inc\header.html:28
-#: .\templates\base\index.html:54 .\templates\others\students.html:19
+#: .\templates\base\inc\footer.html:14 .\templates\base\inc\header.html:31
+#: .\templates\base\index.html:62 .\templates\others\students.html:19
 #: .\templates\others\students.html:25
 msgid "Студенты"
 msgstr "Studentlar"
 
-#: .\templates\base\inc\footer.html:15 .\templates\base\inc\header.html:29
-#: .\templates\base\index.html:55 .\templates\blog\article.html:22
+#: .\templates\base\inc\footer.html:15 .\templates\base\inc\header.html:33
+#: .\templates\base\index.html:63 .\templates\blog\article.html:22
 #: .\templates\blog\news.html:20 .\templates\blog\news.html:27
 msgid "Новости"
 msgstr "Yangiliklar"
 
-#: .\templates\base\inc\footer.html:16 .\templates\base\inc\header.html:30
-#: .\templates\base\index.html:56 .\templates\others\contacts.html:19
+#: .\templates\base\inc\footer.html:16 .\templates\base\inc\header.html:34
+#: .\templates\base\index.html:64 .\templates\others\contacts.html:19
 #: .\templates\others\contacts.html:26
 msgid "Контакты"
 msgstr "Aloqa"
 
-#: .\templates\base\inc\header.html:78 .\templates\base\index.html:98
+#: .\templates\base\inc\header.html:80 .\templates\base\index.html:111
 #: .\templates\others\cons.html:5
 msgid "Оставить заявку"
 msgstr "Ariza qoldirish"
 
-#: .\templates\base\index.html:109
+#: .\templates\base\index.html:122
 msgid "Грант и контрактное обучение в"
 msgstr "Grand va kontrakt asosida"
 
-#: .\templates\base\index.html:109
+#: .\templates\base\index.html:122
 msgid "зарубежных вузах"
 msgstr "chet elda o'qish"
 
-#: .\templates\base\index.html:112
+#: .\templates\base\index.html:125
 msgid "Учись в зарубежных вузах на грант и контрактной основе!"
 msgstr " Chet el universitetlarida grant va shartnoma asosida o'qing!"
 
-#: .\templates\base\index.html:131
+#: .\templates\base\index.html:144
 msgid "Добро пожаловать в нашу группу иностранного образования"
 msgstr "Xorijiy ta'lim guruhimizga xush kelibsiz"
 
-#: .\templates\base\index.html:134
+#: .\templates\base\index.html:147
 msgid "Почему мы?"
 msgstr "Nimaga aynan biz?"
 
-#: .\templates\base\index.html:169 .\templates\blog\univers.html:36
+#: .\templates\base\index.html:182 .\templates\blog\univers.html:43
 #: .\templates\others\universtate.html:35
 msgid "Страны"
 msgstr "Shaharlar"
 
-#: .\templates\base\index.html:173
-msgid " В нашем каталоге вы найдете более "
-msgstr "Bizning katalogimizda siz ko'proq ma'lumot topasiz"
+#: .\templates\base\index.html:186
+msgid "В нашем каталоге вы найдете более"
+msgstr "Bizning katalogimizda siz"
 
-#: .\templates\base\index.html:173
-#, fuzzy
-#| msgid "Университеты"
-msgid " университетов "
-msgstr "universitetlar"
+#: .\templates\base\index.html:186
 
-#: .\templates\base\index.html:173
-msgid " из более чем "
-msgstr " ko'proq"
+msgid "университетов"
+msgstr "dan"
 
-#: .\templates\base\index.html:173
+msgid "из более чем"
+msgstr "ortiq mamlakatlarning"
+
+
+#: .\templates\base\index.html:186
 msgid " стран "
-msgstr "shaharlar"
+msgstr "dan ortiq universitetlarini topasiz"
 
-#: .\templates\base\index.html:176
+#: .\templates\base\index.html:189
 msgid " Смотреть все "
 msgstr "Xammasini ko'rish"
 
-#: .\templates\base\index.html:187
+#: .\templates\base\index.html:202
 msgid "вузов"
 msgstr "universitet"
 
-#: .\templates\base\index.html:201
+#: .\templates\base\index.html:216
 msgid "Отзывы наших студентов"
 msgstr "Bizni o'quvchilarimizning izohlari"
 
-#: .\templates\base\index.html:239
+#: .\templates\base\index.html:254
 msgid "Смотреть все"
 msgstr "Xammasini ko'rish"
 
-#: .\templates\base\index.html:242
+#: .\templates\base\index.html:257
 msgid "Фотографии наших студентов"
 msgstr "Bizni o'quvchilarimizning foto-surati"
 
-#: .\templates\base\index.html:280
+#: .\templates\base\index.html:295
 msgid "Вопросы и ответы"
 msgstr "Savol va javoblar"
 
 #: .\templates\blog\ajax\univers.html:155 .\templates\blog\search.html:157
-#: .\templates\blog\univers.html:267 .\templates\others\universtate.html:170
+#: .\templates\blog\univers.html:293 .\templates\others\universtate.html:267
 #, fuzzy
 #| msgid "за семест"
 msgid "за семестр"
@@ -206,16 +209,10 @@ msgstr "O'qish vaqti"
 msgid " минут"
 msgstr "daqiqa"
 
-#: .\templates\blog\news.html:65 .\templates\blog\univers.html:289
-#: .\templates\others\students.html:72 .\templates\others\universtate.html:198
+#: .\templates\blog\news.html:65 .\templates\blog\univers.html:321
+#: .\templates\others\students.html:72 .\templates\others\universtate.html:295
 msgid "Еще"
 msgstr "Yana"
-
-#: .\templates\blog\uninfo.html:27
-#, fuzzy
-#| msgid "Университеты"
-msgid "Название университета"
-msgstr "Universitetlar nomlari"
 
 #: .\templates\blog\uninfo.html:68
 msgid "Расположение"
@@ -257,31 +254,35 @@ msgstr "Akadem programmalar"
 msgid "Галерея"
 msgstr "Galereya"
 
-#: .\templates\blog\univers.html:31 .\templates\blog\univers.html:95
+#: .\templates\blog\univers.html:38 .\templates\blog\univers.html:106
 #: .\templates\others\universtate.html:32
-#: .\templates\others\universtate.html:73
+#: .\templates\others\universtate.html:93
 msgid "Фильтры"
 msgstr "Filtrlash"
 
-#: .\templates\blog\univers.html:51 .\templates\others\universtate.html:45
+#: .\templates\blog\univers.html:62 .\templates\others\universtate.html:56
 msgid "Форма обучения"
 msgstr "O'qish formasi"
 
-#: .\templates\blog\univers.html:65 .\templates\others\universtate.html:55
+#: .\templates\blog\univers.html:76 .\templates\others\universtate.html:69
 msgid "Направление обучения"
 msgstr "O'qish yo'nalishlar"
 
-#: .\templates\blog\univers.html:83 .\templates\others\universtate.html:65
+#: .\templates\blog\univers.html:94 .\templates\others\universtate.html:85
 msgid "Применить"
 msgstr "Qidirish"
 
-#: .\templates\blog\univers.html:106 .\templates\others\universtate.html:79
+#: .\templates\blog\univers.html:110
+msgid "Поиск"
+msgstr "Qidirish"
+
+#: .\templates\blog\univers.html:121 .\templates\others\universtate.html:104
 msgid "По популярности"
 msgstr "Ommabopligi bo'yicha"
 
-#: .\templates\blog\univers.html:107 .\templates\blog\univers.html:108
-#: .\templates\others\universtate.html:80
-#: .\templates\others\universtate.html:81
+#: .\templates\blog\univers.html:122 .\templates\blog\univers.html:123
+#: .\templates\others\universtate.html:105
+#: .\templates\others\universtate.html:106
 msgid "По цене"
 msgstr "Narxi bo'yicha"
 
@@ -334,6 +335,11 @@ msgstr "Biz bilan bog'laning va barcha savollaringizga mening javobim"
 #| msgid "г.Ташкент"
 msgid "г. Ташкент"
 msgstr "sh.Toshkent"
+
+#, fuzzy
+#~| msgid "Университеты"
+#~ msgid "Название университета"
+#~ msgstr "Universitetlar nomlari"
 
 #~ msgid " Мы предлагаем нашим клиентам следующие услуги:"
 #~ msgstr "Biz mijozlarimizga quyidagi xizmatlarni taklif etamiz:"

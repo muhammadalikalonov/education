@@ -178,14 +178,14 @@ const handleGetData = () => {
         success: function (response) {
             // console.log(response.max)
             max_size = response.max;
-            console.log(max_size)
+            // console.log(max_size)
             const news = response.news;
 
 
             setTimeout(() => {
 
                 news.map(news => {
-                    console.log(news);
+                    // console.log(news);
                     let html = `
                         
                         <a href="/news/${news.slug}" class="news__card card-tmp">
@@ -217,7 +217,7 @@ const handleGetData = () => {
 
         },
         error: function (error) {
-            console.log(error);
+            // console.log(error);
 
         },
     });

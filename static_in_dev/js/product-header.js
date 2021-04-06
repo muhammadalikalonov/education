@@ -52,7 +52,7 @@ $(document).ready(function () {
     });
 
     function ajaxFilter() {
-        console.log(_filterObj)
+
         $.ajax({
             url: '/filter',
             data: _filterObj,

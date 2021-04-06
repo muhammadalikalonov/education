@@ -11,13 +11,13 @@ class ContactFormForm(TranslationModelForm):
         fields = ['name', 'phone', 'content']
         widgets = {
             'name': forms.TextInput(
-                attrs={'class': "input form__input _name _req", 'id': 'form_id_afasfas','data-value': "Ваше имя", 'name': "form[]",
+                attrs={'class': "input form__input _name _req", 'id': 'form_id_afassdsdwdwfas','data-value': "Ваше имя", 'name': "form[]",
                        'type': "text",'required': '', 'autocomplete': "off"}),
             'phone': forms.TextInput(
-                attrs={'class': "input form__input _phone _req _tel",'id': 'form_id_namewefwef', 'data-value': "+998 (93) 563-55-09",
+                attrs={'class': "input form__input _phone _req _tel",'id': 'form_id_asdnamewefwef', 'data-value': "+998 (93) 563-55-09",
                        'name': "form[]", 'type': "text",'required': '', 'autocomplete': "off"}),
             'content': forms.Textarea(
-                attrs={'class': "form__input input _msg", 'id': 'form_id_namehhj','data-value': "Дополнительные комментарии", 'rows': "10",
+                attrs={'class': "form__input input _msg", 'id': 'form_id_nwqeqwamehhj','data-value': "Дополнительные комментарии", 'rows': "10",
                        'cols': "30", 'name': "txt", 'required': '', 'placeholder': 'Text'}),
         }
 

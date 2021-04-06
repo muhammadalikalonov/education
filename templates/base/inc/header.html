@@ -1,12 +1,28 @@
-{% load i18n  %}
+{% load i18n %}
 <header class="header">
     <div class="header__content _container">
         <div class="header__column header__column_1">
-            <a href="{%url 'index'%}" id="logo"><picture><source srcset="/static/img/logo.webp" type="image/webp"><img src="/static/img/logo.png" alt="logo" class="header__logo" width="110" height="48"></picture></a>
+            <a href="{% url 'index' %}" id="logo">
+                <picture>
+                    <source srcset="/static/img/logo.webp" type="image/webp">
+                    <img src="/static/img/logo.png" alt="logo" class="header__logo" width="110" height="48"></picture>
+            </a>
             <div class="header__social social-box">
-                <a href="{{contact.facebook}}" class="social-box__link"><span class="social-box__icon"><svg class="social-box__inst" viewBox="0 0 21 22 " width="21" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.69.896H5.6a5.606 5.606 0 00-5.6 5.6v9.09c0 3.088 2.512 5.6 5.6 5.6h9.09c3.088 0 5.6-2.512 5.6-5.6v-9.09c0-3.088-2.512-5.6-5.6-5.6zm-4.545 4.917a5.234 5.234 0 00-5.228 5.228 5.234 5.234 0 005.228 5.228 5.234 5.234 0 005.228-5.228 5.234 5.234 0 00-5.228-5.228zm0 8.656a3.432 3.432 0 01-3.428-3.428 3.432 3.432 0 013.428-3.428 3.432 3.432 0 013.428 3.428 3.432 3.432 0 01-3.428 3.428zm4.515-9.796a1.32 1.32 0 011.866 1.867 1.333 1.333 0 01-.934.387 1.33 1.33 0 01-.932-.387 1.331 1.331 0 01-.388-.933c0-.349.142-.69.388-.934z" fill="#52BFFF"/></svg></span></a>
-                <a href="{{contact.instagram}}" class="social-box__link"><span class="social-box__icon"><svg class="social-box__fb" viewBox="0 0 12 23 " width="12" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.137 4.715c.03-.034.175-.148.742-.148l1.718-.001c.605 0 1.096-.493 1.096-1.098V1.103A1.1 1.1 0 0010.599.004L8.834 0C7.13 0 6.11.119 5.074 1.184c-1.031 1.06-1.577 2.54-1.577 4.28v2.198h-2.11C.781 7.662.29 8.155.29 8.76v2.616c0 .605.492 1.098 1.096 1.098h2.111v8.62c0 .606.492 1.098 1.096 1.098H6.93c.605 0 1.096-.492 1.096-1.098v-8.62h2.581c.604 0 1.096-.493 1.096-1.098l.001-2.616a1.102 1.102 0 00-1.106-1.098H8.025V5.388c0-.451.061-.615.112-.673z" fill="#52BFFF"/></svg></span></a>
-                <a href="{{contact.telegram}}" class="social-box__link"><span class="social-box__icon"><svg class="social-box__yt" viewBox="0 0 24 17 " width="24" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.506 14.36C24 12.46 24 8.52 24 8.52s.02-3.96-.494-5.86A3.025 3.025 0 0021.39.52C19.512 0 12 0 12 0S4.488 0 2.61.5C1.6.78.77 1.62.494 2.66 0 4.56 0 8.5 0 8.5s0 3.96.494 5.84a3.025 3.025 0 002.116 2.14C4.507 17 12 17 12 17s7.512 0 9.39-.5a3.025 3.025 0 002.116-2.14zM15.855 8.5l-6.247 3.64V4.86l6.247 3.64z" fill="#52BFFF"/></svg> </span></a>
+                <a href="{{ contact.facebook }}" class="social-box__link"><span class="social-box__icon"><svg
+                        class="social-box__inst" viewBox="0 0 21 22 " width="21" height="22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M14.69.896H5.6a5.606 5.606 0 00-5.6 5.6v9.09c0 3.088 2.512 5.6 5.6 5.6h9.09c3.088 0 5.6-2.512 5.6-5.6v-9.09c0-3.088-2.512-5.6-5.6-5.6zm-4.545 4.917a5.234 5.234 0 00-5.228 5.228 5.234 5.234 0 005.228 5.228 5.234 5.234 0 005.228-5.228 5.234 5.234 0 00-5.228-5.228zm0 8.656a3.432 3.432 0 01-3.428-3.428 3.432 3.432 0 013.428-3.428 3.432 3.432 0 013.428 3.428 3.432 3.432 0 01-3.428 3.428zm4.515-9.796a1.32 1.32 0 011.866 1.867 1.333 1.333 0 01-.934.387 1.33 1.33 0 01-.932-.387 1.331 1.331 0 01-.388-.933c0-.349.142-.69.388-.934z"
+                                                                 fill="#52BFFF"/></svg></span></a>
+                <a href="{{ contact.instagram }}" class="social-box__link"><span class="social-box__icon"><svg
+                        class="social-box__fb" viewBox="0 0 12 23 " width="12" height="23" fill="none"
+                        xmlns="http://www.w3.org/2000/svg"><path
+                        d="M8.137 4.715c.03-.034.175-.148.742-.148l1.718-.001c.605 0 1.096-.493 1.096-1.098V1.103A1.1 1.1 0 0010.599.004L8.834 0C7.13 0 6.11.119 5.074 1.184c-1.031 1.06-1.577 2.54-1.577 4.28v2.198h-2.11C.781 7.662.29 8.155.29 8.76v2.616c0 .605.492 1.098 1.096 1.098h2.111v8.62c0 .606.492 1.098 1.096 1.098H6.93c.605 0 1.096-.492 1.096-1.098v-8.62h2.581c.604 0 1.096-.493 1.096-1.098l.001-2.616a1.102 1.102 0 00-1.106-1.098H8.025V5.388c0-.451.061-.615.112-.673z"
+                        fill="#52BFFF"/></svg></span></a>
+                <a href="{{ contact.telegram }}" class="social-box__link"><span class="social-box__icon"><svg
+                        class="social-box__yt" viewBox="0 0 24 17 " width="24" height="17" fill="none"
+                        xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M23.506 14.36C24 12.46 24 8.52 24 8.52s.02-3.96-.494-5.86A3.025 3.025 0 0021.39.52C19.512 0 12 0 12 0S4.488 0 2.61.5C1.6.78.77 1.62.494 2.66 0 4.56 0 8.5 0 8.5s0 3.96.494 5.84a3.025 3.025 0 002.116 2.14C4.507 17 12 17 12 17s7.512 0 9.39-.5a3.025 3.025 0 002.116-2.14zM15.855 8.5l-6.247 3.64V4.86l6.247 3.64z"
+                                                                 fill="#52BFFF"/></svg> </span></a>
             </div>
         </div>
         <div class="header__column header__column_2">
@@ -17,41 +33,59 @@
                     <span></span>
                 </div>
                 <nav class="menu__body">
-                    <ul class="menu__list">
-
-
-
-                        <li><a href="{%url 'index'%}"  {% if request.resolver_match.url_name == 'index' %}  class="menu__link _active" {%else %}class="menu__link" {%endif%}>{% trans 'Главная' %}</a></li>
-                        <li><a href="{%url 'about'%}"  {% if request.resolver_match.url_name == 'about' or request.resolver_match.url_name == 'news' %}  class="menu__link _active" {%else %}class="menu__link dropdown-about" {%endif%}>{% trans 'О нас' %}</a>
+                    {% get_current_language as LANGUAGE_CODE %}
+                    <ul {% if LANGUAGE_CODE == 'ru' %} class="menu__list" {% else %}
+                        class="menu__list menu__list-uz" {% endif %}>
+                        <li><a href="{% url 'index' %}"  {% if request.resolver_match.url_name == 'index' %}
+                               class="menu__link _active"
+                               {% else %}class="menu__link" {% endif %}>{% trans 'Главная' %}</a></li>
+                        <li><a href="{% url 'about' %}"  {% if request.resolver_match.url_name == 'about' %}
+                               class="menu__link _active"
+                               {% else %}class="menu__link dropdown-about" {% endif %}>{% trans 'О нас' %}</a>
                         </li>
-                        <li><a href="{%url 'service'%}"  {% if request.resolver_match.url_name == 'service' %}  class="menu__link _active" {%else %}class="menu__link" {%endif%}>{% trans 'Услуги' %}</a></li>
+                        <li><a href="{% url 'service' %}"  {% if request.resolver_match.url_name == 'service' %}
+                               class="menu__link _active"
+                               {% else %}class="menu__link" {% endif %}>{% trans 'Услуги' %}</a></li>
                         <li></li>
-                        <li><a href="{%url 'country_view'%}"  {% if request.resolver_match.url_name == 'country_view' %}  class="menu__link _active" {%else %}class="menu__link" {%endif%}>{% trans 'Университеты' %}</a></li>
+                        <li><a href="{% url 'country_view' %}"
+                                {% if request.resolver_match.url_name == 'country_view' %}  class="menu__link _active"
+                               {% else %}class="menu__link" {% endif %}>{% trans 'Университеты' %}</a></li>
                         <li></li>
-                        <li><a href="{%url 'students'%}"  {% if request.resolver_match.url_name == 'students' %}  class="menu__link _active" {%else %}class="menu__link" {%endif%}>{% trans 'Студенты' %}</a></li>
+                        <li><a href="{% url 'students' %}"  {% if request.resolver_match.url_name == 'students' %}
+                               class="menu__link _active"
+                               {% else %}class="menu__link" {% endif %}>{% trans 'Студенты' %}</a></li>
 
-                    <li><a href="{%url 'news'%}" class="menu__link" >{% trans 'Новости' %}</a></li>
-                        <li><a href="{%url 'contacts'%}"  {% if request.resolver_match.url_name == 'contacts' %}  class="menu__link _active" {%else %}class="menu__link" {%endif%}>{% trans 'Контакты' %}</a></li>
-                    <li></li>
+                        <li><a href="{% url 'news' %}" {% if request.resolver_match.url_name == 'news' %}
+                               class="menu__link _active" {% else %}
+                               class="menu__link" {% endif %} >{% trans 'Новости' %}</a></li>
+                        <li><a href="{% url 'contacts' %}"  {% if request.resolver_match.url_name == 'contacts' %}
+                               class="menu__link _active"
+                               {% else %}class="menu__link" {% endif %}>{% trans 'Контакты' %}</a></li>
+                        <li></li>
                         <br>
                     </ul>
                     <ul class="header__contacts contacts">
-                        <li class="contacts__item contacts__item_time">{{ contact.working_time}}</li>
-                        <li class="contacts__item contacts__item_map"><a href="tel:{{ contact.phone }}" class="contacts__item-link">{{ contact.address }}</a></li>
+                        <li class="contacts__item contacts__item_time">{{ contact.working_time }}</li>
+                        <li class="contacts__item contacts__item_map"><a href="tel:{{ contact.phone }}"
+                                                                         class="contacts__item-link">{{ contact.address }}</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
 
 
-
-
             <div data-da=".menu__body, 992, 0" class="header__lang lang">
-                 <ul class="header__lang-list lang__list">
+                <ul {% if LANGUAGE_CODE == 'ru' %}
+                    class="header__lang-list lang__list" {% else %}
+                    class="header__lang-list lang__list lang__list-uz" {% endif %}>
+
                     <li class="header__lang-item lang__item lang__item-ru">
-                        {% get_current_language as LANGUAGE_CODE %}
-                        <form {% if LANGUAGE_CODE == 'ru'%} class="lang__link _active" {% else %} class="lang__link" {% endif %} action="{% url 'set_language' %}" method="post">{% csrf_token %}
-                        <input name="next" type="hidden"  value="{{ redirect_to }}">
-                            <select name="language">
+                        <form {% if LANGUAGE_CODE == 'ru' %} class="lang__link _active" {% else %}
+                                                             class="lang__link" {% endif %}
+                                                             action="{% url 'set_language' %}"
+                                                             method="post">{% csrf_token %}
+                            <input name="next" type="hidden" style="display: none;" value="{{ redirect_to }}">
+                            <select name="language" style="display: none;">
                                 {% get_current_language as LANGUAGE_CODE %}
                                 {% get_available_languages as LANGUAGES %}
                                 {% get_language_info_list for LANGUAGES as languages %}
@@ -60,12 +94,14 @@
                             <input class="langs" type="submit" value="рус">
                         </form>
                     </li>
-
                     <li class="header__lang-item lang__item lang__item-uz">
                         {% get_current_language as LANGUAGE_CODE %}
-                        <form {% if LANGUAGE_CODE == 'uz'%} class="lang__link _active" {% else %} class="lang__link" {% endif %}  action="{% url 'set_language' %}" method="post">{% csrf_token %}
-                        <input name="next" type="hidden" value="{{ redirect_to }}">
-                            <select name="language">
+                        <form {% if LANGUAGE_CODE == 'uz' %} class="lang__link _active" {% else %}
+                                                             class="lang__link" {% endif %}
+                                                             action="{% url 'set_language' %}"
+                                                             method="post">{% csrf_token %}
+                            <input name="next" type="hidden" style="display: none;" value="{{ redirect_to }}">
+                            <select name="language" style="display: none;">
                                 {% get_current_language as LANGUAGE_CODE %}
                                 {% get_available_languages as LANGUAGES %}
                                 {% get_language_info_list for LANGUAGES as languages %}
@@ -79,7 +115,8 @@
         </div>
         <div class="header__column header__column_3">
             <div data-da=".menu__body, 992, 1" class="header__callback callback">
-                <a href="{%url 'page'%}" class="callback__btn"><span class="callback__txt">{% trans 'Оставить заявку' %}</span></a>
+                <a href="{% url 'page' %}" class="callback__btn"><span
+                        class="callback__txt">{% trans 'Оставить заявку' %}</span></a>
             </div>
         </div>
 
