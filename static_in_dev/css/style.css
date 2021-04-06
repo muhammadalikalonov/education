@@ -3512,7 +3512,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .univers__item-country {
-  font-size: 18px;
+  font-size: 16px;
   color: #7a7a7a;
 }
 
@@ -8657,6 +8657,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 @media (max-width: 991.98px){
 
   ._webp .gtc__content:after{ background: url(../img/cust2.webp) top left/180px no-repeat; }
+
 }
 
 @media (max-width: 767.98px){
@@ -8687,6 +8688,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 @media (max-width: 479.98px){
 
   ._webp .hero{ background: url(../img/hero-bgs.webp) left top/cover no-repeat; }
+
 }
 
 @media (max-width: 479.98px){

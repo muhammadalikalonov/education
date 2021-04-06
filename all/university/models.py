@@ -81,6 +81,8 @@ class University(models.Model):
     on_campus_yearly = models.PositiveBigIntegerField(verbose_name='Цена/проживание', blank=True,null=True)
     slug = models.SlugField(unique=True)
     top_universities = models.BooleanField(verbose_name='Top Университет', default=False)
+    logo = models.ImageField(upload_to='university_images/images', blank=True, verbose_name='University_LOGO')
+
 
     def __str__(self):
         return self.name

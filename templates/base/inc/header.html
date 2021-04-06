@@ -22,14 +22,18 @@
 
 
                         <li><a href="{%url 'index'%}"  {% if request.resolver_match.url_name == 'index' %}  class="menu__link _active" {%else %}class="menu__link" {%endif%}>{% trans 'Главная' %}</a></li>
-                        <li><a href="{%url 'about'%}"  {% if request.resolver_match.url_name == 'about' %}  class="menu__link _active" {%else %}class="menu__link" {%endif%}>{% trans 'О нас' %}</a></li>
+                        <li><a href="{%url 'about'%}"  {% if request.resolver_match.url_name == 'about' or request.resolver_match.url_name == 'news' %}  class="menu__link _active" {%else %}class="menu__link dropdown-about" {%endif%}>{% trans 'О нас' %}</a>
+                        </li>
                         <li><a href="{%url 'service'%}"  {% if request.resolver_match.url_name == 'service' %}  class="menu__link _active" {%else %}class="menu__link" {%endif%}>{% trans 'Услуги' %}</a></li>
+                        <li></li>
                         <li><a href="{%url 'country_view'%}"  {% if request.resolver_match.url_name == 'country_view' %}  class="menu__link _active" {%else %}class="menu__link" {%endif%}>{% trans 'Университеты' %}</a></li>
+                        <li></li>
                         <li><a href="{%url 'students'%}"  {% if request.resolver_match.url_name == 'students' %}  class="menu__link _active" {%else %}class="menu__link" {%endif%}>{% trans 'Студенты' %}</a></li>
-                        <li><a href="{%url 'news'%}"  {% if request.resolver_match.url_name == 'news' %}  class="menu__link _active" {%else %}class="menu__link" {%endif%}>{% trans 'Новости' %}</a></li>
+
+                    <li><a href="{%url 'news'%}" class="menu__link" >{% trans 'Новости' %}</a></li>
                         <li><a href="{%url 'contacts'%}"  {% if request.resolver_match.url_name == 'contacts' %}  class="menu__link _active" {%else %}class="menu__link" {%endif%}>{% trans 'Контакты' %}</a></li>
-                        <li></li>
-                        <li></li>
+                    <li></li>
+                        <br>
                     </ul>
                     <ul class="header__contacts contacts">
                         <li class="contacts__item contacts__item_time">{{ contact.working_time}}</li>
@@ -53,7 +57,7 @@
                                 {% get_language_info_list for LANGUAGES as languages %}
                                 <option value="ru" selected></option>
                             </select>
-                            <input type="submit" value="рус">
+                            <input class="langs" type="submit" value="рус">
                         </form>
                     </li>
 
@@ -67,7 +71,7 @@
                                 {% get_language_info_list for LANGUAGES as languages %}
                                 <option value="uz" selected></option>
                             </select>
-                            <input type="submit" value="uz">
+                            <input class="langs" type="submit" value="uz">
                         </form>
                     </li>
                 </ul>

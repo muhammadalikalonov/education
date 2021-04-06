@@ -6,6 +6,7 @@ resources:
                 ru: Узбекистан
                 uz-lat: Uzbekistan
                 uz-kir: Uzbekistan
+
             regions:
 
                 - key: tashkent
@@ -21,6 +22,9 @@ resources:
                                 ru: Сергелийский район
                                 uz-lat: Sirg'ali tumani
                                 uz-kir: Сирғали тўмани
+                                lat: 123.234234
+                                lng: 62.23423
+                                zoom:
                         - key: tashkent2
                             user-pick-able: true
                             name:
@@ -84,28 +88,6 @@ resources:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 - key: taskent_obl
                     user-pick-able: false
                     name:
@@ -118,7 +100,7 @@ resources:
                             name:
                                 ru: Аккурганский район
                                 uz-lat: Oqqo'rg'on tumani
-                                uz-kir: Оққурўон тумани
+                                uz-kir: Оққурғон тумани
                         - key: taskent_obl2
                             user-pick-able: true
                             name:
@@ -136,7 +118,7 @@ resources:
                             user-pick-able: true
                             name:
                                 ru: Бостанлыкский район
-                                uz-lat: Bo'stonliq' tumani
+                                uz-lat: Bo'stonliq tumani
                                 uz-kir: Бўстонлиқ тумани
                         - key: taskent_obl5
                             user-pick-able: true
@@ -174,7 +156,7 @@ resources:
                             name:
                                 ru: Алмалык
                                 uz-lat: Olmaliq
-                                uz-kir: Алмалык
+                                uz-kir: Олмалиқ
                         - key: taskent_obl11
                             user-pick-able: true
                             name:
@@ -185,14 +167,14 @@ resources:
                             user-pick-able: true
                             name:
                                 ru: Бекабад
-                                uz-lat: Бекабад
+                                uz-lat: Bekobod
                                 uz-kir: Бекобод
 
                         - key: taskent_obl13
                             user-pick-able: true
                             name:
                                 ru: Нурафшан
-                                uz-lat: Нурафшан
+                                uz-lat: Nurafshon
                                 uz-kir: Нурафшон
                         - key: taskent_obl14
                             user-pick-able: true
@@ -380,7 +362,7 @@ resources:
                           user-pick-able: true
                           name:
                               ru: Акташ
-                              uz-lat: Акташ
+                              uz-lat: Oqtosh
                               uz-kir: Акташ
                     regions:
                         - key: samar_obl2
@@ -394,120 +376,141 @@ resources:
                           user-pick-able: true
                           name:
                               ru: Булунгур
-                              uz-lat: Булунгур
+                              uz-lat: Bulung'ur
                               uz-kir: Булунгур
                     regions:
                         - key: samar_obl4
                           user-pick-able: true
                           name:
                               ru: Чилек
-                              uz-lat: Чилек
+                              uz-lat: Chelak
                               uz-kir: Чилек
                     regions:
                         - key: samar_obl5
                           user-pick-able: true
                           name:
                               ru: Иштыхан
-                              uz-lat: Иштыхан
+                              uz-lat: Ishtixon
                               uz-kir: Иштыхан
                     regions:
                         - key: samar_obl6
                           user-pick-able: true
                           name:
                               ru: Каттакурган
-                              uz-lat: Каттакурган
+                              uz-lat: Kattaqo'rg'on
                               uz-kir: Каттакурган
                     regions:
                         - key: samar_obl7
                           user-pick-able: true
                           name:
                               ru: Гузалкент
-                              uz-lat: Гузалкент
+                              uz-lat: Go'zalkent
                               uz-kir: Гузалкент
                     regions:
                         - key: samar_obl8
                           user-pick-able: true
                           name:
                               ru: Джамбай
-                              uz-lat: Джамбай
+                              uz-lat: Jomboy
                               uz-kir: Джамбай
                     regions:
                         - key: samar_obl9
                           user-pick-able: true
                           name:
                               ru: Ургут
-                              uz-lat: Ургут
+                              uz-lat: Urgut
                               uz-kir: Ургут
                     regions:
                         - key: samar_obl10
                           user-pick-able: true
                           name:
                               ru: Кушрабад
-                              uz-lat: Кушрабад
+                              uz-lat: Qoʻshrobod
                               uz-kir: Кушрабад
                     regions:
                         - key: samar_obl11
                           user-pick-able: true
                           name:
                               ru: Зиадин
-                              uz-lat: Зиадин
+                              uz-lat: Ziadin
                               uz-kir: Зиадин
                     regions:
                         - key: samar_obl12
                           user-pick-able: true
                           name:
                               ru: Пайарык
-                              uz-lat: Пайарык
+                              uz-lat: Payariq
                               uz-kir: Пайарык
                     regions:
                         - key: samar_obl13
                           user-pick-able: true
                           name:
                               ru: Дарбанд
-                              uz-lat: Дарбанд
+                              uz-lat: Darband
                               uz-kir: Дарбанд
                     regions:
                         - key: samar_obl14
                           user-pick-able: true
                           name:
                               ru: Джума
-                              uz-lat: Джума
+                              uz-lat: Juma
                               uz-kir: Джума
                     regions:
                         - key: samar_obl15
                           user-pick-able: true
                           name:
                               ru: Тайлак
-                              uz-lat: Тайлак
+                              uz-lat: Tayloq
                               uz-kir: Тайлак
                     regions:
                         - key: samar_obl16
                           user-pick-able: true
                           name:
                               ru: Самарканд
-                              uz-lat: Самарканд
+                              uz-lat: Samarqand
                               uz-kir: Самарканд
                     regions:
                         - key: samar_obl17
                           user-pick-able: true
                           name:
                               ru: Пайшанба
-                              uz-lat: Пайшанба
+                              uz-lat: Payshanba
                               uz-kir: Пайшанба
                     regions:
                         - key: samar_obl18
                           user-pick-able: true
                           name:
                               ru: Лаиш
-                              uz-lat: Лаиш
+                              uz-lat: Loish
                               uz-kir: Лаиш
                     regions:
                         - key: samar_obl19
                           user-pick-able: true
                           name:
                               ru: Гюлабад
-                              uz-lat: Гюлабад
+                              uz-lat: Gulobod
                               uz-kir: Гюлабад
+                    regions:
+                        - key: samar_obl19
+                          user-pick-able: true
+                          name:
+                              ru: Nurobod
+                              uz-lat: Nurobod
+                              uz-kir: Nurobod
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 - key: xorezm_obl
                     user-pick-able: false
                     name:
@@ -519,85 +522,87 @@ resources:
                           user-pick-able: true
                           name:
                               ru: Янгиарык
-                              uz-lat: Янгиарык
+                              uz-lat: Yangiariq
                               uz-kir: Янгиарык
                     regions:
                         - key: xorezm_obl2
                           user-pick-able: true
                           name:
                               ru: Гурлен
-                              uz-lat: Гурлен
+                              uz-lat: Gurlan
                               uz-kir: Гурлен
                     regions:
                         - key: xorezm_obl3
                           user-pick-able: true
                           name:
                               ru: Багат
-                              uz-lat: Багат
+                              uz-lat: Bog'ot
                               uz-kir: Багат
                     regions:
                         - key: xorezm_obl4
                           user-pick-able: true
                           name:
                               ru: Чалыш
-                              uz-lat: Чалыш
+                              uz-lat: Cholish
                               uz-kir: Чалыш
                     regions:
                         - key: xorezm_obl5
                           user-pick-able: true
                           name:
                               ru: Караул
-                              uz-lat: Караул
+                              uz-lat: Qorovul
                               uz-kir: Караул
                     regions:
                         - key: xorezm_obl6
                           user-pick-able: true
                           name:
                               ru: Питнак
-                              uz-lat: Питнак
+                              uz-lat: Pitnak
                               uz-kir: Питнак
                     regions:
                         - key: xorezm_obl7
                           user-pick-able: true
                           name:
                               ru: Шават
-                              uz-lat: Шават
+                              uz-lat: Shovot
                               uz-kir: Шават
                     regions:
                         - key: xorezm_obl8
                           user-pick-able: true
                           name:
                               ru: Ханка
-                              uz-lat: Ханка
+                              uz-lat: Xonqa
                               uz-kir: Ханка
                     regions:
                         - key: xorezm_obl9
                           user-pick-able: true
                           name:
                               ru: Хазарасп
-                              uz-lat: Хазарасп
+                              uz-lat: Xozarasp
                               uz-kir: Хазарасп
                     regions:
                         - key: xorezm_obl10
                           user-pick-able: true
                           name:
                               ru: Ургенч
-                              uz-lat: Ургенч
+                              uz-lat: Urganch
                               uz-kir: Ургенч
                     regions:
                         - key: xorezm_obl11
                           user-pick-able: true
                           name:
                               ru: Хива
-                              uz-lat: Хива
+                              uz-lat: Xiva
                               uz-kir: Хива
                     regions:
                         - key: xorezm_obl12
                           user-pick-able: true
                           name:
                               ru: Кошкупыр
-                              uz-lat: Кошкупыр
+                              uz-lat: Qoʻshkoʻpir
                               uz-kir: Кошкупыр
+
+
                 - key: fergana_obl
                     user-pick-able: false
                     name:
@@ -609,134 +614,136 @@ resources:
                           user-pick-able: true
                           name:
                               ru: Алтыарык
-                              uz-lat: Алтыарык
+                              uz-lat: Oltiariq
                               uz-kir: Алтыарык
                         - key: fergana_obl2
                           user-pick-able: true
                           name:
                               ru: Язъяван
-                              uz-lat: Язъяван
+                              uz-lat: Yozyovon
                               uz-kir: Язъяван
                         - key: fergana_obl3
                           user-pick-able: true
                           name:
                               ru: Янгикурган
-                              uz-lat: Янгикурган
+                              uz-lat: Yangiqoʻrgʻon
                               uz-kir: Янгикурган
                         - key: fergana_obl4
                           user-pick-able: true
                           name:
                               ru: Янги Маргилан
-                              uz-lat: Янги Маргилан
+                              uz-lat: Yangi Margʻilon
                               uz-kir: Янги Маргилан
                         - key: fergana_obl5
                           user-pick-able: true
                           name:
                               ru: Яйпан
-                              uz-lat: Яйпан
+                              uz-lat: Yaypan
                               uz-kir: Яйпан
                         - key: fergana_obl6
                           user-pick-able: true
                           name:
                               ru: Хамза
-                              uz-lat: Хамза
+                              uz-lat: Hamza
                               uz-kir: Хамза
                         - key: fergana_obl7
                           user-pick-able: true
                           name:
                               ru: Вуадиль
-                              uz-lat: Вуадиль
+                              uz-lat: Vodil
                               uz-kir: Вуадиль
                         - key: fergana_obl8
                           user-pick-able: true
                           name:
                               ru: Ташлак
-                              uz-lat: Ташлак
+                              uz-lat: Toshloq
                               uz-kir: Ташлак
                         - key: fergana_obl9
                           user-pick-able: true
                           name:
                               ru: Учкуприк
-                              uz-lat: Учкуприк
+                              uz-lat: Uchkoʻpriq
                               uz-kir: Учкуприк
                         - key: fergana_obl10
                           user-pick-able: true
                           name:
                               ru: Шахимардан
-                              uz-lat: Шахимардан
+                              uz-lat: Shohimardon
                               uz-kir: Шахимардан
                         - key: fergana_obl11
                           user-pick-able: true
                           name:
                               ru: Риштан
-                              uz-lat: Риштан
+                              uz-lat: Rishton
                               uz-kir: Риштан
                         - key: fergana_obl12
                           user-pick-able: true
                           name:
                               ru: Раван
-                              uz-lat: Раван
+                              uz-lat: Ravon
                               uz-kir: Раван
                         - key: fergana_obl13
                           user-pick-able: true
                           name:
                               ru: Лангар
-                              uz-lat: Лангар
+                              uz-lat: Langar
                               uz-kir: Лангар
                         - key: fergana_obl14
                           user-pick-able: true
                           name:
                               ru: Навбахор
-                              uz-lat: Навбахор
+                              uz-lat: Navbahor
                               uz-kir: Навбахор
                         - key: fergana_obl15
                           user-pick-able: true
                           name:
                               ru: Маргилан
-                              uz-lat: Маргилан
+                              uz-lat: Marg'ilon
                               uz-kir: Маргилан
                         - key: fergana_obl16
                           user-pick-able: true
                           name:
                               ru: Кувасай
-                              uz-lat: Кувасай
+                              uz-lat: Quvasoy
                               uz-kir: Кувасай
                         - key: fergana_obl17
                           user-pick-able: true
                           name:
                               ru: Кува
-                              uz-lat: Кува
+                              uz-lat: Quva
                               uz-kir: Кува
                         - key: fergana_obl18
                           user-pick-able: true
                           name:
                               ru: Багдад
-                              uz-lat: Багдад
+                              uz-lat: Bogʻdod
                               uz-kir: Багдад
                         - key: fergana_obl19
                           user-pick-able: true
                           name:
                               ru: Дангара
-                              uz-lat: Дангара
+                              uz-lat: Dangʻara
                               uz-kir: Дангара
                         - key: fergana_obl20
                           user-pick-able: true
                           name:
                               ru: Коканд
-                              uz-lat: Коканд
+                              uz-lat: Qo'qon
                               uz-kir: Коканд
                         - key: fergana_obl21
                           user-pick-able: true
                           name:
                               ru: Бешарык
-                              uz-lat: Бешарык
+                              uz-lat: Beshariq
                               uz-kir: Бешарык
                         - key: fergana_obl22
                           user-pick-able: true
                           name:
                               ru: Фергана
-                              uz-lat: Фергана
+                              uz-lat: Farg‘ona
                               uz-kir: Фергана
+
+
                 - key: sirdarya_obl
                     user-pick-able: false
                     name:
@@ -748,945 +755,1187 @@ resources:
                           user-pick-able: true
                           name:
                               ru: Бахт
-                              uz-lat: Бахт
+                              uz-lat: Baxt
                               uz-kir: Бахт
                         - key: sirdarya_obl2
                           user-pick-able: true
                           name:
                               ru: Баяут
-                              uz-lat: Баяут
+                              uz-lat: Boyovut
                               uz-kir: Баяут
                         - key: sirdarya_obl3
                           user-pick-able: true
                           name:
                               ru: Cырдарья
-                              uz-lat: Cырдарья
+                              uz-lat: Sirdaryo
                               uz-kir: Cырдарья
                         - key: sirdarya_obl4
                           user-pick-able: true
                           name:
                               ru: Гулистан
-                              uz-lat: Гулистан
+                              uz-lat: Guliston
                               uz-kir: Гулистан
                         - key: sirdarya_obl5
                           user-pick-able: true
                           name:
                               ru: Навруз
-                              uz-lat: Навруз
+                              uz-lat: Navroʻz
                               uz-kir: Навруз
                         - key: sirdarya_obl6
                           user-pick-able: true
                           name:
                               ru: Сайхун
-                              uz-lat: Сайхун
+                              uz-lat: Sayxun
                               uz-kir: Сайхун
                         - key: sirdarya_obl7
                           user-pick-able: true
                           name:
                               ru: Хаваст
-                              uz-lat: Хаваст
+                              uz-lat: Xovos
                               uz-kir: Хаваст
                         - key: sirdarya_obl8
                           user-pick-able: true
                           name:
                               ru: Янгиер
-                              uz-lat: Янгиер
+                              uz-lat: Yangiyer
                               uz-kir: Янгиер
                         - key: sirdarya_obl9
                           user-pick-able: true
                           name:
                               ru: Янгиёр
-                              uz-lat: Янгиёр
+                              uz-lat: Yangiyer
                               uz-kir: Янгиёр
                         - key: sirdarya_obl10
                           user-pick-able: true
                           name:
                               ru: Теренозек
-                              uz-lat: Теренозек
+                              uz-lat: Terenozek
                               uz-kir: Теренозек
                         - key: sirdarya_obl11
                           user-pick-able: true
                           name:
                               ru: Ширин
-                              uz-lat: Ширин
+                              uz-lat: Shirin
                               uz-kir: Ширин
                         - key: sirdarya_obl12
                           user-pick-able: true
                           name:
                               ru: Сардоба
-                              uz-lat: Сардоба
+                              uz-lat: Sardoba
                               uz-kir: Сардоба
-                        - key: sirdarya_obl13
-                          user-pick-able: true
-                          name:
-                              ru: Сырдарья
-                              uz-lat: Сырдарья
-                              uz-kir: Сырдарья
+
+
                 - key: surxan_obl
                     user-pick-able: false
                     name:
                         ru: Сурхандарьинская область
-                        uz-lat: Сурхандарьинская область
-                        uz-kir: Сурхандарьинская область
+                        uz-lat: Surxondaryo viloyati
+                        uz-kir: Сурхандарё вилояти 
                     regions:
                         - key: surxan_obl1
                           user-pick-able: true
                           name:
                               ru: Ангор
-                              uz-lat: Ангор
+                              uz-lat: Angor
                               uz-kir: Ангор
                         - key: surxan_obl2
                           user-pick-able: true
                           name:
                               ru: Байсун
-                              uz-lat: Байсун
-                              uz-kir: Байсун
+                              uz-lat: Boysun
+                              uz-kir: Бойсун
                         - key: surxan_obl3
                           user-pick-able: true
                           name:
                               ru: Бандихон
-                              uz-lat: Бандихон
+                              uz-lat: Bandixon
                               uz-kir: Бандихон
 
                         - key: surxan_obl4
                           user-pick-able: true
                           name:
                               ru: Денау
-                              uz-lat: Денау
-                              uz-kir: Денау
+                              uz-lat: Denov
+                              uz-kir: Денов
                         - key: surxan_obl5
                           user-pick-able: true
                           name:
                               ru: Джаркурган
-                              uz-lat: Джаркурган
-                              uz-kir: Джаркурган
+                              uz-lat: Jarqo'rg'on
+                              uz-kir: Джарқурғон
                         - key: surxan_obl6
                           user-pick-able: true
                           name:
                               ru: Шаргунь
-                              uz-lat: Шаргунь
-                              uz-kir: Шаргунь
+                              uz-lat: Sharg'un
+                              uz-kir: Шарғун
                         - key: surxan_obl7
                           user-pick-able: true
                           name:
                               ru: Кумкурган
-                              uz-lat: Кумкурган
-                              uz-kir: Кумкурган
+                              uz-lat: Qumqo'rg'on
+                              uz-kir: Кумқурған
                         - key: surxan_obl8
                           user-pick-able: true
                           name:
                               ru: Карлук
-                              uz-lat: Карлук
-                              uz-kir: Карлук
+                              uz-lat: Qorlik
+                              uz-kir: Қарлик
                         - key: surxan_obl9
                           user-pick-able: true
                           name:
                               ru: Музрабад
-                              uz-lat: Музрабад
+                              uz-lat: Muzrobod
                               uz-kir: Музрабад
                         - key: surxan_obl10
                           user-pick-able: true
                           name:
                               ru: Сарык
-                              uz-lat: Сарык
-                              uz-kir: Сарык
+                              uz-lat: Sariq
+                              uz-kir: Сарық
                         - key: surxan_obl11
                           user-pick-able: true
                           name:
                               ru: Кизирик
-                              uz-lat: Кизирик
-                              uz-kir: Кизирик
+                              uz-lat: Qiziriq
+                              uz-kir: Қизирик
                         - key: surxan_obl12
                           user-pick-able: true
                           name:
                               ru: Сариасия
-                              uz-lat: Сариасия
-                              uz-kir: Сариасия
+                              uz-lat: Sariosiyo
+                              uz-kir: Сариосиё
                         - key: surxan_obl13
                           user-pick-able: true
                           name:
                               ru: Шурчи
-                              uz-lat: Шурчи
-                              uz-kir: Шурчи
+                              uz-lat: Sho'rchi
+                              uz-kir: Шўрчи
                         - key: surxan_obl14
                           user-pick-able: true
                           name:
                               ru: Шерабад
-                              uz-lat: Шерабад
-                              uz-kir: Шерабад
+                              uz-lat: Sherobod
+                              uz-kir: Шеробод
                         - key: surxan_obl15
                           user-pick-able: true
                           name:
                               ru: Учкызыл
-                              uz-lat: Учкызыл
-                              uz-kir: Учкызыл
+                              uz-lat: Uchqizil
+                              uz-kir: Учқизил
                         - key: surxan_obl16
                           user-pick-able: true
                           name:
                               ru: Термез
-                              uz-lat: Термез
-                              uz-kir: Термез
+                              uz-lat: Termiz
+                              uz-kir: Термиз
                         - key: surxan_obl17
                           user-pick-able: true
                           name:
                               ru: Узун
-                              uz-lat: Узун
+                              uz-lat: Uzun
                               uz-kir: Узун
                         - key: surxan_obl18
                           user-pick-able: true
                           name:
                               ru: Халкабад
-                              uz-lat: Халкабад
-                              uz-kir: Халкабад
+                              uz-lat: Xalqobod
+                              uz-kir: Халкобод
+
                 - key: namangan_obl
                     user-pick-able: false
                     name:
                         ru: Наманганская область
-                        uz-lat: Наманганская область
-                        uz-kir: Наманганская область
+                        uz-lat: Namangan viloyati
+                        uz-kir: Наманган вилояти
                     regions:
                         - key: namangan_obl1
                           user-pick-able: true
                           name:
                               ru: Чартак
-                              uz-lat: Чартак
-                              uz-kir: Чартак
+                              uz-lat: Chortoq
+                              uz-kir: Чорто к
                     regions:
                         - key: namangan_obl2
                           user-pick-able: true
                           name:
                               ru: Челак
-                              uz-lat: Челак
+                              uz-lat: Chelak
                               uz-kir: Челак
                     regions:
                         - key: namangan_obl3
                           user-pick-able: true
                           name:
                               ru: Чуст
-                              uz-lat: Чуст
+                              uz-lat: Chust
                               uz-kir: Чуст
                     regions:
                         - key: namangan_obl4
                           user-pick-able: true
                           name:
                               ru: Джумашуй
-                              uz-lat: Джумашуй
-                              uz-kir: Джумашуй
+                              uz-lat: Jomashoʻy
+                              uz-kir: Джумашў
                     regions:
                         - key: namangan_obl5
                           user-pick-able: true
                           name:
                               ru: Касансай
-                              uz-lat: Касансай
+                              uz-lat: Kosonsoy
                               uz-kir: Касансай
                     regions:
                         - key: namangan_obl6
                           user-pick-able: true
                           name:
                               ru: Ташбулак
-                              uz-lat: Ташбулак
-                              uz-kir: Ташбулак
+                              uz-lat: Toshbuloq
+                              uz-kir: Тошбулоқ
                     regions:
                         - key: namangan_obl7
                           user-pick-able: true
                           name:
                               ru: Хаккулабад
-                              uz-lat: Хаккулабад
-                              uz-kir: Хаккулабад
+                              uz-lat: Xaqqulobod
+                              uz-kir: Хаққулобод
                     regions:
                         - key: namangan_obl8
                           user-pick-able: true
                           name:
                               ru: Наманган
-                              uz-lat: Наманган
+                              uz-lat: Namangan
                               uz-kir: Наманган
                     regions:
                         - key: namangan_obl9
                           user-pick-able: true
                           name:
                               ru: Пап
-                              uz-lat: Пап
-                              uz-kir: Пап
+                              uz-lat: Pop
+                              uz-kir: Поп
                     regions:
                         - key: namangan_obl10
                           user-pick-able: true
                           name:
                               ru: Туракурган
-                              uz-lat: Туракурган
-                              uz-kir: Туракурган
+                              uz-lat: To'raqo'rg'on
+                              uz-kir: Тўракўрғон
                     regions:
                         - key: namangan_obl11
                           user-pick-able: true
                           name:
                               ru: Учкурган
-                              uz-lat: Учкурган
-                              uz-kir: Учкурган
+                              uz-lat: Uchqo'rg'on
+                              uz-kir: Учқўрғон
+
                 - key: navoi_obl
                     user-pick-able: false
                     name:
                         ru: Навоийская область
-                        uz-lat: Навоийская область
-                        uz-kir: Навоийская область
+                        uz-lat: Navoiy viloyati
+                        uz-kir: Навоий вилояти
                     regions:
                         - key: navoi_obl1
                           user-pick-able: true
                           name:
                               ru: Бешрабат
-                              uz-lat: Бешрабат
-                              uz-kir: Бешрабат
+                              uz-lat: Beshrobot
+                              uz-kir: Бешработ
                     regions:
                         - key: navoi_obl2
                           user-pick-able: true
                           name:
                               ru: Канимех
-                              uz-lat: Канимех
+                              uz-lat: Konimex
                               uz-kir: Канимех
                     regions:
                         - key: navoi_obl3
                           user-pick-able: true
                           name:
                               ru: Навои
-                              uz-lat: Навои
-                              uz-kir: Навои
+                              uz-lat: Navoiy
+                              uz-kir: Навоий
                     regions:
                         - key: navoi_obl4
                           user-pick-able: true
                           name:
                               ru: Кармана
-                              uz-lat: Кармана
+                              uz-lat: Karmana
                               uz-kir: Кармана
                     regions:
                         - key: navoi_obl5
                           user-pick-able: true
                           name:
                               ru: Янгирабат
-                              uz-lat: Янгирабат
-                              uz-kir: Янгирабат
+                              uz-lat: Yangirobot
+                              uz-kir: Янгиробот
                     regions:
                         - key: navoi_obl6
                           user-pick-able: true
                           name:
                               ru: Нурата
-                              uz-lat: Нурата
-                              uz-kir: Нурата
+                              uz-lat: Nurota
+                              uz-kir: Нурота
                     regions:
                         - key: navoi_obl7
                           user-pick-able: true
                           name:
                               ru: Кызылтепа
-                              uz-lat: Кызылтепа
-                              uz-kir: Кызылтепа
+                              uz-lat: Qiziltepa
+                              uz-kir: Қизилтепа
                     regions:
                         - key: navoi_obl8
                           user-pick-able: true
                           name:
                               ru: Зарафшан
-                              uz-lat: Зарафшан
-                              uz-kir: Зарафшан
+                              uz-lat: Zarafshon
+                              uz-kir: Зарафшон
                     regions:
                         - key: navoi_obl9
                           user-pick-able: true
                           name:
                               ru: Тамдыбулак
-                              uz-lat: Тамдыбулак
-                              uz-kir: Тамдыбулак
+                              uz-lat: Tomdibuloq
+                              uz-kir: Томдибулоқ
                     regions:
                         - key: navoi_obl10
                           user-pick-able: true
                           name:
                               ru: Учкудук
-                              uz-lat: Учкудук
-                              uz-kir: Учкудук
+                              uz-lat: Uchquduq
+                              uz-kir: Учкқудук
+
+
+                                      
                 - key: karshi_obl
                     user-pick-able: false
                     name:
                         ru: Кашкадарьинская область
-                        uz-lat: Кашкадарьинская область
-                        uz-kir: Кашкадарьинская область
+                        uz-lat: Qashqadaryo viloyati
+                        uz-kir: Қашқадарё вилояти
                     regions:
                         - key: karshi_obl1
                           user-pick-able: true
                           name:
                               ru: Бешкент
-                              uz-lat: Бешкент
+                              uz-lat: Beshkent
                               uz-kir: Бешкент
+                              lat: 38.8137664
+                              lng: 65.6157152
+                              z = 13
                     regions:
                         - key: karshi_obl2
                           user-pick-able: true
                           name:
                               ru: Камаши
-                              uz-lat: Камаши
-                              uz-kir: Камаши
+                              uz-lat: Qamashi
+                              uz-kir: Қамаши
+                              lat: 38.8109788
+                              lng: 66.4490884
+                              z = 13
                     regions:
                         - key: karshi_obl3
                           user-pick-able: true
                           name:
                               ru: Карашина
-                              uz-lat: Карашина
+                              uz-lat: Karashina
                               uz-kir: Карашина
+                              lat: 38.3392087
+                              lng: 66.5507341
+                              z = 15
                     regions:
                         - key: karshi_obl4
                           user-pick-able: true
                           name:
                               ru: Дехканабад
-                              uz-lat: Дехканабад
-                              uz-kir: Дехканабад
+                              uz-lat: Dehqonobod
+                              uz-kir: Деҳқонобод
+                              lat: 38.3537398
+                              lng: 66.4375656
+                              z = 13
                     regions:
                         - key: karshi_obl5
                           user-pick-able: true
                           name:
                               ru: Гузар
-                              uz-lat: Гузар
-                              uz-kir: Гузар
+                              uz-lat: G'uzor
+                              uz-kir: Ғузор
+                              lat: 38.5972436
+                              lng: 66.1834927
+                              z = 12
                     regions:
                         - key: karshi_obl6
                           user-pick-able: true
                           name:
                               ru: Чиракчи
-                              uz-lat: Чиракчи
-                              uz-kir: Чиракчи
+                              uz-lat: Chiroqchi
+                              uz-kir: Чироқчи
+                              lat: 39.0382681
+                              lng: 66.5524715
+                              z = 13
                     regions:
                         - key: karshi_obl7
                           user-pick-able: true
                           name:
                               ru: Янги-Нишан
-                              uz-lat: Янги-Нишан
-                              uz-kir: Янги-Нишан
+                              uz-lat: Yangi-Nishon
+                              uz-kir: Янги-Нишон
+                              lat: 38.6356341
+                              lng: 65.6572187
+                              z = 13
                     regions:
                         - key: karshi_obl8
                           user-pick-able: true
                           name:
                               ru: Мубарек
-                              uz-lat: Мубарек
-                              uz-kir: Мубарек
+                              uz-lat: Muborak
+                              uz-kir: Муборак
+                              lat: 39.2487375
+                              lng: 65.1083701
+                              z = 13
                     regions:
                         - key: karshi_obl9
                           user-pick-able: true
                           name:
                               ru: Карши
-                              uz-lat: Карши
-                              uz-kir: Карши
+                              uz-lat: Qarshi
+                              uz-kir: Қарши
+                              lat: 38.8583673
+                              lng: 65.7217571
+                              z = 12
                     regions:
                         - key: karshi_obl10
                           user-pick-able: true
                           name:
                               ru: Талимарджан
-                              uz-lat: Талимарджан
-                              uz-kir: Талимарджан
+                              uz-lat: Talimarjon
+                              uz-kir: Талимаржон
+                              lat: 38.2896472
+                              lng: 65.5302929
+                              z = 14
                     regions:
                         - key: karshi_obl11
                           user-pick-able: true
                           name:
                               ru: Касан
-                              uz-lat: Касан
-                              uz-kir: Касан
+                              uz-lat: Koson
+                              uz-kir: Косон
+                              lat: 39.0278407
+                              lng: 65.5256575
+                              z = 12
                     regions:
                         - key: karshi_obl12
                           user-pick-able: true
                           name:
                               ru: Касби
-                              uz-lat: Касби
+                              uz-lat: Kasbi
                               uz-kir: Касби
+                              lat: 38.9102986
+                              lng: 65.1550636
+                              z = 10
                     regions:
                         - key: karshi_obl13
                           user-pick-able: true
                           name:
                               ru: Китаб
-                              uz-lat: Китаб
-                              uz-kir: Китаб
+                              uz-lat: Kitob
+                              uz-kir: Китоб
+                              lat: 39.1262751
+                              lng: 66.8441671
+                              z = 13
                     regions:
                         - key: karshi_obl14
                           user-pick-able: true
                           name:
                               ru:  Шахрисабз
-                              uz-lat:  Шахрисабз
+                              uz-lat:  Shahrisabz
                               uz-kir:  Шахрисабз
+                              lat: 39.0530583
+                              lng: 66.7962735
+                              z = 13
                     regions:
                         - key: karshi_obl15
                           user-pick-able: true
                           name:
                               ru:  Янги Миришкор
-                              uz-lat:  Янги Миришкор
+                              uz-lat:  Yangi Mirishkor
                               uz-kir:  Янги Миришкор
+                              lat: 38.847577
+                              lng: 65.2618359
+                              z = 14
                     regions:
                         - key: karshi_obl16
                           user-pick-able: true
                           name:
                               ru:  Яккабаг
-                              uz-lat:  Яккабаг
-                              uz-kir:  Яккабаг
+                              uz-lat:  Yakkabog'
+                              uz-kir:  Яккабоғ
+                              lat: 38.9770853
+                              lng: 66.6552915
+                              z = 13
                     regions:
                         - key: karshi_obl17
                           user-pick-able: true
                           name:
                               ru: Муглан
-                              uz-lat: Муглан
-                              uz-kir: Муглан
+                              uz-lat: Mugʻlon
+                              uz-kir: Муғлон
+                              lat: 38.9231242
+                              lng: 65.3940088
+                              z = 14
+
+
                 - key: karakalpak
                     user-pick-able: false
                     name:
                         ru: Каракалпакстан
-                        uz-lat: Каракалпакстан
-                        uz-kir: Каракалпакстан
+                        uz-lat: Qoraqalpog'iston
+                        uz-kir: Қорақалпоғистон
                     regions:
                         - key: karakalpak1
                           user-pick-able: true
                           name:
                               ru: Акмангит
-                              uz-lat: Акмангит
-                              uz-kir: Акмангит
+                              uz-lat: Oqmangʻit
+                              uz-kir: Оқманғит
+                              lat: 42.5890022
+                              lng: 59.5122951
+                              z = 13
                     regions:
                         - key: karakalpak2
                           user-pick-able: true
                           name:
                               ru: Канлыкуль
-                              uz-lat: Канлыкуль
-                              uz-kir: Канлыкуль
+                              uz-lat: Qanlikoʻl
+                              uz-kir: Қанликўл
+                              lat: 42.8326391
+                              lng: 58.9867542
+                              z = 14
 
                     regions:
                         - key: karakalpak3
                           user-pick-able: true
                           name:
                               ru: Ходжейли
-                              uz-lat: Ходжейли
-                              uz-kir: Ходжейли
+                              uz-lat: Xo'jayli
+                              uz-kir: Хўджайли
+                              lat: 42.416473
+                              lng: 59.4154994
+                              z = 13
+
                     regions:
                         - key: karakalpak4
                           user-pick-able: true
                           name:
                               ru: Тахтакупыр
-                              uz-lat: Тахтакупыр
-                              uz-kir: Тахтакупыр
+                              uz-lat: Taxtakoʻpir
+                              uz-kir: Тахтакўпир
+                              lat: 43.019029
+                              lng: 60.2666611
+                              z = 13
                     regions:
                         - key: karakalpak5
                           user-pick-able: true
                           name:
                               ru: Турткуль
-                              uz-lat: Турткуль
-                              uz-kir: Турткуль
+                              uz-lat: To'rtko'l
+                              uz-kir: Тўрткўл
+                              lat: 41.550606
+                              lng: 60.9628765
+                              z = 13
                     regions:
                         - key: karakalpak6
                           user-pick-able: true
                           name:
                               ru: Тахиаташ
-                              uz-lat: Тахиаташ
-                              uz-kir: Тахиаташ
+                              uz-lat: Taxiatosh
+                              uz-kir: Тахиатош
+                              lat: 42.6367977
+                              lng:58.9124677
+                              z = 14
                     regions:
                         - key: karakalpak7
                           user-pick-able: true
                           name:
                               ru: Шуманай
-                              uz-lat: Шуманай
+                              uz-lat: Shumanay
                               uz-kir: Шуманай
+                              lat: 40.7955804
+                              lng: 66.3803826
+                              z = 9
                     regions:
                         - key: karakalpak8
                           user-pick-able: true
                           name:
                               ru: Муйнак
-                              uz-lat: Муйнак
-                              uz-kir: Муйнак
+                              uz-lat: Mo'ynoq
+                              uz-kir: Муйнок
+                              lat: 43.7710092
+                              lng: 58.9882988
+                              z = 13
+
+
                     regions:
                         - key: karakalpak9
                           user-pick-able: true
                           name:
                               ru: Нукус
-                              uz-lat: Нукус
+                              uz-lat: Nukus
                               uz-kir: Нукус
+                              lat: 42.4715434
+                              lng: 59.463744
+                              z = 11
+
                     regions:
                         - key: karakalpak10
                           user-pick-able: true
                           name:
                               ru: Мангит
-                              uz-lat: Мангит
-                              uz-kir: Мангит
+                              uz-lat: Mang'it
+                              uz-kir: Манғит
+                              lat: 42.1024495
+                              lng: 60.0326223
+                              z = 13
+
                     regions:
                         - key: karakalpak11
                           user-pick-able: true
                           name:
                               ru: Кунград
-                              uz-lat: Кунград
-                              uz-kir: Кунград
+                              uz-lat: Qo'ng'irot
+                              uz-kir: Қунғирот
+                              lat: 43.0555205
+                              lng: 58.837108
+                              z = 13
+
                     regions:
                         - key: karakalpak12
                           user-pick-able: true
                           name:
                               ru: Кегейли
-                              uz-lat: Кегейли
+                              uz-lat: Kegeyli
                               uz-kir: Кегейли
+                              lat: 42.7759115
+                              lng: 59.5926444
+                              z = 14
                     regions:
                         - key: karakalpak13
                           user-pick-able: true
                           name:
                               ru: Чимбай
-                              uz-lat: Чимбай
-                              uz-kir: Чимбай
+                              uz-lat: Chimboy
+                              uz-kir: Чимбой
+                              lat: 42.9366355
+                              lng: 59.7412454
+                              z = 13
                     regions:
                         - key: karakalpak14
                           user-pick-able: true
                           name:
                               ru: Бустан
-                              uz-lat: Бустан
-                              uz-kir: Бустан
+                              uz-lat: Bo'ston
+                              uz-kir: Бўстон
+                              lat: 41.7147502
+                              lng: 60.8431857
+                              z = 13
                     regions:
                         - key: karakalpak15
                           user-pick-able: true
                           name:
                               ru: Караузяк
-                              uz-lat: Караузяк
-                              uz-kir: Караузяк
+                              uz-lat: Qoraoʻzak
+                              uz-kir: Караўзак
+                              lat: 43.0189386
+                              lng: 59.981746
+                              z = 13
                     regions:
                         - key: karakalpak16
                           user-pick-able: true
                           name:
                               ru: Беруни
-                              uz-lat: Беруни
-                              uz-kir: Беруни
+                              uz-lat: Beruniy
+                              uz-kir: Беруний
+                              lat: 41.6812546
+                              lng: 60.6856845
+                              z = 12
+
+
+
+
+
                 - key: jizzax_obl
                     user-pick-able: false
                     name:
                         ru: Джизакская область
-                        uz-lat: Джизакская область
-                        uz-kir: Джизакская область
+                        uz-lat: Jizzax viloyati
+                        uz-kir: Жиззах вилояти
                     regions:
                         - key: jizzax_obl1
                           user-pick-able: true
                           name:
                               ru: Айдаркуль
-                              uz-lat: Айдаркуль
-                              uz-kir: Айдаркуль
+                              uz-lat: Aydarko'l
+                              uz-kir: Айдаркўл
+                              lat: 40.7955804
+                              lng: 66.3803826
+                              z = 9
                     regions:
                         - key: jizzax_obl2
                           user-pick-able: true
                           name:
                               ru: Баландчакир
-                              uz-lat: Баландчакир
-                              uz-kir: Баландчакир
+                              uz-lat: Balandchaqir
+                              uz-kir: Баландчақир
+                              lat: 39.9128926
+                              lng: 68.7759802
+                              z = 14
                     regions:
                         - key: jizzax_obl3
                           user-pick-able: true
                           name:
                               ru: Даштобод
-                              uz-lat: Даштобод
+                              uz-lat: Dashtobod
                               uz-kir: Даштобод
+                              lat: 40.1290474
+                              lng: 68.4706914
+                              z = 14
                     regions:
                         - key: jizzax_obl4
                           user-pick-able: true
                           name:
                               ru: Учтепа
-                              uz-lat: Учтепа
+                              uz-lat: Uchtepa
                               uz-kir: Учтепа
+                              lat: 40.2058327
+                              lng: 67.8883622
+                              z = 14
                     regions:
                         - key: jizzax_obl5
                           user-pick-able: true
                           name:
                               ru: Дустлик
-                              uz-lat: Дустлик
-                              uz-kir: Дустлик
+                              uz-lat: Do'stlik
+                              uz-kir: Дўстлик
+                              lat: 40.5234031
+                              lng: 68.0154775
+                              z = 14
+
+
                     regions:
                         - key: jizzax_obl6
                           user-pick-able: true
                           name:
                               ru: Гагарин
-                              uz-lat: Гагарин
+                              uz-lat: Gagarin
                               uz-kir: Гагарин
+                              lat: 40.6617888
+                              lng: 68.1365139
+                              z = 14
                     regions:
                         - key: jizzax_obl7
                           user-pick-able: true
                           name:
                               ru: Джизак
-                              uz-lat: Джизак
-                              uz-kir: Джизак
+                              uz-lat: Jizzax
+                              uz-kir: Джизах
+                              lat: 40.1189145
+                              lng: 67.7843545
+                              z = 12
                     regions:
                         - key: jizzax_obl8
                           user-pick-able: true
                           name:
                               ru: Янгикишлак
-                              uz-lat: Янгикишлак
-                              uz-kir: Янгикишлак
+                              uz-lat: Yangiqishloq
+                              uz-kir: Янгикишлоқ
+                              lat: 40.403191
+                              lng: 67.1312493
+                              z = 13
+
                     regions:
                         - key: jizzax_obl9
                           user-pick-able: true
                           name:
                               ru: Зарбдар
-                              uz-lat: Зарбдар
-                              uz-kir: Зарбдар
+                              uz-lat: Zarbdor
+                              uz-kir: Зарбдор
+                              lat: 40.0938196
+                              lng: 68.1354039
+                              z = 13
+
                     regions:
                         - key: jizzax_obl10
                           user-pick-able: true
                           name:
                               ru: Галлаарал
-                              uz-lat: Галлаарал
-                              uz-kir: Галлаарал
+                              uz-lat: G'allaorol
+                              uz-kir: Ғаллаорол
+                              lat: 40.0278655
+                              lng: 67.571942
+                              z = 14
+
                     regions:
                         - key: jizzax_obl11
                           user-pick-able: true
                           name:
                               ru: Зафарабад
-                              uz-lat: Зафарабад
-                              uz-kir: Зафарабад
+                              uz-lat: Zafarobod
+                              uz-kir: Зафаробод
+                              lat: 40.3250328
+                              lng: 67.8554033
+                              z = 14
+
                     regions:
                         - key: jizzax_obl12
                           user-pick-able: true
                           name:
                               ru: Пахтакор
-                              uz-lat: Пахтакор
+                              uz-lat: Paxtakor
                               uz-kir: Пахтакор
+                              lat: 40.3168387
+                              lng: 667.9293888
+                              z = 13
                     regions:
                         - key: jizzax_obl13
                           user-pick-able: true
                           name:
                               ru: Марджанбулак
-                              uz-lat: Марджанбулак
-                              uz-kir: Марджанбулак
+                              uz-lat: Marjonbuloq
+                              uz-kir: Маржонбулоқ
+                              lat: 39.9365412
+                              lng: 67.4009297
+                              z = 14
                     regions:
                         - key: jizzax_obl14
                           user-pick-able: true
                           name:
                               ru: Голиблар
-                              uz-lat: Голиблар
-                              uz-kir: Голиблар
+                              uz-lat: Gʻoliblar
+                              uz-kir: Ғолиблар
+                              lat: 40.4947724
+                              lng: 67.8571989
+                              z = 14
                     regions:
                         - key: jizzax_obl15
                           user-pick-able: true
                           name:
                               ru: Усмат
-                              uz-lat: Усмат
-                              uz-kir: Усмат
+                              uz-lat: Oʻsmat
+                              uz-kir: Ўсмат
+                              lat: 39.7398159
+                              lng: 67.6099055
+                              z = 13
                     regions:
                         - key: jizzax_obl16
                           user-pick-able: true
                           name:
                               ru: Заамин
-                              uz-lat: Заамин
-                              uz-kir: Заамин
+                              uz-lat: Zomin
+                              uz-kir: Зомин
+
+                              lat: 39.9669561
+                              lng: 68.3740893
+                              z = 14
+
+
                 - key: buxara_obl
                     user-pick-able: false
                     name:
                         ru: Бухарская область
-                        uz-lat: Бухарская область
-                        uz-kir: Бухарская область
+                        uz-lat: Buxoro viloyati
+                        uz-kir: Бухоро вилояти
                     regions:
                         - key: buxara_obl1
                           user-pick-able: true
                           name:
                               ru: Алат
-                              uz-lat: Алат
-                              uz-kir: Алат
+                              uz-lat: Olot
+                              uz-kir: Олот
+                              lat: 39.2619674
+                              lng: 63.8263409
+                              z = 10
                     regions:
                         - key: buxara_obl2
                           user-pick-able: true
                           name:
                               ru: Бухара
-                              uz-lat: Бухара
-                              uz-kir: Бухара
+                              uz-lat: Buxoro
+                              uz-kir: Бухоро
+                              lat: 39.6372
+                              lng: 64.0634941
+                              z= 10
                     regions:
                         - key: buxara_obl3
                           user-pick-able: true
                           name:
                               ru: Газли
-                              uz-lat: Газли
-                              uz-kir: Газли
+                              uz-lat: Gazli
+                              uz-kir: Ғазли
+                              lat: 40.1304038
+                              lng: 63.4396503
+                              z= 14
                     regions:
                         - key: buxara_obl4
                           user-pick-able: true
                           name:
                               ru: Каган
-                              uz-lat: Каган
-                              uz-kir: Каган
+                              uz-lat: Kogon
+                              uz-kir: Қогон
+                              lat: 39.7221659
+                              lng: 64.5161384
+                              z= 13
                     regions:
                         - key: buxara_obl5
                           user-pick-able: true
                           name:
                               ru: Гиждуван
-                              uz-lat: Гиждуван
-                              uz-kir: Гиждуван
+                              uz-lat: G'ijduvon
+                              uz-kir: Ғиждувон
+                              lat: 40.0881447
+                              lng: 64.5793508
+                              z = 12
                     regions:
                         - key: buxara_obl6
                           user-pick-able: true
                           name:
                               ru: Каракуль
-                              uz-lat: Каракуль
-                              uz-kir: Каракуль
+                              uz-lat: Qorako'l
+                              uz-kir: Коракўл
+                              lat: 39.4959567
+                              lng: 63.8479652
+                              z= 15
                     regions:
                         - key: buxara_obl7
                           user-pick-able: true
                           name:
                               ru: Ромитан
-                              uz-lat: Ромитан
+                              uz-lat: Romitan
                               uz-kir: Ромитан
+                              lat: 39.9373063
+                              lng: 64.3435758
+                              z= 13
                     regions:
                         - key: buxara_obl8
                           user-pick-able: true
                           name:
                               ru: Караулбазар
-                              uz-lat: Караулбазар
-                              uz-kir: Караулбазар
+                              uz-lat: Qorovulbozor
+                              uz-kir: Қороулбозор
+                              lat: 39.4937859
+                              lng: 64.7465508
+                              z= 13
                     regions:
                         - key: buxara_obl9
                           user-pick-able: true
                           name:
                               ru: Шафиркан
-                              uz-lat: Шафиркан
-                              uz-kir: Шафиркан
+                              uz-lat: Shofirkon
+                              uz-kir: Шофиркон
+                              lat: 40.1253421
+                              lng: 64.4488901
+                              z= 13
                     regions:
                         - key: buxara_obl10
                           user-pick-able: true
                           name:
                               ru: Вабкент
-                              uz-lat: Вабкент
-                              uz-kir: Вабкент
+                              uz-lat: Vobkent
+                              uz-kir: Вобкент
+                              lat: 40.0276193
+                              lng: 64.4863551
+                              z= 13
                     regions:
                         - key: buxara_obl11
                           user-pick-able: true
                           name:
                               ru: Жондор
-                              uz-lat: Жондор
+                              uz-lat: Jondor
                               uz-kir: Жондор
+                              lat: 39.7441686,64
+                              lng: 64.1564654
+                              z= 14
                     regions:
                         - key: buxara_obl12
                           user-pick-able: true
                           name:
                               ru: Галаасия
-                              uz-lat: Галаасия
-                              uz-kir: Галаасия
+                              uz-lat: Galaosiyo
+                              uz-kir: Галаосиё
+                              lat: 39.8585925
+                              lng: 64.4334195
+                              z= 14
+
                 - key: andijan_obl
                     user-pick-able: false
                     name:
                         ru: Андижанская область
-                        uz-lat: Андижанская область
-                        uz-kir: Андижанская область
+                        uz-lat: Andijon viloyati
+                        uz-kir: Андижон вилояти
                     regions:
                         - key: andijan_obl1
                           user-pick-able: true
                           name:
                               ru: Акалтын
-                              uz-lat: Акалтын
-                              uz-kir: Акалтын
+                              uz-lat: Oqoltin
+                              uz-kir: Оқолтин
+                              lat: 40.4997514
+                              lng: 68.3349936
+                              z= 11
                     regions:
                         - key: andijan_obl2
                           user-pick-able: true
                           name:
                               ru: Алтынкуль
-                              uz-lat: Алтынкуль
-                              uz-kir: Алтынкуль
+                              uz-lat: Oltinkoʻl
+                              uz-kir: Олтинкўл
+                              lat: 40.797344
+                              lng: 72.1487401
+                              z= 14
                     regions:
                         - key: andijan_obl3
                           user-pick-able: true
                           name:
                               ru: Ахунбабаев
-                              uz-lat: Ахунбабаев
-                              uz-kir: Ахунбабаев
+                              uz-lat: Oxunboboyev
+                              uz-kir: Охунбобоев
+                              lat: 123.234234
+                              lng: 62.23423
+                              z= 11
                     regions:
                         - key: andijan_obl4
                           user-pick-able: true
                           name:
                               ru: Боз
-                              uz-lat: Боз
-                              uz-kir: Боз
+                              uz-lat: Boʻz
+                              uz-kir: Бўз
+                              lat: 40.7100534
+                              lng: 72.6005738
+                              z= 13
                     regions:
                         - key: andijan_obl5
                           user-pick-able: true
                           name:
                               ru: Балыкчи
-                              uz-lat: Балыкчи
-                              uz-kir: Балыкчи
+                              uz-lat: Baliqchi
+                              uz-kir: Балиқчи
+                              lat: 40.8488861
+                              lng: 71.8362653
+                              z= 11
                     regions:
                         - key: andijan_obl6
                           user-pick-able: true
                           name:
                               ru: Карасу
-                              uz-lat: Карасу
-                              uz-kir: Карасу
+                              uz-lat: Qorasuv
+                              uz-kir: Қорасув
+                              lat: 40.729245
+                              lng: 72.869265
+                              z= 11
                     regions:
                         - key: andijan_obl7
                           user-pick-able: true
                           name:
                               ru: Булакбаши
-                              uz-lat: Булакбаши
-                              uz-kir: Булакбаши
+                              uz-lat: Buloqboshi
+                              uz-kir: Булоқбоши
+                              lat: 40.6196466
+                              lng: 72.3850511
+                              z= 12
                     regions:
                         - key: andijan_obl8
                           user-pick-able: true
                           name:
                               ru: Куйганъяр
-                              uz-lat: Куйганъяр
-                              uz-kir: Куйганъяр
+                              uz-lat: Kuyganyor
+                              uz-kir: Куйганёр
+                              lat: 40.8611067
+                              lng: 72.3020417
+                              z= 15
                     regions:
                         - key: andijan_obl9
                           user-pick-able: true
                           name:
                               ru: Кургантепа
-                              uz-lat: Кургантепа
-                              uz-kir: Кургантепа
+                              uz-lat: Qo'rg'ontepa
+                              uz-kir: Қўрғонтепа
+                              lat: 40.7328257
+                              lng: 72.7217452
+                              z= 13
                     regions:
                         - key: andijan_obl10
                           user-pick-able: true
                           name:
                               ru: Мархамат
-                              uz-lat: Мархамат
-                              uz-kir: Мархамат
+                              uz-lat: Marhamat
+                              uz-kir: Марҳамат
+                              lat: 40.5000155
+                              lng: 72.3079122
+                              z= 15
                     regions:
                         - key: andijan_obl11
                           user-pick-able: true
                           name:
                               ru: Пайтуг
-                              uz-lat: Пайтуг
-                              uz-kir: Пайтуг
+                              uz-lat: Poytug'
+                              uz-kir: Пайтуғ
+                              lat: 40.8947357
+                              lng: 72.2155374
+                              z= 13
                     regions:
                         - key: andijan_obl12
                           user-pick-able: true
                           name:
                               ru: Пахтаабад
-                              uz-lat: Пахтаабад
-                              uz-kir: Пахтаабад
+                              uz-lat: Paxtaobod
+                              uz-kir: Пахтаобод
+                              lat: 40.973449
+                              lng: 72.2852437
+                              z= 11
                     regions:
                         - key: andijan_obl13
                           user-pick-able: true
                           name:
                               ru: Шахрихан
-                              uz-lat: Шахрихан
-                              uz-kir: Шахрихан
+                              uz-lat: Shahrixon
+                              uz-kir: Шаҳрихон
+                              lat: 40.6934251
+                              lng: 71.8888722
+                              z= 11
                     regions:
                         - key: andijan_obl14
                           user-pick-able: true
                           name:
                               ru: Ханабад
-                              uz-lat: Ханабад
-                              uz-kir: Ханабад
+                              uz-lat: Xonobod
+                              uz-kir: Хонобод
+                              lat: 40.8048725
+                              lng: 72.9732083
+                              z= 14
                     regions:
                         - key: andijan_obl15
                           user-pick-able: true
                           name:
                               ru: Ходжаабад
-                              uz-lat: Ходжаабад
-                              uz-kir: Ходжаабад
+                              uz-lat: Xo'jaobod
+                              uz-kir: Хўжаобод
+                              lat: 40.6591578
+                              lng: 72.541694
+                              z= 13
                     regions:
                         - key: andijan_obl16
                           user-pick-able: true
                           name:
                               ru: Асака
-                              uz-lat: Асака
+                              uz-lat: Asaka
                               uz-kir: Асака
+                              lat: 40.6601935
+                              lng: 72.1986288
+                              z= 13
                     regions:
-                            - key: andijan_obl17
-                              user-pick-able: true
-                              name:
-                                  ru: Андижан
-                                  uz-lat: Андижан
-                                  uz-kir: Андижан
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                        - key: andijan_obl17
+                          user-pick-able: true
+                          name:
+                              ru: Андижан
+                              uz-lat: Andijon
+                              uz-kir: Андижон
+                              lat: 40.7795396
+                              lng: 72.1795595
+                              z= 11
