@@ -942,6 +942,11 @@ resources:
                               uz-lat: Xalqobod
                               uz-kir: Халкобод
 
+        
+
+
+
+
                 - key: namangan_obl
                     user-pick-able: false
                     name:
@@ -954,77 +959,102 @@ resources:
                           name:
                               ru: Чартак
                               uz-lat: Chortoq
-                              uz-kir: Чорто к
+                              uz-kir: Чортоқ
+                              lat: 41.0713293
+                              lng: 71.7894309
+                              z = 13
                     regions:
                         - key: namangan_obl2
-                          user-pick-able: true
-                          name:
-                              ru: Челак
-                              uz-lat: Chelak
-                              uz-kir: Челак
-                    regions:
-                        - key: namangan_obl3
                           user-pick-able: true
                           name:
                               ru: Чуст
                               uz-lat: Chust
                               uz-kir: Чуст
+                              lat: 41.0418096
+                              lng: 71.0354417
+                              z = 11
                     regions:
-                        - key: namangan_obl4
+                        - key: namangan_obl3
                           user-pick-able: true
                           name:
                               ru: Джумашуй
                               uz-lat: Jomashoʻy
-                              uz-kir: Джумашў
+                              uz-kir: Жомашўй
+                              lat: 40.9139742
+                              lng: 72.0934866
+                              z = 14
                     regions:
-                        - key: namangan_obl5
+                        - key: namangan_obl4
                           user-pick-able: true
                           name:
                               ru: Касансай
                               uz-lat: Kosonsoy
                               uz-kir: Касансай
+                              lat: 40.9139742
+                              lng: 72.0934866
+                              z = 14
                     regions:
-                        - key: namangan_obl6
+                        - key: namangan_obl5
                           user-pick-able: true
                           name:
                               ru: Ташбулак
                               uz-lat: Toshbuloq
                               uz-kir: Тошбулоқ
+                              lat: 40.766947
+                              lng: 71.2239809
+                              z = 10
+
                     regions:
-                        - key: namangan_obl7
+                        - key: namangan_obl6
                           user-pick-able: true
                           name:
                               ru: Хаккулабад
                               uz-lat: Xaqqulobod
                               uz-kir: Хаққулобод
+                              lat: 40.9139742
+                              lng: 72.0934866
+                              z = 14
                     regions:
-                        - key: namangan_obl8
+                        - key: namangan_obl7
                           user-pick-able: true
                           name:
                               ru: Наманган
                               uz-lat: Namangan
                               uz-kir: Наманган
+                              lat: 40.9706421
+                              lng: 71.5045366
+                              z = 11
                     regions:
-                        - key: namangan_obl9
+                        - key: namangan_obl8
                           user-pick-able: true
                           name:
                               ru: Пап
                               uz-lat: Pop
                               uz-kir: Поп
+                              lat: 41.0929658
+                              lng: 70.3018672
+                              z = 9
                     regions:
-                        - key: namangan_obl10
+                        - key: namangan_obl9
                           user-pick-able: true
                           name:
                               ru: Туракурган
                               uz-lat: To'raqo'rg'on
                               uz-kir: Тўракўрғон
+                              lat: 40.9996975
+                              lng: 71.3022034
+                              z = 11
                     regions:
-                        - key: namangan_obl11
+                        - key: namangan_obl10
                           user-pick-able: true
                           name:
                               ru: Учкурган
                               uz-lat: Uchqo'rg'on
                               uz-kir: Учқўрғон
+                              lat: 41.1211605
+                              lng: 72.057008
+                              z = 13
+
 
                 - key: navoi_obl
                     user-pick-able: false
@@ -1039,6 +1069,7 @@ resources:
                               ru: Бешрабат
                               uz-lat: Beshrobot
                               uz-kir: Бешработ
+
                     regions:
                         - key: navoi_obl2
                           user-pick-able: true
@@ -1046,6 +1077,9 @@ resources:
                               ru: Канимех
                               uz-lat: Konimex
                               uz-kir: Канимех
+                              lat: 40.2744475
+                              lng: 65.1225326
+                              z = 14
                     regions:
                         - key: navoi_obl3
                           user-pick-able: true
@@ -1053,6 +1087,9 @@ resources:
                               ru: Навои
                               uz-lat: Navoiy
                               uz-kir: Навоий
+                              lat: 40.0980699
+                              lng: 65.336594
+                              z = 13
                     regions:
                         - key: navoi_obl4
                           user-pick-able: true
@@ -1060,6 +1097,9 @@ resources:
                               ru: Кармана
                               uz-lat: Karmana
                               uz-kir: Кармана
+                              lat: 40.1401145
+                              lng: 65.3323561
+                              z = 13
                     regions:
                         - key: navoi_obl5
                           user-pick-able: true
@@ -1067,13 +1107,19 @@ resources:
                               ru: Янгирабат
                               uz-lat: Yangirobot
                               uz-kir: Янгиробот
+                              lat: 40.0343476
+                              lng: 65.9487174
+                              z = 14
                     regions:
                         - key: navoi_obl6
                           user-pick-able: true
                           name:
                               ru: Нурата
                               uz-lat: Nurota
-                              uz-kir: Нурота
+                              uz-kir:
+                              lat: 40.5646522
+                              lng: 65.6831787
+                              z = 14
                     regions:
                         - key: navoi_obl7
                           user-pick-able: true
@@ -1081,6 +1127,9 @@ resources:
                               ru: Кызылтепа
                               uz-lat: Qiziltepa
                               uz-kir: Қизилтепа
+                              lat: 40.0575347
+                              lng: 64.7923844
+                              z = 13
                     regions:
                         - key: navoi_obl8
                           user-pick-able: true
@@ -1088,6 +1137,9 @@ resources:
                               ru: Зарафшан
                               uz-lat: Zarafshon
                               uz-kir: Зарафшон
+                              lat: 41.5742784
+                              lng: 64.156894
+                              z = 13
                     regions:
                         - key: navoi_obl9
                           user-pick-able: true
@@ -1095,6 +1147,9 @@ resources:
                               ru: Тамдыбулак
                               uz-lat: Tomdibuloq
                               uz-kir: Томдибулоқ
+                              lat: 41.7548871
+                              lng: 64.6111964
+                              z = 14
                     regions:
                         - key: navoi_obl10
                           user-pick-able: true
@@ -1102,6 +1157,10 @@ resources:
                               ru: Учкудук
                               uz-lat: Uchquduq
                               uz-kir: Учкқудук
+                              lat: 42.1526794
+                              lng: 63.539128
+                              z = 14
+
 
 
                                       

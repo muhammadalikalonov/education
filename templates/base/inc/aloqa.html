@@ -21,9 +21,20 @@
                     {% trans 'Оставьте свои данные и наш специалист обязательно свяжемся с Вами в течение дня' %}</div>
                 <form  action="{% url 'contacts' %}"  method="POST" class="form-call__form form">
                     {%csrf_token%}
-                    {{ form.name }}
+                    {% get_current_language as LANGUAGE_CODE %}
+
+                    {% if LANGUAGE_CODE == 'ru' %}
+                        {{ form.name }}
                     {{ form.phone }}
                     {{ form.content }}
+
+                    {% else %}
+                          {{ formuz.name }}
+                    {{ formuz.phone }}
+                    {{ formuz.content }}
+                       {% endif %}
+
+
                     <button type="submit" id="zor" class="form__btn btn big"><span class="btn__icon _ar"></span><span class="btn__dec"></span><span class="btn__txt">{% trans 'Отправить' %}</span></button>
                 </form>
             </div>
@@ -34,10 +45,11 @@
     <div class="gtc__content _container">
         <h2 class="gtc__title t">
 
-            {% trans ' Остались вопросы?' %}
+
+            {% trans 'Остались вопросы?' %}
         </h2>
         <div class="gtc__subt txt subt">
-            {% trans ' Свяжитесь с нами и мы ответим на все ваши вопросы' %}
+            {%trans 'Свяжитесь с нами и мы ответим на все ваши вопросы' %}
 
         </div>
         <div class="gtc__body">

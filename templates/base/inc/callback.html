@@ -12,10 +12,20 @@
 
 
                 <form method="POST"  action="{% url 'contact_mobile' %}" class="form-call__form form">
-                   {%csrf_token%}
-                    {{ formi.name }}
+                    {%csrf_token%}
+                    {% get_current_language as LANGUAGE_CODE %}
+
+                    {% if LANGUAGE_CODE == 'ru' %}
+                     {{ formi.name }}
                     {{ formi.phone }}
                     {{ formi.content }}
+
+                    {% else %}
+                          {{ formuz.name }}
+                    {{ formuz.phone }}
+                    {{ formuz.content }}
+                       {% endif %}
+
 
 
                     <button type="submit" class="form__btn btn big"><span class="btn__icon _ar"></span><span class="btn__dec"></span><span class="btn__txt">{%trans 'Отправить'%}</span></button>

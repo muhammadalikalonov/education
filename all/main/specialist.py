@@ -7,14 +7,14 @@ def spec(request):
     specialist = Specialist.objects.all().first()
     form =ContactFormForm()
     formi =ContactFormForm2()
+    formuz=ContactFormForm3()
     contact = Contact.objects.all().first()
     country = Country.objects.all()
+    zayavka = PageFormsuz()
     forming = PageForms()
+
     study  = Study_form.objects.all()
     faculty = Faculty.objects.all()
-    # university = University.objects.all()
-    # for i in country:
-    #     print(i.country.all().count())
 
 
 
@@ -26,7 +26,10 @@ def spec(request):
         'country':country,
         'study':study,
         'faculty':faculty,
-        'forming':forming
+        'zayavka': zayavka,
+        'forming':forming,
+        'formuz':formuz,
+
 
 
     }

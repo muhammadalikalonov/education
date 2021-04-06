@@ -16,35 +16,45 @@ def error_404_view(request,exception):
 
 
 def page(request):
-    print('hello')
-    forming = PageForms()
+
+
+
     if request.method == 'POST':
-        print('hello')
-        form = PageForms(request.POST)
+        try:
+            form = PageForms(request.POST)
+        except:
+            form = PageFormsuz(request.POST)
+
+
         if form.is_valid():
             form.save()
+            try:
+                message_name = request.POST['name']
+                message_phone = request.POST['phone']
+                message_birth_date = request.POST['birth_date']
+                message_city = request.POST['city']
+                message_email = request.POST['email']
+                message_english = request.POST['english']
+                message_study = request.POST['study']
+                message_description = request.POST['description']
+                message_take_date = request.POST['take_date']
+                message_surname = request.POST['surname']
+                sms = f'📩 Sizga xabar keldi\n\nIsmi: {message_birth_date}\n☎️ Telefon raqami: {message_study} \n✉️ Xabar: {message_english}'
+                bot.send_message( 721237497, sms)
+                messages.success(request, 'Xabaringiz qabul qilindi. Tez orada operator aloqaga chiqadi!!! ')
+                print(sms)
 
-            message_name = request.POST['name']
-            message_phone = request.POST['phone']
-            message_birth_date = request.POST['birth_date']
-            message_city = request.POST['city']
-            message_email = request.POST['email']
-            message_english = request.POST['english']
-            message_study = request.POST['study']
-            message_description = request.POST['description']
-            message_take_date = request.POST['take_date']
-            message_surname = request.POST['surname']
-            sms = f'📩 Sizga xabar keldi\n\nIsmi: {message_birth_date}\n☎️ Telefon raqami: {message_study} \n✉️ Xabar: {message_english}'
-            bot.send_message( 721237497, sms)
-            messages.success(request, 'Xabaringiz qabul qilindi. Tez orada operator aloqaga chiqadi!!! ')
-            print(sms)
-            return redirect('index')
+                return redirect('index')
+            except:
+                return redirect('index')
 
     context = {
-        'forming':forming
+
 
     }
     return render(request,'others/cons.html', context)
+
+
 
 def contacts(request):
 

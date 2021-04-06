@@ -34,6 +34,7 @@
                 </div>
                 <nav class="menu__body">
                     {% get_current_language as LANGUAGE_CODE %}
+
                     <ul {% if LANGUAGE_CODE == 'ru' %} class="menu__list" {% else %}
                         class="menu__list menu__list-uz" {% endif %}>
                         <li><a href="{% url 'index' %}"  {% if request.resolver_match.url_name == 'index' %}
@@ -64,6 +65,7 @@
                         <li></li>
                         <br>
                     </ul>
+
                     <ul class="header__contacts contacts">
                         <li class="contacts__item contacts__item_time">{{ contact.working_time }}</li>
                         <li class="contacts__item contacts__item_map"><a href="tel:{{ contact.phone }}"
