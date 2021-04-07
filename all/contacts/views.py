@@ -2,6 +2,7 @@ from django.core import serializers
 from django.shortcuts import render, redirect
 from .models import *
 from .forms import *
+from .forms import PageFormsuz
 import telebot
 from django.contrib import messages
 from django.core.serializers import serialize
@@ -16,19 +17,17 @@ def error_404_view(request,exception):
 
 
 def page(request):
-
-
+    zayavka = PageFormsuz()
 
     if request.method == 'POST':
-        try:
-            form = PageForms(request.POST)
-        except:
-            form = PageFormsuz(request.POST)
+        zayavka = PageFormsuz(request.POST)
 
 
-        if form.is_valid():
-            form.save()
+        if zayavka.is_valid():
+            zayavka.save()
+
             try:
+
                 message_name = request.POST['name']
                 message_phone = request.POST['phone']
                 message_birth_date = request.POST['birth_date']
@@ -49,6 +48,7 @@ def page(request):
                 return redirect('index')
 
     context = {
+        'zayavka':zayavka
 
 
     }

@@ -1,2000 +1,2276 @@
 resources:
-    regions:
-        - key: uzb
-            user-pick-able: false
-            name:
-                ru: Узбекистан
-                uz-lat: Uzbekistan
-                uz-kir: Uzbekistan
-
-            regions:
-
-                - key: tashkent
-                    user-pick-able: false
-                    name:
-                        ru: город Ташкент
-                        uz-lat: Toshkent shahri
-                        uz-kir: Тoшкент шахри
-                    regions:
-                        - key: tashkent1
-                            user-pick-able: true
-                            name:
-                                ru: Сергелийский район
-                                uz-lat: Sirg'ali tumani
-                                uz-kir: Сирғали тўмани
-                                lat: 123.234234
-                                lng: 62.23423
-                                zoom:
-                        - key: tashkent2
-                            user-pick-able: true
-                            name:
-                                ru: Мирзо-Улугбекский район
-                                uz-lat: Mirzo-Ulugbek tumani
-                                uz-kir: Мирзо-Улуғбек тўмани
-                        - key: tashkent3
-                            user-pick-able: true
-                            name:
-                                ru: Мирабадский район
-                                uz-lat: Mirоbod tumani
-                                uz-kir: Миробод тумани
-                        - key: tashkent4
-                            user-pick-able: true
-                            name:
-                                ru: Бектемирский район
-                                uz-lat: Bektemir tumani
-                                uz-kir: Бектемир тумани
-                        - key: tashkent5
-                            user-pick-able: true
-                            name:
-                                ru: Алмазарский район
-                                uz-lat: Olmazor tumani
-                                uz-kir: Олмазор тумани
-                        - key: tashkent6
-                            user-pick-able: true
-                            name:
-                                ru: Яшнабадский район
-                                uz-lat: Yashnobod tumani
-                                uz-kir: Яшнобод тумани
-                        - key: tashkent7
-                            user-pick-able: true
-                            name:
-                                ru: Юнусабадский район
-                                uz-lat: Yunusobod tumani
-                                uz-kir: Юнусобод тумани
-                        - key: tashkent8
-                            user-pick-able: true
-                            name:
-                                ru: Учтепинский район
-                                uz-lat: Uchtepa tumani
-                                uz-kir: Учтепа тумани
-                        - key: tashkent9
-                            user-pick-able: true
-                            name:
-                                ru: Шайхантахурский район
-                                uz-lat: Shayhontohur tumani
-                                uz-kir: Шайхонтохур тумани
-                        - key: tashkent10
-                            user-pick-able: true
-                            name:
-                                ru: Чиланзарский район
-                                uz-lat: Chilonzor tumani
-                                uz-kir: Чилонзор тумани
-                        - key: tashkent11
-                            user-pick-able: true
-                            name:
-                                ru: Яккасарайский район
-                                uz-lat: Yakkasaroy tumani
-                                uz-kir: Яккасарой тумани
-
-
-
-                - key: taskent_obl
-                    user-pick-able: false
-                    name:
-                        ru: Ташкентская область
-                        uz-lat: Toshkent viloyati
-                        uz-kir: Тошкент вилояти
-                    regions:
-                        - key: taskent_obl1
-                            user-pick-able: true
-                            name:
-                                ru: Аккурганский район
-                                uz-lat: Oqqo'rg'on tumani
-                                uz-kir: Оққурғон тумани
-                        - key: taskent_obl2
-                            user-pick-able: true
-                            name:
-                                ru: Ахангаранский район
-                                uz-lat: Ohangaron tumani
-                                uz-kir: Охангарон тумани
-                        - key: taskent_obl3
-                            user-pick-able: true
-                            name:
-                                ru: Бекабадский район
-                                uz-lat: Bekobod tumani
-                                uz-kir: Бекобод тумани
-
-                        - key: taskent_obl4
-                            user-pick-able: true
-                            name:
-                                ru: Бостанлыкский район
-                                uz-lat: Bo'stonliq tumani
-                                uz-kir: Бўстонлиқ тумани
-                        - key: taskent_obl5
-                            user-pick-able: true
-                            name:
-                                ru: Букинский район
-                                uz-lat: Bo'ka tumani
-                                uz-kir: Бўка тумани
-                        - key: taskent_obl6
-                            user-pick-able: true
-                            name:
-                                ru: Зангиатинский район
-                                uz-lat: Zangiota tumani
-                                uz-kir: Зангиата тумани
-                        - key: taskent_obl7
-                            user-pick-able: true
-                            name:
-                                ru: Чиназ
-                                uz-lat: Chinoz
-                                uz-kir: Чиноз
-
-                        - key: taskent_obl8
-                            user-pick-able: true
-                            name:
-                                ru: Паркентский район
-                                uz-lat: Parkent tumani
-                                uz-kir: Паркент тумани
-                        - key: taskent_obl9
-                            user-pick-able: true
-                            name:
-                                ru: Пскентский район
-                                uz-lat: Pskent tumani
-                                uz-kir: Пскент тумани
-                        - key: taskent_obl10
-                            user-pick-able: true
-                            name:
-                                ru: Алмалык
-                                uz-lat: Olmaliq
-                                uz-kir: Олмалиқ
-                        - key: taskent_obl11
-                            user-pick-able: true
-                            name:
-                                ru: Ангрен
-                                uz-lat: Angren
-                                uz-kir: Ангрен
-                        - key: taskent_obl12
-                            user-pick-able: true
-                            name:
-                                ru: Бекабад
-                                uz-lat: Bekobod
-                                uz-kir: Бекобод
-
-                        - key: taskent_obl13
-                            user-pick-able: true
-                            name:
-                                ru: Нурафшан
-                                uz-lat: Nurafshon
-                                uz-kir: Нурафшон
-                        - key: taskent_obl14
-                            user-pick-able: true
-                            name:
-                                ru: Чирчик
-                                uz-lat: Chirchiq
-                                uz-kir: Чирчик
-                        - key: taskent_obl15
-                            user-pick-able: true
-                            name:
-                                ru: Дустабад
-                                uz-lat: Do'stobod
-                                uz-kir: Дустобод
-                        - key: taskent_obl16
-                            user-pick-able: true
-                            name:
-                                ru: Эшангузар
-                                uz-lat: Eshonguzar
-                                uz-kir: Эшонгузар
-
-                        - key: taskent_obl17
-                            user-pick-able: true
-                            name:
-                                ru: Дурмень
-                                uz-lat: Durmen
-                                uz-kir: Дурмень
-
-                        - key: taskent_obl18
-                            user-pick-able: true
-                            name:
-                                ru: Cукок
-                                uz-lat: So'qoq
-                                uz-kir: Cукок
-                        - key: taskent_obl19
-                            user-pick-able: true
-                            name:
-                                ru: Газалкент
-                                uz-lat: G'azalkent
-                                uz-kir: Газалкент
-                        - key: taskent_obl20
-                            user-pick-able: true
-                            name:
-                                ru: Большой Чимган
-                                uz-lat: Katta Chimyon
-                                uz-kir: Катта Чимён
-
-                        - key: taskent_obl21
-                            user-pick-able: true
-                            name:
-                                ru: Ходжикент
-                                uz-lat: Xo'jakent
-                                uz-kir: Ходжикент
-                        - key: taskent_obl22
-                            user-pick-able: true
-                            name:
-                                ru: Уртааул
-                                uz-lat: Oʻrtaovul
-                                uz-kir: Уртааул
-                        - key: taskent_obl23
-                            user-pick-able: true
-                            name:
-                                ru: Чарвак
-                                uz-lat: Chorvoq
-                                uz-kir: Чорвок
-                        - key: taskent_obl24
-                            user-pick-able: true
-                            name:
-                                ru: Туркестан
-                                uz-lat: Turkiston
-                                uz-kir: Туркестон
-                        - key: taskent_obl25
-                            user-pick-able: true
-                            name:
-                                ru: Ташморе
-                                uz-lat: Tashmore
-                                uz-kir: Ташморе
-                        - key: taskent_obl26
-                            user-pick-able: true
-                            name:
-                                ru: Янгибазар
-                                uz-lat: Yangibozor
-                                uz-kir: Янгибозор
-                        - key: taskent_obl27
-                            user-pick-able: true
-                            name:
-                                ru: Назарбек
-                                uz-lat: Nazarbek
-                                uz-kir: Назарбек
-                        - key: taskent_obl28
-                            user-pick-able: true
-                            name:
-                                ru: Зафар
-                                uz-lat: Zafar
-                                uz-kir: Зафар
-                        - key: taskent_obl29
-                            user-pick-able: true
-                            name:
-                                ru: Янгиюль
-                                uz-lat: Yangiyo'l
-                                uz-kir: Янгиюль
-                        - key: taskent_obl30
-                            user-pick-able: true
-                            name:
-                                ru: Мирабад
-                                uz-lat: Mirobod
-                                uz-kir: Миробод
-                        - key: taskent_obl31
-                            user-pick-able: true
-                            name:
-                                ru: Салар
-                                uz-lat: Salar
-                                uz-kir: Салар
-                        - key: taskent_obl32
-                            user-pick-able: true
-                            name:
-                                ru: Янгиабад
-                                uz-lat: Yangiobod
-                                uz-kir: Янгиабад
-                        - key: taskent_obl33
-                            user-pick-able: true
-                            name:
-                                ru: Красногорск
-                                uz-lat: Krasnogorsk
-                                uz-kir: Красногорск
-                        - key: taskent_obl34
-                            user-pick-able: true
-                            name:
-                                ru: Коксарай
-                                uz-lat: Ko'ksaroy
-                                uz-kir: Кўксарой
-                        - key: taskent_obl35
-                            user-pick-able: true
-                            name:
-                                ru: Кибрай
-                                uz-lat: Qibray
-                                uz-kir: Кибрай
-                        - key: taskent_obl36
-                            user-pick-able: true
-                            name:
-                                ru: Келес
-                                uz-lat: Keles
-                                uz-kir: Келес
-                        - key: taskent_obl37
-                            user-pick-able: true
-                            name:
-                                ru: Карасу
-                                uz-lat: Qorasuv
-                                uz-kir: Корасу
-                        - key: taskent_obl38
-                            user-pick-able: true
-                            name:
-                                ru: Искандар
-                                uz-lat: Iskandar
-                                uz-kir: Искандар
-                        - key: taskent_obl39
-                            user-pick-able: true
-                            name:
-                                ru: Гульбахор
-                                uz-lat: Gulbahor
-                                uz-kir: Гульбахор
-                        - key: taskent_obl40
-                            user-pick-able: true
-                            name:
-                                ru: Чиназ
-                                uz-lat: Chinoz
-                                uz-kir: Чиноз
-                        - key: taskent_obl41
-                            user-pick-able: true
-                            name:
-                                ru: Туйтепинский район
-                                uz-lat: To'ytepa tumani
-                                uz-kir: Тўйтепа тумани
-
-
-
-
-                - key: samar_obl
-                    user-pick-able: false
-                    name:
-                        ru: Самаркандская область
-                        uz-lat: Самаркандская область
-                        uz-kir: Самаркандская область
-                    regions:
-                        - key: samar_obl1
-                          user-pick-able: true
-                          name:
-                              ru: Акташ
-                              uz-lat: Oqtosh
-                              uz-kir: Акташ
-                    regions:
-                        - key: samar_obl2
-                          user-pick-able: true
-                          name:
-                              ru: Самарканд
-                              uz-lat: Samarqand
-                              uz-kir: Самарканд
-                    regions:
-                        - key: samar_obl3
-                          user-pick-able: true
-                          name:
-                              ru: Булунгур
-                              uz-lat: Bulung'ur
-                              uz-kir: Булунгур
-                    regions:
-                        - key: samar_obl4
-                          user-pick-able: true
-                          name:
-                              ru: Чилек
-                              uz-lat: Chelak
-                              uz-kir: Чилек
-                    regions:
-                        - key: samar_obl5
-                          user-pick-able: true
-                          name:
-                              ru: Иштыхан
-                              uz-lat: Ishtixon
-                              uz-kir: Иштыхан
-                    regions:
-                        - key: samar_obl6
-                          user-pick-able: true
-                          name:
-                              ru: Каттакурган
-                              uz-lat: Kattaqo'rg'on
-                              uz-kir: Каттакурган
-                    regions:
-                        - key: samar_obl7
-                          user-pick-able: true
-                          name:
-                              ru: Гузалкент
-                              uz-lat: Go'zalkent
-                              uz-kir: Гузалкент
-                    regions:
-                        - key: samar_obl8
-                          user-pick-able: true
-                          name:
-                              ru: Джамбай
-                              uz-lat: Jomboy
-                              uz-kir: Джамбай
-                    regions:
-                        - key: samar_obl9
-                          user-pick-able: true
-                          name:
-                              ru: Ургут
-                              uz-lat: Urgut
-                              uz-kir: Ургут
-                    regions:
-                        - key: samar_obl10
-                          user-pick-able: true
-                          name:
-                              ru: Кушрабад
-                              uz-lat: Qoʻshrobod
-                              uz-kir: Кушрабад
-                    regions:
-                        - key: samar_obl11
-                          user-pick-able: true
-                          name:
-                              ru: Зиадин
-                              uz-lat: Ziadin
-                              uz-kir: Зиадин
-                    regions:
-                        - key: samar_obl12
-                          user-pick-able: true
-                          name:
-                              ru: Пайарык
-                              uz-lat: Payariq
-                              uz-kir: Пайарык
-                    regions:
-                        - key: samar_obl13
-                          user-pick-able: true
-                          name:
-                              ru: Дарбанд
-                              uz-lat: Darband
-                              uz-kir: Дарбанд
-                    regions:
-                        - key: samar_obl14
-                          user-pick-able: true
-                          name:
-                              ru: Джума
-                              uz-lat: Juma
-                              uz-kir: Джума
-                    regions:
-                        - key: samar_obl15
-                          user-pick-able: true
-                          name:
-                              ru: Тайлак
-                              uz-lat: Tayloq
-                              uz-kir: Тайлак
-                    regions:
-                        - key: samar_obl16
-                          user-pick-able: true
-                          name:
-                              ru: Самарканд
-                              uz-lat: Samarqand
-                              uz-kir: Самарканд
-                    regions:
-                        - key: samar_obl17
-                          user-pick-able: true
-                          name:
-                              ru: Пайшанба
-                              uz-lat: Payshanba
-                              uz-kir: Пайшанба
-                    regions:
-                        - key: samar_obl18
-                          user-pick-able: true
-                          name:
-                              ru: Лаиш
-                              uz-lat: Loish
-                              uz-kir: Лаиш
-                    regions:
-                        - key: samar_obl19
-                          user-pick-able: true
-                          name:
-                              ru: Гюлабад
-                              uz-lat: Gulobod
-                              uz-kir: Гюлабад
-                    regions:
-                        - key: samar_obl19
-                          user-pick-able: true
-                          name:
-                              ru: Nurobod
-                              uz-lat: Nurobod
-                              uz-kir: Nurobod
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                - key: xorezm_obl
-                    user-pick-able: false
-                    name:
-                        ru: Хорезмская область
-                        uz-lat: Хорезмская область
-                        uz-kir: Хорезмская область
-                    regions:
-                        - key: xorezm_obl1
-                          user-pick-able: true
-                          name:
-                              ru: Янгиарык
-                              uz-lat: Yangiariq
-                              uz-kir: Янгиарык
-                    regions:
-                        - key: xorezm_obl2
-                          user-pick-able: true
-                          name:
-                              ru: Гурлен
-                              uz-lat: Gurlan
-                              uz-kir: Гурлен
-                    regions:
-                        - key: xorezm_obl3
-                          user-pick-able: true
-                          name:
-                              ru: Багат
-                              uz-lat: Bog'ot
-                              uz-kir: Багат
-                    regions:
-                        - key: xorezm_obl4
-                          user-pick-able: true
-                          name:
-                              ru: Чалыш
-                              uz-lat: Cholish
-                              uz-kir: Чалыш
-                    regions:
-                        - key: xorezm_obl5
-                          user-pick-able: true
-                          name:
-                              ru: Караул
-                              uz-lat: Qorovul
-                              uz-kir: Караул
-                    regions:
-                        - key: xorezm_obl6
-                          user-pick-able: true
-                          name:
-                              ru: Питнак
-                              uz-lat: Pitnak
-                              uz-kir: Питнак
-                    regions:
-                        - key: xorezm_obl7
-                          user-pick-able: true
-                          name:
-                              ru: Шават
-                              uz-lat: Shovot
-                              uz-kir: Шават
-                    regions:
-                        - key: xorezm_obl8
-                          user-pick-able: true
-                          name:
-                              ru: Ханка
-                              uz-lat: Xonqa
-                              uz-kir: Ханка
-                    regions:
-                        - key: xorezm_obl9
-                          user-pick-able: true
-                          name:
-                              ru: Хазарасп
-                              uz-lat: Xozarasp
-                              uz-kir: Хазарасп
-                    regions:
-                        - key: xorezm_obl10
-                          user-pick-able: true
-                          name:
-                              ru: Ургенч
-                              uz-lat: Urganch
-                              uz-kir: Ургенч
-                    regions:
-                        - key: xorezm_obl11
-                          user-pick-able: true
-                          name:
-                              ru: Хива
-                              uz-lat: Xiva
-                              uz-kir: Хива
-                    regions:
-                        - key: xorezm_obl12
-                          user-pick-able: true
-                          name:
-                              ru: Кошкупыр
-                              uz-lat: Qoʻshkoʻpir
-                              uz-kir: Кошкупыр
-
-
-                - key: fergana_obl
-                    user-pick-able: false
-                    name:
-                        ru: Ферганская область
-                        uz-lat: Ферганская область
-                        uz-kir: Ферганская область
-                    regions:
-                        - key: fergana_obl1
-                          user-pick-able: true
-                          name:
-                              ru: Алтыарык
-                              uz-lat: Oltiariq
-                              uz-kir: Алтыарык
-                        - key: fergana_obl2
-                          user-pick-able: true
-                          name:
-                              ru: Язъяван
-                              uz-lat: Yozyovon
-                              uz-kir: Язъяван
-                        - key: fergana_obl3
-                          user-pick-able: true
-                          name:
-                              ru: Янгикурган
-                              uz-lat: Yangiqoʻrgʻon
-                              uz-kir: Янгикурган
-                        - key: fergana_obl4
-                          user-pick-able: true
-                          name:
-                              ru: Янги Маргилан
-                              uz-lat: Yangi Margʻilon
-                              uz-kir: Янги Маргилан
-                        - key: fergana_obl5
-                          user-pick-able: true
-                          name:
-                              ru: Яйпан
-                              uz-lat: Yaypan
-                              uz-kir: Яйпан
-                        - key: fergana_obl6
-                          user-pick-able: true
-                          name:
-                              ru: Хамза
-                              uz-lat: Hamza
-                              uz-kir: Хамза
-                        - key: fergana_obl7
-                          user-pick-able: true
-                          name:
-                              ru: Вуадиль
-                              uz-lat: Vodil
-                              uz-kir: Вуадиль
-                        - key: fergana_obl8
-                          user-pick-able: true
-                          name:
-                              ru: Ташлак
-                              uz-lat: Toshloq
-                              uz-kir: Ташлак
-                        - key: fergana_obl9
-                          user-pick-able: true
-                          name:
-                              ru: Учкуприк
-                              uz-lat: Uchkoʻpriq
-                              uz-kir: Учкуприк
-                        - key: fergana_obl10
-                          user-pick-able: true
-                          name:
-                              ru: Шахимардан
-                              uz-lat: Shohimardon
-                              uz-kir: Шахимардан
-                        - key: fergana_obl11
-                          user-pick-able: true
-                          name:
-                              ru: Риштан
-                              uz-lat: Rishton
-                              uz-kir: Риштан
-                        - key: fergana_obl12
-                          user-pick-able: true
-                          name:
-                              ru: Раван
-                              uz-lat: Ravon
-                              uz-kir: Раван
-                        - key: fergana_obl13
-                          user-pick-able: true
-                          name:
-                              ru: Лангар
-                              uz-lat: Langar
-                              uz-kir: Лангар
-                        - key: fergana_obl14
-                          user-pick-able: true
-                          name:
-                              ru: Навбахор
-                              uz-lat: Navbahor
-                              uz-kir: Навбахор
-                        - key: fergana_obl15
-                          user-pick-able: true
-                          name:
-                              ru: Маргилан
-                              uz-lat: Marg'ilon
-                              uz-kir: Маргилан
-                        - key: fergana_obl16
-                          user-pick-able: true
-                          name:
-                              ru: Кувасай
-                              uz-lat: Quvasoy
-                              uz-kir: Кувасай
-                        - key: fergana_obl17
-                          user-pick-able: true
-                          name:
-                              ru: Кува
-                              uz-lat: Quva
-                              uz-kir: Кува
-                        - key: fergana_obl18
-                          user-pick-able: true
-                          name:
-                              ru: Багдад
-                              uz-lat: Bogʻdod
-                              uz-kir: Багдад
-                        - key: fergana_obl19
-                          user-pick-able: true
-                          name:
-                              ru: Дангара
-                              uz-lat: Dangʻara
-                              uz-kir: Дангара
-                        - key: fergana_obl20
-                          user-pick-able: true
-                          name:
-                              ru: Коканд
-                              uz-lat: Qo'qon
-                              uz-kir: Коканд
-                        - key: fergana_obl21
-                          user-pick-able: true
-                          name:
-                              ru: Бешарык
-                              uz-lat: Beshariq
-                              uz-kir: Бешарык
-                        - key: fergana_obl22
-                          user-pick-able: true
-                          name:
-                              ru: Фергана
-                              uz-lat: Farg‘ona
-                              uz-kir: Фергана
-
-
-                - key: sirdarya_obl
-                    user-pick-able: false
-                    name:
-                        ru: Сырдарьинская область
-                        uz-lat: Сырдарьинская область
-                        uz-kir: Сырдарьинская область
-                    regions:
-                        - key: sirdarya_obl1
-                          user-pick-able: true
-                          name:
-                              ru: Бахт
-                              uz-lat: Baxt
-                              uz-kir: Бахт
-                        - key: sirdarya_obl2
-                          user-pick-able: true
-                          name:
-                              ru: Баяут
-                              uz-lat: Boyovut
-                              uz-kir: Баяут
-                        - key: sirdarya_obl3
-                          user-pick-able: true
-                          name:
-                              ru: Cырдарья
-                              uz-lat: Sirdaryo
-                              uz-kir: Cырдарья
-                        - key: sirdarya_obl4
-                          user-pick-able: true
-                          name:
-                              ru: Гулистан
-                              uz-lat: Guliston
-                              uz-kir: Гулистан
-                        - key: sirdarya_obl5
-                          user-pick-able: true
-                          name:
-                              ru: Навруз
-                              uz-lat: Navroʻz
-                              uz-kir: Навруз
-                        - key: sirdarya_obl6
-                          user-pick-able: true
-                          name:
-                              ru: Сайхун
-                              uz-lat: Sayxun
-                              uz-kir: Сайхун
-                        - key: sirdarya_obl7
-                          user-pick-able: true
-                          name:
-                              ru: Хаваст
-                              uz-lat: Xovos
-                              uz-kir: Хаваст
-                        - key: sirdarya_obl8
-                          user-pick-able: true
-                          name:
-                              ru: Янгиер
-                              uz-lat: Yangiyer
-                              uz-kir: Янгиер
-                        - key: sirdarya_obl9
-                          user-pick-able: true
-                          name:
-                              ru: Янгиёр
-                              uz-lat: Yangiyer
-                              uz-kir: Янгиёр
-                        - key: sirdarya_obl10
-                          user-pick-able: true
-                          name:
-                              ru: Теренозек
-                              uz-lat: Terenozek
-                              uz-kir: Теренозек
-                        - key: sirdarya_obl11
-                          user-pick-able: true
-                          name:
-                              ru: Ширин
-                              uz-lat: Shirin
-                              uz-kir: Ширин
-                        - key: sirdarya_obl12
-                          user-pick-able: true
-                          name:
-                              ru: Сардоба
-                              uz-lat: Sardoba
-                              uz-kir: Сардоба
-
-
-                - key: surxan_obl
-                    user-pick-able: false
-                    name:
-                        ru: Сурхандарьинская область
-                        uz-lat: Surxondaryo viloyati
-                        uz-kir: Сурхандарё вилояти 
-                    regions:
-                        - key: surxan_obl1
-                          user-pick-able: true
-                          name:
-                              ru: Ангор
-                              uz-lat: Angor
-                              uz-kir: Ангор
-                        - key: surxan_obl2
-                          user-pick-able: true
-                          name:
-                              ru: Байсун
-                              uz-lat: Boysun
-                              uz-kir: Бойсун
-                        - key: surxan_obl3
-                          user-pick-able: true
-                          name:
-                              ru: Бандихон
-                              uz-lat: Bandixon
-                              uz-kir: Бандихон
-
-                        - key: surxan_obl4
-                          user-pick-able: true
-                          name:
-                              ru: Денау
-                              uz-lat: Denov
-                              uz-kir: Денов
-                        - key: surxan_obl5
-                          user-pick-able: true
-                          name:
-                              ru: Джаркурган
-                              uz-lat: Jarqo'rg'on
-                              uz-kir: Джарқурғон
-                        - key: surxan_obl6
-                          user-pick-able: true
-                          name:
-                              ru: Шаргунь
-                              uz-lat: Sharg'un
-                              uz-kir: Шарғун
-                        - key: surxan_obl7
-                          user-pick-able: true
-                          name:
-                              ru: Кумкурган
-                              uz-lat: Qumqo'rg'on
-                              uz-kir: Кумқурған
-                        - key: surxan_obl8
-                          user-pick-able: true
-                          name:
-                              ru: Карлук
-                              uz-lat: Qorlik
-                              uz-kir: Қарлик
-                        - key: surxan_obl9
-                          user-pick-able: true
-                          name:
-                              ru: Музрабад
-                              uz-lat: Muzrobod
-                              uz-kir: Музрабад
-                        - key: surxan_obl10
-                          user-pick-able: true
-                          name:
-                              ru: Сарык
-                              uz-lat: Sariq
-                              uz-kir: Сарық
-                        - key: surxan_obl11
-                          user-pick-able: true
-                          name:
-                              ru: Кизирик
-                              uz-lat: Qiziriq
-                              uz-kir: Қизирик
-                        - key: surxan_obl12
-                          user-pick-able: true
-                          name:
-                              ru: Сариасия
-                              uz-lat: Sariosiyo
-                              uz-kir: Сариосиё
-                        - key: surxan_obl13
-                          user-pick-able: true
-                          name:
-                              ru: Шурчи
-                              uz-lat: Sho'rchi
-                              uz-kir: Шўрчи
-                        - key: surxan_obl14
-                          user-pick-able: true
-                          name:
-                              ru: Шерабад
-                              uz-lat: Sherobod
-                              uz-kir: Шеробод
-                        - key: surxan_obl15
-                          user-pick-able: true
-                          name:
-                              ru: Учкызыл
-                              uz-lat: Uchqizil
-                              uz-kir: Учқизил
-                        - key: surxan_obl16
-                          user-pick-able: true
-                          name:
-                              ru: Термез
-                              uz-lat: Termiz
-                              uz-kir: Термиз
-                        - key: surxan_obl17
-                          user-pick-able: true
-                          name:
-                              ru: Узун
-                              uz-lat: Uzun
-                              uz-kir: Узун
-                        - key: surxan_obl18
-                          user-pick-able: true
-                          name:
-                              ru: Халкабад
-                              uz-lat: Xalqobod
-                              uz-kir: Халкобод
-
-        
-
-
-
-
-                - key: namangan_obl
-                    user-pick-able: false
-                    name:
-                        ru: Наманганская область
-                        uz-lat: Namangan viloyati
-                        uz-kir: Наманган вилояти
-                    regions:
-                        - key: namangan_obl1
-                          user-pick-able: true
-                          name:
-                              ru: Чартак
-                              uz-lat: Chortoq
-                              uz-kir: Чортоқ
-                              lat: 41.0713293
-                              lng: 71.7894309
-                              z = 13
-                    regions:
-                        - key: namangan_obl2
-                          user-pick-able: true
-                          name:
-                              ru: Чуст
-                              uz-lat: Chust
-                              uz-kir: Чуст
-                              lat: 41.0418096
-                              lng: 71.0354417
-                              z = 11
-                    regions:
-                        - key: namangan_obl3
-                          user-pick-able: true
-                          name:
-                              ru: Джумашуй
-                              uz-lat: Jomashoʻy
-                              uz-kir: Жомашўй
-                              lat: 40.9139742
-                              lng: 72.0934866
-                              z = 14
-                    regions:
-                        - key: namangan_obl4
-                          user-pick-able: true
-                          name:
-                              ru: Касансай
-                              uz-lat: Kosonsoy
-                              uz-kir: Касансай
-                              lat: 40.9139742
-                              lng: 72.0934866
-                              z = 14
-                    regions:
-                        - key: namangan_obl5
-                          user-pick-able: true
-                          name:
-                              ru: Ташбулак
-                              uz-lat: Toshbuloq
-                              uz-kir: Тошбулоқ
-                              lat: 40.766947
-                              lng: 71.2239809
-                              z = 10
-
-                    regions:
-                        - key: namangan_obl6
-                          user-pick-able: true
-                          name:
-                              ru: Хаккулабад
-                              uz-lat: Xaqqulobod
-                              uz-kir: Хаққулобод
-                              lat: 40.9139742
-                              lng: 72.0934866
-                              z = 14
-                    regions:
-                        - key: namangan_obl7
-                          user-pick-able: true
-                          name:
-                              ru: Наманган
-                              uz-lat: Namangan
-                              uz-kir: Наманган
-                              lat: 40.9706421
-                              lng: 71.5045366
-                              z = 11
-                    regions:
-                        - key: namangan_obl8
-                          user-pick-able: true
-                          name:
-                              ru: Пап
-                              uz-lat: Pop
-                              uz-kir: Поп
-                              lat: 41.0929658
-                              lng: 70.3018672
-                              z = 9
-                    regions:
-                        - key: namangan_obl9
-                          user-pick-able: true
-                          name:
-                              ru: Туракурган
-                              uz-lat: To'raqo'rg'on
-                              uz-kir: Тўракўрғон
-                              lat: 40.9996975
-                              lng: 71.3022034
-                              z = 11
-                    regions:
-                        - key: namangan_obl10
-                          user-pick-able: true
-                          name:
-                              ru: Учкурган
-                              uz-lat: Uchqo'rg'on
-                              uz-kir: Учқўрғон
-                              lat: 41.1211605
-                              lng: 72.057008
-                              z = 13
-
-
-                - key: navoi_obl
-                    user-pick-able: false
-                    name:
-                        ru: Навоийская область
-                        uz-lat: Navoiy viloyati
-                        uz-kir: Навоий вилояти
-                    regions:
-                        - key: navoi_obl1
-                          user-pick-able: true
-                          name:
-                              ru: Бешрабат
-                              uz-lat: Beshrobot
-                              uz-kir: Бешработ
-
-                    regions:
-                        - key: navoi_obl2
-                          user-pick-able: true
-                          name:
-                              ru: Канимех
-                              uz-lat: Konimex
-                              uz-kir: Канимех
-                              lat: 40.2744475
-                              lng: 65.1225326
-                              z = 14
-                    regions:
-                        - key: navoi_obl3
-                          user-pick-able: true
-                          name:
-                              ru: Навои
-                              uz-lat: Navoiy
-                              uz-kir: Навоий
-                              lat: 40.0980699
-                              lng: 65.336594
-                              z = 13
-                    regions:
-                        - key: navoi_obl4
-                          user-pick-able: true
-                          name:
-                              ru: Кармана
-                              uz-lat: Karmana
-                              uz-kir: Кармана
-                              lat: 40.1401145
-                              lng: 65.3323561
-                              z = 13
-                    regions:
-                        - key: navoi_obl5
-                          user-pick-able: true
-                          name:
-                              ru: Янгирабат
-                              uz-lat: Yangirobot
-                              uz-kir: Янгиробот
-                              lat: 40.0343476
-                              lng: 65.9487174
-                              z = 14
-                    regions:
-                        - key: navoi_obl6
-                          user-pick-able: true
-                          name:
-                              ru: Нурата
-                              uz-lat: Nurota
-                              uz-kir:
-                              lat: 40.5646522
-                              lng: 65.6831787
-                              z = 14
-                    regions:
-                        - key: navoi_obl7
-                          user-pick-able: true
-                          name:
-                              ru: Кызылтепа
-                              uz-lat: Qiziltepa
-                              uz-kir: Қизилтепа
-                              lat: 40.0575347
-                              lng: 64.7923844
-                              z = 13
-                    regions:
-                        - key: navoi_obl8
-                          user-pick-able: true
-                          name:
-                              ru: Зарафшан
-                              uz-lat: Zarafshon
-                              uz-kir: Зарафшон
-                              lat: 41.5742784
-                              lng: 64.156894
-                              z = 13
-                    regions:
-                        - key: navoi_obl9
-                          user-pick-able: true
-                          name:
-                              ru: Тамдыбулак
-                              uz-lat: Tomdibuloq
-                              uz-kir: Томдибулоқ
-                              lat: 41.7548871
-                              lng: 64.6111964
-                              z = 14
-                    regions:
-                        - key: navoi_obl10
-                          user-pick-able: true
-                          name:
-                              ru: Учкудук
-                              uz-lat: Uchquduq
-                              uz-kir: Учкқудук
-                              lat: 42.1526794
-                              lng: 63.539128
-                              z = 14
-
-
-
-                                      
-                - key: karshi_obl
-                    user-pick-able: false
-                    name:
-                        ru: Кашкадарьинская область
-                        uz-lat: Qashqadaryo viloyati
-                        uz-kir: Қашқадарё вилояти
-                    regions:
-                        - key: karshi_obl1
-                          user-pick-able: true
-                          name:
-                              ru: Бешкент
-                              uz-lat: Beshkent
-                              uz-kir: Бешкент
-                              lat: 38.8137664
-                              lng: 65.6157152
-                              z = 13
-                    regions:
-                        - key: karshi_obl2
-                          user-pick-able: true
-                          name:
-                              ru: Камаши
-                              uz-lat: Qamashi
-                              uz-kir: Қамаши
-                              lat: 38.8109788
-                              lng: 66.4490884
-                              z = 13
-                    regions:
-                        - key: karshi_obl3
-                          user-pick-able: true
-                          name:
-                              ru: Карашина
-                              uz-lat: Karashina
-                              uz-kir: Карашина
-                              lat: 38.3392087
-                              lng: 66.5507341
-                              z = 15
-                    regions:
-                        - key: karshi_obl4
-                          user-pick-able: true
-                          name:
-                              ru: Дехканабад
-                              uz-lat: Dehqonobod
-                              uz-kir: Деҳқонобод
-                              lat: 38.3537398
-                              lng: 66.4375656
-                              z = 13
-                    regions:
-                        - key: karshi_obl5
-                          user-pick-able: true
-                          name:
-                              ru: Гузар
-                              uz-lat: G'uzor
-                              uz-kir: Ғузор
-                              lat: 38.5972436
-                              lng: 66.1834927
-                              z = 12
-                    regions:
-                        - key: karshi_obl6
-                          user-pick-able: true
-                          name:
-                              ru: Чиракчи
-                              uz-lat: Chiroqchi
-                              uz-kir: Чироқчи
-                              lat: 39.0382681
-                              lng: 66.5524715
-                              z = 13
-                    regions:
-                        - key: karshi_obl7
-                          user-pick-able: true
-                          name:
-                              ru: Янги-Нишан
-                              uz-lat: Yangi-Nishon
-                              uz-kir: Янги-Нишон
-                              lat: 38.6356341
-                              lng: 65.6572187
-                              z = 13
-                    regions:
-                        - key: karshi_obl8
-                          user-pick-able: true
-                          name:
-                              ru: Мубарек
-                              uz-lat: Muborak
-                              uz-kir: Муборак
-                              lat: 39.2487375
-                              lng: 65.1083701
-                              z = 13
-                    regions:
-                        - key: karshi_obl9
-                          user-pick-able: true
-                          name:
-                              ru: Карши
-                              uz-lat: Qarshi
-                              uz-kir: Қарши
-                              lat: 38.8583673
-                              lng: 65.7217571
-                              z = 12
-                    regions:
-                        - key: karshi_obl10
-                          user-pick-able: true
-                          name:
-                              ru: Талимарджан
-                              uz-lat: Talimarjon
-                              uz-kir: Талимаржон
-                              lat: 38.2896472
-                              lng: 65.5302929
-                              z = 14
-                    regions:
-                        - key: karshi_obl11
-                          user-pick-able: true
-                          name:
-                              ru: Касан
-                              uz-lat: Koson
-                              uz-kir: Косон
-                              lat: 39.0278407
-                              lng: 65.5256575
-                              z = 12
-                    regions:
-                        - key: karshi_obl12
-                          user-pick-able: true
-                          name:
-                              ru: Касби
-                              uz-lat: Kasbi
-                              uz-kir: Касби
-                              lat: 38.9102986
-                              lng: 65.1550636
-                              z = 10
-                    regions:
-                        - key: karshi_obl13
-                          user-pick-able: true
-                          name:
-                              ru: Китаб
-                              uz-lat: Kitob
-                              uz-kir: Китоб
-                              lat: 39.1262751
-                              lng: 66.8441671
-                              z = 13
-                    regions:
-                        - key: karshi_obl14
-                          user-pick-able: true
-                          name:
-                              ru:  Шахрисабз
-                              uz-lat:  Shahrisabz
-                              uz-kir:  Шахрисабз
-                              lat: 39.0530583
-                              lng: 66.7962735
-                              z = 13
-                    regions:
-                        - key: karshi_obl15
-                          user-pick-able: true
-                          name:
-                              ru:  Янги Миришкор
-                              uz-lat:  Yangi Mirishkor
-                              uz-kir:  Янги Миришкор
-                              lat: 38.847577
-                              lng: 65.2618359
-                              z = 14
-                    regions:
-                        - key: karshi_obl16
-                          user-pick-able: true
-                          name:
-                              ru:  Яккабаг
-                              uz-lat:  Yakkabog'
-                              uz-kir:  Яккабоғ
-                              lat: 38.9770853
-                              lng: 66.6552915
-                              z = 13
-                    regions:
-                        - key: karshi_obl17
-                          user-pick-able: true
-                          name:
-                              ru: Муглан
-                              uz-lat: Mugʻlon
-                              uz-kir: Муғлон
-                              lat: 38.9231242
-                              lng: 65.3940088
-                              z = 14
-
-
-                - key: karakalpak
-                    user-pick-able: false
-                    name:
-                        ru: Каракалпакстан
-                        uz-lat: Qoraqalpog'iston
-                        uz-kir: Қорақалпоғистон
-                    regions:
-                        - key: karakalpak1
-                          user-pick-able: true
-                          name:
-                              ru: Акмангит
-                              uz-lat: Oqmangʻit
-                              uz-kir: Оқманғит
-                              lat: 42.5890022
-                              lng: 59.5122951
-                              z = 13
-                    regions:
-                        - key: karakalpak2
-                          user-pick-able: true
-                          name:
-                              ru: Канлыкуль
-                              uz-lat: Qanlikoʻl
-                              uz-kir: Қанликўл
-                              lat: 42.8326391
-                              lng: 58.9867542
-                              z = 14
-
-                    regions:
-                        - key: karakalpak3
-                          user-pick-able: true
-                          name:
-                              ru: Ходжейли
-                              uz-lat: Xo'jayli
-                              uz-kir: Хўджайли
-                              lat: 42.416473
-                              lng: 59.4154994
-                              z = 13
-
-                    regions:
-                        - key: karakalpak4
-                          user-pick-able: true
-                          name:
-                              ru: Тахтакупыр
-                              uz-lat: Taxtakoʻpir
-                              uz-kir: Тахтакўпир
-                              lat: 43.019029
-                              lng: 60.2666611
-                              z = 13
-                    regions:
-                        - key: karakalpak5
-                          user-pick-able: true
-                          name:
-                              ru: Турткуль
-                              uz-lat: To'rtko'l
-                              uz-kir: Тўрткўл
-                              lat: 41.550606
-                              lng: 60.9628765
-                              z = 13
-                    regions:
-                        - key: karakalpak6
-                          user-pick-able: true
-                          name:
-                              ru: Тахиаташ
-                              uz-lat: Taxiatosh
-                              uz-kir: Тахиатош
-                              lat: 42.6367977
-                              lng:58.9124677
-                              z = 14
-                    regions:
-                        - key: karakalpak7
-                          user-pick-able: true
-                          name:
-                              ru: Шуманай
-                              uz-lat: Shumanay
-                              uz-kir: Шуманай
-                              lat: 40.7955804
-                              lng: 66.3803826
-                              z = 9
-                    regions:
-                        - key: karakalpak8
-                          user-pick-able: true
-                          name:
-                              ru: Муйнак
-                              uz-lat: Mo'ynoq
-                              uz-kir: Муйнок
-                              lat: 43.7710092
-                              lng: 58.9882988
-                              z = 13
-
-
-                    regions:
-                        - key: karakalpak9
-                          user-pick-able: true
-                          name:
-                              ru: Нукус
-                              uz-lat: Nukus
-                              uz-kir: Нукус
-                              lat: 42.4715434
-                              lng: 59.463744
-                              z = 11
-
-                    regions:
-                        - key: karakalpak10
-                          user-pick-able: true
-                          name:
-                              ru: Мангит
-                              uz-lat: Mang'it
-                              uz-kir: Манғит
-                              lat: 42.1024495
-                              lng: 60.0326223
-                              z = 13
-
-                    regions:
-                        - key: karakalpak11
-                          user-pick-able: true
-                          name:
-                              ru: Кунград
-                              uz-lat: Qo'ng'irot
-                              uz-kir: Қунғирот
-                              lat: 43.0555205
-                              lng: 58.837108
-                              z = 13
-
-                    regions:
-                        - key: karakalpak12
-                          user-pick-able: true
-                          name:
-                              ru: Кегейли
-                              uz-lat: Kegeyli
-                              uz-kir: Кегейли
-                              lat: 42.7759115
-                              lng: 59.5926444
-                              z = 14
-                    regions:
-                        - key: karakalpak13
-                          user-pick-able: true
-                          name:
-                              ru: Чимбай
-                              uz-lat: Chimboy
-                              uz-kir: Чимбой
-                              lat: 42.9366355
-                              lng: 59.7412454
-                              z = 13
-                    regions:
-                        - key: karakalpak14
-                          user-pick-able: true
-                          name:
-                              ru: Бустан
-                              uz-lat: Bo'ston
-                              uz-kir: Бўстон
-                              lat: 41.7147502
-                              lng: 60.8431857
-                              z = 13
-                    regions:
-                        - key: karakalpak15
-                          user-pick-able: true
-                          name:
-                              ru: Караузяк
-                              uz-lat: Qoraoʻzak
-                              uz-kir: Караўзак
-                              lat: 43.0189386
-                              lng: 59.981746
-                              z = 13
-                    regions:
-                        - key: karakalpak16
-                          user-pick-able: true
-                          name:
-                              ru: Беруни
-                              uz-lat: Beruniy
-                              uz-kir: Беруний
-                              lat: 41.6812546
-                              lng: 60.6856845
-                              z = 12
-
-
-
-
-
-                - key: jizzax_obl
-                    user-pick-able: false
-                    name:
-                        ru: Джизакская область
-                        uz-lat: Jizzax viloyati
-                        uz-kir: Жиззах вилояти
-                    regions:
-                        - key: jizzax_obl1
-                          user-pick-able: true
-                          name:
-                              ru: Айдаркуль
-                              uz-lat: Aydarko'l
-                              uz-kir: Айдаркўл
-                              lat: 40.7955804
-                              lng: 66.3803826
-                              z = 9
-                    regions:
-                        - key: jizzax_obl2
-                          user-pick-able: true
-                          name:
-                              ru: Баландчакир
-                              uz-lat: Balandchaqir
-                              uz-kir: Баландчақир
-                              lat: 39.9128926
-                              lng: 68.7759802
-                              z = 14
-                    regions:
-                        - key: jizzax_obl3
-                          user-pick-able: true
-                          name:
-                              ru: Даштобод
-                              uz-lat: Dashtobod
-                              uz-kir: Даштобод
-                              lat: 40.1290474
-                              lng: 68.4706914
-                              z = 14
-                    regions:
-                        - key: jizzax_obl4
-                          user-pick-able: true
-                          name:
-                              ru: Учтепа
-                              uz-lat: Uchtepa
-                              uz-kir: Учтепа
-                              lat: 40.2058327
-                              lng: 67.8883622
-                              z = 14
-                    regions:
-                        - key: jizzax_obl5
-                          user-pick-able: true
-                          name:
-                              ru: Дустлик
-                              uz-lat: Do'stlik
-                              uz-kir: Дўстлик
-                              lat: 40.5234031
-                              lng: 68.0154775
-                              z = 14
-
-
-                    regions:
-                        - key: jizzax_obl6
-                          user-pick-able: true
-                          name:
-                              ru: Гагарин
-                              uz-lat: Gagarin
-                              uz-kir: Гагарин
-                              lat: 40.6617888
-                              lng: 68.1365139
-                              z = 14
-                    regions:
-                        - key: jizzax_obl7
-                          user-pick-able: true
-                          name:
-                              ru: Джизак
-                              uz-lat: Jizzax
-                              uz-kir: Джизах
-                              lat: 40.1189145
-                              lng: 67.7843545
-                              z = 12
-                    regions:
-                        - key: jizzax_obl8
-                          user-pick-able: true
-                          name:
-                              ru: Янгикишлак
-                              uz-lat: Yangiqishloq
-                              uz-kir: Янгикишлоқ
-                              lat: 40.403191
-                              lng: 67.1312493
-                              z = 13
-
-                    regions:
-                        - key: jizzax_obl9
-                          user-pick-able: true
-                          name:
-                              ru: Зарбдар
-                              uz-lat: Zarbdor
-                              uz-kir: Зарбдор
-                              lat: 40.0938196
-                              lng: 68.1354039
-                              z = 13
-
-                    regions:
-                        - key: jizzax_obl10
-                          user-pick-able: true
-                          name:
-                              ru: Галлаарал
-                              uz-lat: G'allaorol
-                              uz-kir: Ғаллаорол
-                              lat: 40.0278655
-                              lng: 67.571942
-                              z = 14
-
-                    regions:
-                        - key: jizzax_obl11
-                          user-pick-able: true
-                          name:
-                              ru: Зафарабад
-                              uz-lat: Zafarobod
-                              uz-kir: Зафаробод
-                              lat: 40.3250328
-                              lng: 67.8554033
-                              z = 14
-
-                    regions:
-                        - key: jizzax_obl12
-                          user-pick-able: true
-                          name:
-                              ru: Пахтакор
-                              uz-lat: Paxtakor
-                              uz-kir: Пахтакор
-                              lat: 40.3168387
-                              lng: 667.9293888
-                              z = 13
-                    regions:
-                        - key: jizzax_obl13
-                          user-pick-able: true
-                          name:
-                              ru: Марджанбулак
-                              uz-lat: Marjonbuloq
-                              uz-kir: Маржонбулоқ
-                              lat: 39.9365412
-                              lng: 67.4009297
-                              z = 14
-                    regions:
-                        - key: jizzax_obl14
-                          user-pick-able: true
-                          name:
-                              ru: Голиблар
-                              uz-lat: Gʻoliblar
-                              uz-kir: Ғолиблар
-                              lat: 40.4947724
-                              lng: 67.8571989
-                              z = 14
-                    regions:
-                        - key: jizzax_obl15
-                          user-pick-able: true
-                          name:
-                              ru: Усмат
-                              uz-lat: Oʻsmat
-                              uz-kir: Ўсмат
-                              lat: 39.7398159
-                              lng: 67.6099055
-                              z = 13
-                    regions:
-                        - key: jizzax_obl16
-                          user-pick-able: true
-                          name:
-                              ru: Заамин
-                              uz-lat: Zomin
-                              uz-kir: Зомин
-
-                              lat: 39.9669561
-                              lng: 68.3740893
-                              z = 14
-
-
-                - key: buxara_obl
-                    user-pick-able: false
-                    name:
-                        ru: Бухарская область
-                        uz-lat: Buxoro viloyati
-                        uz-kir: Бухоро вилояти
-                    regions:
-                        - key: buxara_obl1
-                          user-pick-able: true
-                          name:
-                              ru: Алат
-                              uz-lat: Olot
-                              uz-kir: Олот
-                              lat: 39.2619674
-                              lng: 63.8263409
-                              z = 10
-                    regions:
-                        - key: buxara_obl2
-                          user-pick-able: true
-                          name:
-                              ru: Бухара
-                              uz-lat: Buxoro
-                              uz-kir: Бухоро
-                              lat: 39.6372
-                              lng: 64.0634941
-                              z= 10
-                    regions:
-                        - key: buxara_obl3
-                          user-pick-able: true
-                          name:
-                              ru: Газли
-                              uz-lat: Gazli
-                              uz-kir: Ғазли
-                              lat: 40.1304038
-                              lng: 63.4396503
-                              z= 14
-                    regions:
-                        - key: buxara_obl4
-                          user-pick-able: true
-                          name:
-                              ru: Каган
-                              uz-lat: Kogon
-                              uz-kir: Қогон
-                              lat: 39.7221659
-                              lng: 64.5161384
-                              z= 13
-                    regions:
-                        - key: buxara_obl5
-                          user-pick-able: true
-                          name:
-                              ru: Гиждуван
-                              uz-lat: G'ijduvon
-                              uz-kir: Ғиждувон
-                              lat: 40.0881447
-                              lng: 64.5793508
-                              z = 12
-                    regions:
-                        - key: buxara_obl6
-                          user-pick-able: true
-                          name:
-                              ru: Каракуль
-                              uz-lat: Qorako'l
-                              uz-kir: Коракўл
-                              lat: 39.4959567
-                              lng: 63.8479652
-                              z= 15
-                    regions:
-                        - key: buxara_obl7
-                          user-pick-able: true
-                          name:
-                              ru: Ромитан
-                              uz-lat: Romitan
-                              uz-kir: Ромитан
-                              lat: 39.9373063
-                              lng: 64.3435758
-                              z= 13
-                    regions:
-                        - key: buxara_obl8
-                          user-pick-able: true
-                          name:
-                              ru: Караулбазар
-                              uz-lat: Qorovulbozor
-                              uz-kir: Қороулбозор
-                              lat: 39.4937859
-                              lng: 64.7465508
-                              z= 13
-                    regions:
-                        - key: buxara_obl9
-                          user-pick-able: true
-                          name:
-                              ru: Шафиркан
-                              uz-lat: Shofirkon
-                              uz-kir: Шофиркон
-                              lat: 40.1253421
-                              lng: 64.4488901
-                              z= 13
-                    regions:
-                        - key: buxara_obl10
-                          user-pick-able: true
-                          name:
-                              ru: Вабкент
-                              uz-lat: Vobkent
-                              uz-kir: Вобкент
-                              lat: 40.0276193
-                              lng: 64.4863551
-                              z= 13
-                    regions:
-                        - key: buxara_obl11
-                          user-pick-able: true
-                          name:
-                              ru: Жондор
-                              uz-lat: Jondor
-                              uz-kir: Жондор
-                              lat: 39.7441686,64
-                              lng: 64.1564654
-                              z= 14
-                    regions:
-                        - key: buxara_obl12
-                          user-pick-able: true
-                          name:
-                              ru: Галаасия
-                              uz-lat: Galaosiyo
-                              uz-kir: Галаосиё
-                              lat: 39.8585925
-                              lng: 64.4334195
-                              z= 14
-
-                - key: andijan_obl
-                    user-pick-able: false
-                    name:
-                        ru: Андижанская область
-                        uz-lat: Andijon viloyati
-                        uz-kir: Андижон вилояти
-                    regions:
-                        - key: andijan_obl1
-                          user-pick-able: true
-                          name:
-                              ru: Акалтын
-                              uz-lat: Oqoltin
-                              uz-kir: Оқолтин
-                              lat: 40.4997514
-                              lng: 68.3349936
-                              z= 11
-                    regions:
-                        - key: andijan_obl2
-                          user-pick-able: true
-                          name:
-                              ru: Алтынкуль
-                              uz-lat: Oltinkoʻl
-                              uz-kir: Олтинкўл
-                              lat: 40.797344
-                              lng: 72.1487401
-                              z= 14
-                    regions:
-                        - key: andijan_obl3
-                          user-pick-able: true
-                          name:
-                              ru: Ахунбабаев
-                              uz-lat: Oxunboboyev
-                              uz-kir: Охунбобоев
-                              lat: 123.234234
-                              lng: 62.23423
-                              z= 11
-                    regions:
-                        - key: andijan_obl4
-                          user-pick-able: true
-                          name:
-                              ru: Боз
-                              uz-lat: Boʻz
-                              uz-kir: Бўз
-                              lat: 40.7100534
-                              lng: 72.6005738
-                              z= 13
-                    regions:
-                        - key: andijan_obl5
-                          user-pick-able: true
-                          name:
-                              ru: Балыкчи
-                              uz-lat: Baliqchi
-                              uz-kir: Балиқчи
-                              lat: 40.8488861
-                              lng: 71.8362653
-                              z= 11
-                    regions:
-                        - key: andijan_obl6
-                          user-pick-able: true
-                          name:
-                              ru: Карасу
-                              uz-lat: Qorasuv
-                              uz-kir: Қорасув
-                              lat: 40.729245
-                              lng: 72.869265
-                              z= 11
-                    regions:
-                        - key: andijan_obl7
-                          user-pick-able: true
-                          name:
-                              ru: Булакбаши
-                              uz-lat: Buloqboshi
-                              uz-kir: Булоқбоши
-                              lat: 40.6196466
-                              lng: 72.3850511
-                              z= 12
-                    regions:
-                        - key: andijan_obl8
-                          user-pick-able: true
-                          name:
-                              ru: Куйганъяр
-                              uz-lat: Kuyganyor
-                              uz-kir: Куйганёр
-                              lat: 40.8611067
-                              lng: 72.3020417
-                              z= 15
-                    regions:
-                        - key: andijan_obl9
-                          user-pick-able: true
-                          name:
-                              ru: Кургантепа
-                              uz-lat: Qo'rg'ontepa
-                              uz-kir: Қўрғонтепа
-                              lat: 40.7328257
-                              lng: 72.7217452
-                              z= 13
-                    regions:
-                        - key: andijan_obl10
-                          user-pick-able: true
-                          name:
-                              ru: Мархамат
-                              uz-lat: Marhamat
-                              uz-kir: Марҳамат
-                              lat: 40.5000155
-                              lng: 72.3079122
-                              z= 15
-                    regions:
-                        - key: andijan_obl11
-                          user-pick-able: true
-                          name:
-                              ru: Пайтуг
-                              uz-lat: Poytug'
-                              uz-kir: Пайтуғ
-                              lat: 40.8947357
-                              lng: 72.2155374
-                              z= 13
-                    regions:
-                        - key: andijan_obl12
-                          user-pick-able: true
-                          name:
-                              ru: Пахтаабад
-                              uz-lat: Paxtaobod
-                              uz-kir: Пахтаобод
-                              lat: 40.973449
-                              lng: 72.2852437
-                              z= 11
-                    regions:
-                        - key: andijan_obl13
-                          user-pick-able: true
-                          name:
-                              ru: Шахрихан
-                              uz-lat: Shahrixon
-                              uz-kir: Шаҳрихон
-                              lat: 40.6934251
-                              lng: 71.8888722
-                              z= 11
-                    regions:
-                        - key: andijan_obl14
-                          user-pick-able: true
-                          name:
-                              ru: Ханабад
-                              uz-lat: Xonobod
-                              uz-kir: Хонобод
-                              lat: 40.8048725
-                              lng: 72.9732083
-                              z= 14
-                    regions:
-                        - key: andijan_obl15
-                          user-pick-able: true
-                          name:
-                              ru: Ходжаабад
-                              uz-lat: Xo'jaobod
-                              uz-kir: Хўжаобод
-                              lat: 40.6591578
-                              lng: 72.541694
-                              z= 13
-                    regions:
-                        - key: andijan_obl16
-                          user-pick-able: true
-                          name:
-                              ru: Асака
-                              uz-lat: Asaka
-                              uz-kir: Асака
-                              lat: 40.6601935
-                              lng: 72.1986288
-                              z= 13
-                    regions:
-                        - key: andijan_obl17
-                          user-pick-able: true
-                          name:
-                              ru: Андижан
-                              uz-lat: Andijon
-                              uz-kir: Андижон
-                              lat: 40.7795396
-                              lng: 72.1795595
-                              z= 11
+  regions:
+    - key: uzb
+      user-pick-able: false
+      name:
+        ru: Узбекистан
+        uz-lat: O'zbekiston
+        uz-kir: Ўзбекистон
+      regions:
+        - key: tashkent
+          user-pick-able: false
+          name:
+            ru: город Ташкент
+            uz-lat: Toshkent shahri
+            uz-kir: Тoшкент шахри
+          regions:
+            - key: sergeli_rayon
+              user-pick-able: true
+              name:
+                ru: Сергелийский район
+                uz-lat: Sirg'ali tumani
+                uz-kir: Сирғали тумани
+                lat: 41.2225654
+                lng: 69.1707831
+                z: 12
+            - key: mirzo-ulugbek_rayon
+              user-pick-able: true
+              name:
+                ru: Мирзо-Улугбекский район
+                uz-lat: Mirzo-Ulugbek tumani
+                uz-kir: Мирзо-Улуғбек тумани
+                lat: 41.336176
+                lng: 69.3108534
+                z: 13
+            - key: mirobod_rayon
+              user-pick-able: true
+              name:
+                ru: Мирабадский район
+                uz-lat: Mirоbod tumani
+                uz-kir: Миробод тумани
+                lat: 41.2749063
+                lng: 69.2614568
+                z: 13
+            - key: bektemir_rayon
+              user-pick-able: true
+              name:
+                ru: Бектемирский район
+                uz-lat: Bektemir tumani
+                uz-kir: Бектемир тумани
+                lat: 41.2389721
+                lng: 69.296782
+                z: 13
+            - key: olmazor_rayon
+              user-pick-able: true
+              name:
+                ru: Алмазарский район
+                uz-lat: Olmazor tumani
+                uz-kir: Олмазор тумани
+                lat: 41.3602741
+                lng: 69.1824101
+                z: 13
+            - key: yashnabod_rayon
+              user-pick-able: true
+              name:
+                ru: Яшнабадский район
+                uz-lat: Yashnobod tumani
+                uz-kir: Яшнобод тумани
+                lat: 41.3602741
+                lng: 69.1824101
+                z: 13
+            - key: yunusobod_rayon
+              user-pick-able: true
+              name:
+                ru: Юнусабадский район
+                uz-lat: Yunusobod tumani
+                uz-kir: Юнусобод тумани
+                lat: 41.3539966
+                lng: 69.2159132
+                z: 12
+            - key: uchtepa_rayon
+              user-pick-able: true
+              name:
+                ru: Учтепинский район
+                uz-lat: Uchtepa tumani
+                uz-kir: Учтепа тумани
+                lat: 41.2962654
+                lng: 69.1248852
+                z: 13
+            - key: shayhontohur_rayon
+              user-pick-able: true
+              name:
+                ru: Шайхантахурский район
+                uz-lat: Shayhontohur tumani
+                uz-kir: Шайхонтохур тумани
+                lat: 41.3246868
+                lng: 69.1830957
+                z: 13
+            - key: chilonzor_rayon
+              user-pick-able: true
+              name:
+                ru: Чиланзарский район
+                uz-lat: Chilonzor tumani
+                uz-kir: Чилонзор тумани
+                lat: 41.2699782
+                lng: 69.1343404
+                z: 12
+            - key: yakkasaroy_rayon
+              user-pick-able: true
+              name:
+                ru: Яккасарайский район
+                uz-lat: Yakkasaroy tumani
+                uz-kir: Яккасарой тумани
+                lat: 41.2822373
+                lng: 69.2084593
+                z: 13
+
+
+        - key: taskent_obl
+          user-pick-able: false
+          name:
+            ru: Ташкентская область
+            uz-lat: Toshkent viloyati
+            uz-kir: Тошкент вилояти
+          regions:
+            - key: oqqorgon_tumani
+              user-pick-able: true
+              name:
+                ru: Аккурганский район
+                uz-lat: Oqqo'rg'on tumani
+                uz-kir: Оққурғон тумани
+                lat: 40.8792281
+                lng: 69.0288482
+                z: 14
+            - key: ohangaron_tumani
+              user-pick-able: true
+              name:
+                ru: Ахангаранский район
+                uz-lat: Ohangaron tumani
+                uz-kir: Охангарон тумани
+                lat: 40.9149268
+                lng: 69.5959423
+                z: 13
+
+            - key: bekobod_tumani
+              user-pick-able: true
+              name:
+                ru: Бекабадский район
+                uz-lat: Bekobod tumani
+                uz-kir: Бекобод тумани
+                lat: 40.4524886
+                lng: 68.9251775
+                z: 10
+
+            - key: bostonliq_tumani
+              user-pick-able: true
+              name:
+                ru: Бостанлыкский район
+                uz-lat: Bo'stonliq tumani
+                uz-kir: Бўстонлиқ тумани
+                lat: 41.7584391
+                lng: 69.8649907
+                z: 9
+
+            - key: boka_tumani
+              user-pick-able: true
+              name:
+                ru: Букинский район
+                uz-lat: Bo'ka tumani
+                uz-kir: Бўка тумани
+                lat: 40.7315193
+                lng: 69.0187637
+                z: 11
+            - key: zangiota_tumani
+              user-pick-able: true
+              name:
+                ru: Зангиатинский район
+                uz-lat: Zangiota tumani
+                uz-kir: Зангиата тумани
+                lat: 41.1982421
+                lng: 69.144371
+                z: 14
+            - key: chinoz_tumani
+              user-pick-able: true
+              name:
+                ru: Чиназ
+                uz-lat: Chinoz
+                uz-kir: Чиноз
+                lat: 40.9473707
+                lng: 68.726949
+                z: 13
+
+            - key: parkent_tumani
+              user-pick-able: true
+              name:
+                ru: Паркентский район
+                uz-lat: Parkent tumani
+                uz-kir: Паркент тумани
+                lat: 41.2915635
+                lng: 69.6374196
+                z: 13
+            - key: pskent_tumani
+              user-pick-able: true
+              name:
+                ru: Пскентский район
+                uz-lat: Pskent tumani
+                uz-kir: Пскент тумани
+                lat: 40.8925562
+                lng: 69.3072503
+                z: 13
+            - key: olmaliq_tumani
+              user-pick-able: true
+              name:
+                ru: Алмалык
+                uz-lat: Olmaliq
+                uz-kir: Олмалиқ
+                lat: 40.8925562
+                lng: 69.3072503
+                z: 13
+            - key: angren_tumani
+              user-pick-able: true
+              name:
+                ru: Ангрен
+                uz-lat: Angren
+                uz-kir: Ангрен
+                lat: 41.0160677
+                lng: 70.0088284
+                z: 12
+            - key: bekobod_tumani
+              user-pick-able: true
+              name:
+                ru: Бекабад
+                uz-lat: Bekobod
+                uz-kir: Бекобод
+                lat: 40.2225229
+                lng: 69.2166775
+                z: 13
+
+            - key: nurafshon_tumani
+              user-pick-able: true
+              name:
+                ru: Нурафшан
+                uz-lat: Nurafshon
+                uz-kir: Нурафшон
+                lat: 41.0374635
+                lng: 69.3208545
+                z: 13
+            - key: chirchiq_tumani
+              user-pick-able: true
+              name:
+                ru: Чирчик
+                uz-lat: Chirchiq
+                uz-kir: Чирчик
+                lat: 41.4650213
+                lng: 69.4987796
+                z: 12
+            - key: dostobod_tumani
+              user-pick-able: true
+              name:
+                ru: Дустабад
+                uz-lat: Do'stobod
+                uz-kir: Дўстобод
+                lat: 40.8527569
+                lng: 68.9239126
+                z: 14
+            - key: eshonguzar_tumani
+              user-pick-able: true
+              name:
+                ru: Эшангузар
+                uz-lat: Eshonguzar
+                uz-kir: Эшонгузар
+                lat: 41.2519805
+                lng: 69.1452811
+                z: 15
+
+            - key: durmon_tumani
+              user-pick-able: true
+              name:
+                ru: Дурмон
+                uz-lat: Durmon
+                uz-kir: Дурмон
+                lat: 41.336544
+                lng: 69.3401029
+                z: 17
+
+            - key: soqoq_tumani
+              user-pick-able: true
+              name:
+                ru: Cукок
+                uz-lat: So'qoq
+                uz-kir: Сўқоқ
+                lat: 41.2529661
+                lng: 69.7591065
+                z: 14
+            - key: gazalkent_tumani
+              user-pick-able: true
+              name:
+                ru: Газалкент
+                uz-lat: G'azalkent
+                uz-kir: Ғазалкент
+                lat: 41.5613698
+                lng: 69.7619175
+                z: 14
+            - key: chimyon_tumani
+              user-pick-able: true
+              name:
+                ru: Большой Чимган
+                uz-lat: Katta Chimyon
+                uz-kir: Катта Чимён
+                lat: 41.4951416
+                lng: 70.0491285
+                z: 15
+
+            - key: xojakent_tumani
+              user-pick-able: true
+              name:
+                ru: Ходжикент
+                uz-lat: Xo'jakent
+                uz-kir: Хўжакент
+                lat: 41.6140261
+                lng: 69.9027603
+                z: 15
+            - key: ortaovul_tumani
+              user-pick-able: true
+              name:
+                ru: Уртааул
+                uz-lat: O'rtaovul
+                uz-kir: Ўртаовул
+                lat: 41.1817262
+                lng: 69.1189597
+                z: 14
+            - key: chorvoq_tumani
+              user-pick-able: true
+              name:
+                ru: Чарвак
+                uz-lat: Chorvoq
+                uz-kir: Чорвоқ
+                lat: 41.6391427
+                lng: 69.9068003
+                z: 13
+            - key: tashmore_tumani
+              user-pick-able: true
+              name:
+                ru: Ташморе
+                uz-lat: Tashmore
+                uz-kir: Ташморе
+                lat: 40.9721672
+                lng: 69.2858547
+                z: 15
+            - key: yangibozor_tumani
+              user-pick-able: true
+              name:
+                ru: Янгибазар
+                uz-lat: Yangibozor
+                uz-kir: Янгибозор
+                lat: 41.3183954
+                lng: 69.5133518
+                z: 14
+
+            - key: yangibozor_tumani
+              user-pick-able: true
+              name:
+                ru: Назарбек
+                uz-lat: Nazarbek
+                uz-kir: Назарбек
+                lat: 41.3035759
+                lng: 69.117286
+                z: 14
+            - key: zafar_tumani
+              user-pick-able: true
+              name:
+                ru: Зафар
+                uz-lat: Zafar
+                uz-kir: Зафар
+                lat: 40.3765767
+                lng: 69.2300462
+                z: 14
+            - key: yangiyol_tumani
+              user-pick-able: true
+              name:
+                ru: Янгиюль
+                uz-lat: Yangiyo'l
+                uz-kir: Янгиюль
+                lat: 41.1119402
+                lng: 68.9853834
+                z: 12
+            - key: mirobod_tumani
+              user-pick-able: true
+              name:
+                ru: Мирабад
+                uz-lat: Mirobod
+                uz-kir: Миробод
+                lat: 41.2749063
+                lng: 69.2614568
+                z: 13
+
+            - key: yangiobod_tumani
+              user-pick-able: true
+              name:
+                ru: Янгиабад
+                uz-lat: Yangiobod
+                uz-kir: Янгиабад
+                lat: 41.1178007
+                lng: 70.0838469
+                z: 14
+            - key: krasnogorsk_tumani
+              user-pick-able: true
+              name:
+                ru: Красногорск
+                uz-lat: Krasnogorsk
+                uz-kir: Красногорск
+                lat: 41.1497942
+                lng: 69.6365826
+                z: 13
+            - key: koksaroy_tumani
+              user-pick-able: true
+              name:
+                ru: Коксарай
+                uz-lat: Ko'ksaroy
+                uz-kir: Кўксарой
+                lat: 41.3580129
+                lng: 69.1034029
+                z: 14
+            - key: qibray_tumani
+              user-pick-able: true
+              name:
+                ru: Кибрай
+                uz-lat: Qibray
+                uz-kir: Кибрай
+                lat: 41.3868686
+                lng: 69.4420157
+                z: 14
+            - key: keles_tumani
+              user-pick-able: true
+              name:
+                ru: Келес
+                uz-lat: Keles
+                uz-kir: Келес
+                lat: 41.3959233
+                lng: 69.1875599
+                z: 14
+            - key: qorasuv_tumani
+              user-pick-able: true
+              name:
+                ru: Карасу
+                uz-lat: Qorasuv
+                uz-kir: Корасу
+                lat: 41.0785837
+                lng: 69.2961137
+                z: 13
+            - key: iskandar_tumani
+              user-pick-able: true
+              name:
+                ru: Искандар
+                uz-lat: Iskandar
+                uz-kir: Искандар
+                lat: 41.5610977
+                lng: 69.6978663
+                z: 14
+            - key: gulbahor_tumani
+              user-pick-able: true
+              name:
+                ru: Гульбахор
+                uz-lat: Gulbahor
+                uz-kir: Гулбаҳор
+                lat: 41.0359764
+                lng: 69.00463
+                z: 14
+            - key: toytepa_tumani
+              user-pick-able: true
+              name:
+                ru: Туйтепинский район
+                uz-lat: To'ytepa tumani
+                uz-kir: Тўйтепа тумани
+                lat: 41.0374635
+                lng: 69.3208545
+                z: 13
+
+
+        - key: samar_obl
+          user-pick-able: false
+          name:
+            ru: Самаркандская область
+            uz-lat: Samarqand viloyati
+            uz-kir: Самарқанд вилояти
+          regions:
+            - key: oqtosh_tumani
+              user-pick-able: true
+              name:
+                ru: Акташ
+                uz-lat: Oqtosh
+                uz-kir: Оқтош
+                lat: 39.9225707
+                lng: 65.9117888
+                z = 14
+            - key: samarqand_tumani
+              user-pick-able: true
+              name:
+                ru: Самарканд
+                uz-lat: Samarqand
+                uz-kir: Самарканд
+                lat: 39.6092961
+                lng: 66.6245712
+                z = 10
+            - key: bulungur_tumani
+              user-pick-able: true
+              name:
+                ru: Булунгур
+                uz-lat: Bulung'ur
+                uz-kir: Булунғур
+                lat: 39.7580536
+                lng: 67.2567557
+                z = 14
+            - key: chelak_tumani
+              user-pick-able: true
+              name:
+                ru: Чилек
+                uz-lat: Chelak
+                uz-kir: Челак
+                lat: 39.9153075
+                lng: 66.8445109
+                z = 14
+            - key: ishtixon_tumani
+              user-pick-able: true
+              name:
+                ru: Иштыхан
+                uz-lat: Ishtixon
+                uz-kir: Иштихон
+                lat: 39.9600592
+                lng: 66.4597748
+                z = 14
+            - key: kattaqorgon_tumani
+              user-pick-able: true
+              name:
+                ru: Каттакурган
+                uz-lat: Kattaqo'rg'on
+                uz-kir: Каттақўрғон
+                lat: 39.8975371
+                lng: 66.2240046
+                z = 13
+            - key: gozalkent_tumani
+              user-pick-able: true
+              name:
+                ru: Гузалкент
+                uz-lat: Go'zalkent
+                uz-kir: Гўзалкент
+                lat: 39.7574487
+                lng: 66.5653036
+                z = 14
+            - key: jomboy_tumani
+              user-pick-able: true
+              name:
+                ru: Джамбай
+                uz-lat: Jomboy
+                uz-kir: Жомбой
+                lat: 39.7035956
+                lng: 67.0773696
+                z = 14
+            - key: urgut_tumani
+              user-pick-able: true
+              name:
+                ru: Ургут
+                uz-lat: Urgut
+                uz-kir: Ургут
+                lat: 39.4073939
+                lng: 67.2246973
+                z = 13
+            - key: qoshrobod_tumani
+              user-pick-able: true
+              name:
+                ru: Кушрабад
+                uz-lat: Qoʻshrobod
+                uz-kir: Қўшробод
+                lat: 40.3588003
+                lng: 66.2492341
+                z = 10
+            - key: ziadin_tumani
+              user-pick-able: true
+              name:
+                ru: Зиадин
+                uz-lat: Ziadin
+                uz-kir: Зиадин
+                lat: 40.0302019
+                lng: 65.6316154
+                z = 13
+            - key: payariq_tumani
+              user-pick-able: true
+              name:
+                ru: Пайарык
+                uz-lat: Payariq
+                uz-kir: Паяриқ
+                lat: 39.6357407
+                lng: 66.7541022
+                z = 11
+            - key: juma_tumani
+              user-pick-able: true
+              name:
+                ru: Джума
+                uz-lat: Juma
+                uz-kir: Жума
+                lat: 39.7014124
+                lng: 66.6081756
+                z = 13
+            - key: tayloq_tumani
+              user-pick-able: true
+              name:
+                ru: Тайлак
+                uz-lat: Tayloq
+                uz-kir: Тайлоқ
+                lat: 39.5784497
+                lng: 67.0255174
+                z = 11
+            - key: payshanba_tumani
+              user-pick-able: true
+              name:
+                ru: Пайшанба
+                uz-lat: Payshanba
+                uz-kir: Пайшанба
+                lat: 40.0040773
+                lng: 66.2048362
+                z = 13
+            - key: loish_tumani
+              user-pick-able: true
+              name:
+                ru: Лаиш
+                uz-lat: Loish
+                uz-kir: Лоиш
+                lat: 39.8819527
+                lng: 66.7347227
+                z = 14
+            - key: gulobod_tumani
+              user-pick-able: true
+              name:
+                ru: Гюлабад
+                uz-lat: Gulobod
+                uz-kir: Гулобод
+                lat: 39.5816581
+                lng: 66.9569372
+                z = 14
+            - key: nurobod_tumani
+              user-pick-able: true
+              name:
+                ru: Нурабад
+                uz-lat: Nurobod
+                uz-kir: Нуробод
+                lat: 39.6076332
+                lng: 66.2468341
+                z = 13
+
+
+        - key: xorezm_obl
+          user-pick-able: false
+          name:
+            ru: Хорезмская область
+            uz-lat: Xorazm viloyati
+            uz-kir: Хоразм вилояти
+          regions:
+            - key: yangiariq_tumani
+              user-pick-able: true
+              name:
+                ru: Янгиарык
+                uz-lat: Yangiariq
+                uz-kir: Янгиариқ
+                lat: 41.3338341
+                lng: 60.440244
+                z = 11
+            - key: gurlan_tumani
+              user-pick-able: true
+              name:
+                ru: Гурлен
+                uz-lat: Gurlan
+                uz-kir: Гурлан
+                lat: 41.8427536
+                lng: 60.3595058
+                z = 13
+
+            - key: bog'ot_tumani
+              user-pick-able: true
+              name:
+                ru: Багат
+                uz-lat: Bog'ot
+                uz-kir: Боғот
+                lat: 41.3579503
+                lng: 60.7970616
+                z = 12
+
+            - key: cholish_tumani
+              user-pick-able: true
+              name:
+                ru: Чалыш
+                uz-lat: Cholish
+                uz-kir: Чолиш
+                lat: 41.6243266
+                lng: 60.6725978
+                z = 14
+
+            - key: qorovul_tumani
+              user-pick-able: true
+              name:
+                ru: Караул
+                uz-lat: Qorovul
+                uz-kir: Қоровул
+                lat: 41.5566074
+                lng: 60.5811838
+                z = 15
+
+            - key: pitnak_tumani
+              user-pick-able: true
+              name:
+                ru: Питнак
+                uz-lat: Pitnak
+                uz-kir: Питнак
+                lat: 41.207397
+                lng: 61.282038
+                z = 13
+
+            - key: shovot_tumani
+              user-pick-able: true
+              name:
+                ru: Шават
+                uz-lat: Shovot
+                uz-kir: Шовот
+                lat: 41.6534194
+                lng: 60.2601809
+                z = 13
+
+            - key: xonqa_tumani
+              user-pick-able: true
+              name:
+                ru: Ханка
+                uz-lat: Xonqa
+                uz-kir: Хонқа
+                lat: 41.4731277
+                lng: 60.7515614
+                z = 13
+
+            - key: xozarasp_tumani
+              user-pick-able: true
+              name:
+                ru: Хазарасп
+                uz-lat: Xozarasp
+                uz-kir: Хозарасп
+                lat: 41.3009564
+                lng: 61.0620969
+                z = 13
+
+            - key: urganch_tumani
+              user-pick-able: true
+              name:
+                ru: Ургенч
+                uz-lat: Urganch
+                uz-kir: Урганч
+                lat: 41.5524884
+                lng: 60.5530332
+                z = 12
+
+            - key: xiva_tumani
+              user-pick-able: true
+              name:
+                ru: Хива
+                uz-lat: Xiva
+                uz-kir: Хива
+                lat: 41.3892056
+                lng: 60.3149836
+                z = 13
+
+            - key: qoshkopir_tumani
+              user-pick-able: true
+              name:
+                ru: Кошкупыр
+                uz-lat: Qoʻshkoʻpir
+                uz-kir: Қўшкўпир
+                lat: 41.5333921
+                lng: 60.3139537
+                z = 13
+
+
+        - key: fergana_obl
+          user-pick-able: false
+          name:
+            ru: Ферганская область
+            uz-lat: Fargʻona viloyati
+            uz-kir: Фарғона вилояти
+          regions:
+            - key: oltiariq_tumani
+              user-pick-able: true
+              name:
+                ru: Алтыарык
+                uz-lat: Oltiariq
+                uz-kir: Олтиариқ
+                lat: 40.394616
+                lng: 71.4197562
+                z = 12
+            - key: yozyovon_tumani
+              user-pick-able: true
+              name:
+                ru: Язъяван
+                uz-lat: Yozyovon
+                uz-kir: Ёзёвон
+                lat: 40.6281239
+                lng: 71.4716331
+                z = 11
+            - key: yangiqorgon_tumani
+              user-pick-able: true
+              name:
+                ru: Янгикурган
+                uz-lat: Yangiqoʻrgʻon
+                uz-kir: Янгиқўрғон
+                lat: 40.3772186
+                lng: 71.4299512
+                z = 11
+            - key: margilon_tumani
+              user-pick-able: true
+              name:
+                ru: Янги Маргилан
+                uz-lat: Yangi Margʻilon
+                uz-kir: Янги Марғилон
+                lat: 40.4272811
+                lng: 71.6979788
+                z = 14
+            - key: yaypan_tumani
+              user-pick-able: true
+              name:
+                ru: yaypan_tumani
+                uz-lat: Yaypan
+                uz-kir: Яйпан
+                lat: 40.3740664
+                lng: 70.7201932
+                z = 12
+            - key: hamza_tumani
+              user-pick-able: true
+              name:
+                ru: Хамза
+                uz-lat: Hamza
+                uz-kir: Ҳамза
+                lat: 40.5558505
+                lng: 71.2588261
+                z = 15
+            - key: vodil_tumani
+              user-pick-able: true
+              name:
+                ru: Вуадиль
+                uz-lat: Vodil
+                uz-kir: Водил
+                lat: 40.17612
+                lng: 71.6925727
+                z = 13
+            - key: toshloq_tumani
+              user-pick-able: true
+              name:
+                ru: Ташлак
+                uz-lat: Toshloq
+                uz-kir: Тошлоқ
+                lat: 40.5410471
+                lng: 71.6969387
+                z = 11
+            - key: uchkopriq_tumani
+              user-pick-able: true
+              name:
+                ru: Учкуприк
+                uz-lat: Uchkoʻpriq
+                uz-kir: Учкўприқ
+                lat: 40.5112747
+                lng: 70.7597655
+                z = 10
+            - key: shohimardon_tumani
+              user-pick-able: true
+              name:
+                ru: Шахимардан
+                uz-lat: Shohimardon
+                uz-kir: Шоҳимардон
+                lat: 39.9886203
+                lng: 71.7669862
+                z = 13
+            - key: rishton_tumani
+              user-pick-able: true
+              name:
+                ru: Риштан
+                uz-lat: Rishton
+                uz-kir: Риштон
+                lat: 40.3830041
+                lng: 71.0744945
+                z = 11
+            - key: ravon_tumani
+              user-pick-able: true
+              name:
+                ru: Раван
+                uz-lat: Ravon
+                uz-kir: Равон
+                lat: 39.9643066
+                lng: 71.1226232
+                z = 15
+
+            - key: navbahor_tumani
+              user-pick-able: true
+              name:
+                ru: Навбахор
+                uz-lat: Navbahor
+                uz-kir: Навбахор
+                lat: 40.5190829
+                lng: 70.6067173
+                z = 11
+            - key: margilon_tumani
+              user-pick-able: true
+              name:
+                ru: Маргилан
+                uz-lat: Marg'ilon
+                uz-kir: Марғилон
+                lat: 40.466824
+                lng: 71.6630862
+                z = 12
+            - key: quvasoy_tumani
+              user-pick-able: true
+              name:
+                ru: Кувасай
+                uz-lat: Quvasoy
+                uz-kir: Қувасой
+                lat: 40.3028616
+                lng: 71.9335621
+                z = 13
+            - key: quva_tumani
+              user-pick-able: true
+              name:
+                ru: Кува
+                uz-lat: Quva
+                uz-kir: Қува
+                lat: 40.5023874
+                lng: 71.8826764
+                z = 11
+            - key: bogdod_tumani
+              user-pick-able: true
+              name:
+                ru: Багдад
+                uz-lat: Bogʻdod
+                uz-kir: Боғдод
+                lat: 40.4894411
+                lng: 71.0690873
+                z = 11
+            - key: dangara_tumani
+              user-pick-able: true
+              name:
+                ru: Дангара
+                uz-lat: Dangʻara
+                uz-kir: Данғара
+                lat: 40.6357228
+                lng: 70.709242
+                z = 13
+            - key: qoqon_tumani
+              user-pick-able: true
+              name:
+                ru: Коканд
+                uz-lat: Qo'qon
+                uz-kir: Қўқон
+                lat: 40.5373259
+                lng: 70.6438513
+                z = 10
+            - key: beshariq_tumani
+              user-pick-able: true
+              name:
+                ru: Бешарык
+                uz-lat: Beshariq
+                uz-kir: Бешариқ
+                lat: 40.3706517
+                lng: 70.2458543
+                z = 10
+
+
+
+        - key: sirdarya_obl
+          user-pick-able: false
+          name:
+            ru: Сырдарьинская область
+            uz-lat: Sirdaryo viloyati
+            uz-kir: Cирдарё вилояти
+          regions:
+            - key: baxt_tumani
+              user-pick-able: true
+              name:
+                ru: Бахт
+                uz-lat: Baxt
+                uz-kir: Бахт
+                lat: 40.7132747
+                lng: 68.677253
+                z = 13
+            - key: boyovut_tumani
+              user-pick-able: true
+              name:
+                ru: Баяут
+                uz-lat: Boyovut
+                uz-kir: Боёвут
+                lat: 40.276324
+                lng: 69.0016493
+                z = 14
+            - key: sirdaryo_tumani
+              user-pick-able: true
+              name:
+                ru: Cырдарья
+                uz-lat: Sirdaryo
+                uz-kir: Сирдарё
+                lat: 40.8389774
+                lng: 68.6353032
+                z = 13
+            - key: guliston_tumani
+              user-pick-able: true
+              name:
+                ru: Гулистан
+                uz-lat: Guliston
+                uz-kir: Гулистoн
+                lat: 40.4978002
+                lng: 68.7491363
+                z = 13
+            - key: navroz_tumani
+              user-pick-able: true
+              name:
+                ru: Навруз
+                uz-lat: Navroʻz
+                uz-kir: Наврўз
+                lat: 40.4908568
+                lng: 68.6242532
+                z = 14
+            - key: sayxun_tumani
+              user-pick-able: true
+              name:
+                ru: Сайхун
+                uz-lat: Sayxun
+                uz-kir: Сайхун
+                lat: 40.7096642
+                lng: 68.834451
+                z = 15
+            - key: xovost_tumani
+              user-pick-able: true
+              name:
+                ru: Хаваст
+                uz-lat: Xovost
+                uz-kir: Ховост
+                lat: 40.2097666
+                lng: 68.8285332
+                z = 15
+            - key: yangiyer_tumani
+              user-pick-able: true
+              name:
+                ru: Янгиёр
+                uz-lat: Yangiyer
+                uz-kir: Янгиёр
+                lat: 40.275822
+                lng: 68.7772611
+                z = 13
+            - key: shirin_tumani
+              user-pick-able: true
+              name:
+                ru: Ширин
+                uz-lat: Shirin
+                uz-kir: Ширин
+                lat: 40.2283316
+                lng: 69.1181658
+                z = 14
+            - key: sardoba_tumani
+              user-pick-able: true
+              name:
+                ru: Сардоба
+                uz-lat: Sardoba
+                uz-kir: Сардоба
+                lat: 40.5429581
+                lng: 68.3929608
+                z = 14
+
+
+        - key: surxan_obl
+          user-pick-able: false
+          name:
+            ru: Сурхандарьинская область
+            uz-lat: Surxondaryo viloyati
+            uz-kir: Сурхандарё вилояти
+          regions:
+            - key: angor_tumani
+              user-pick-able: true
+              name:
+                ru: Ангор
+                uz-lat: Angor
+                uz-kir: Ангор
+                lat: 37.5042852
+                lng: 67.1055712
+                z = 15
+            - key: boysun
+              user-pick-able: true
+              name:
+                ru: Байсун_tumani
+                uz-lat: Boysun
+                uz-kir: Бойсун
+                lat: 38.1933872
+                lng: 67.1726626
+                z = 13
+            - key: bandixon_tumani
+              user-pick-able: true
+              name:
+                ru: Бандихон
+                uz-lat: Bandixon
+                uz-kir: Бандихон
+                lat: 37.8647565
+                lng: 67.3555448
+                z = 13
+
+            - key: denov_tumani
+              user-pick-able: true
+              name:
+                ru: Денау
+                uz-lat: Denov
+                uz-kir: Денов
+                lat: 38.2732847
+                lng: 67.8639644
+                z = 13
+            - key: jarqorgon_tumani
+              user-pick-able: true
+              name:
+                ru: Джаркурган
+                uz-lat: Jarqo'rg'on
+                uz-kir: Жарқўрғон
+                lat: 37.5115431
+                lng: 67.3994706
+                z = 14
+            - key: shargun_tumani
+              user-pick-able: true
+              name:
+                ru: Шаргунь
+                uz-lat: Sharg'un
+                uz-kir: Шарғун
+                lat: 38.4630457
+                lng: 67.9519842
+                z = 14
+            - key: qumqorgon_tumani
+              user-pick-able: true
+              name:
+                ru: Кумкурган
+                uz-lat: Qumqo'rg'on
+                uz-kir: Қумқўрғон
+                lat: 37.8234014
+                lng: 67.5566906
+                z = 13
+            - key: muzrobod_tumani
+              user-pick-able: true
+              name:
+                ru: Музрабад
+                uz-lat: Muzrobod
+                uz-kir: Музробод
+                lat: 37.4792463
+                lng: 66.8657149
+                z = 13
+
+            - key: qiziriq_tumani
+              user-pick-able: true
+              name:
+                ru: Кизирик
+                uz-lat: Qiziriq
+                uz-kir: Қизирик
+                lat: 37.6679205
+                lng: 67.2295813
+                z = 15
+            - key: sariosiyo_tumani
+              user-pick-able: true
+              name:
+                ru: Сариасия
+                uz-lat: Sariosiyo
+                uz-kir: Сариосиё
+                lat: 38.4146903
+                lng: 67.9272436
+                z = 14
+            - key: shorchi_tumani
+              user-pick-able: true
+              name:
+                ru: Шурчи
+                uz-lat: Sho'rchi
+                uz-kir: Шўрчи
+                lat: 38.0126879
+                lng: 67.7588862
+                z = 13
+            - key: sherobod_tumani
+              user-pick-able: true
+              name:
+                ru: Шерабад
+                uz-lat: Sherobod
+                uz-kir: Шеробод
+                lat: 37.6712594
+                lng: 66.9793933
+                z = 13
+            - key:  uchqizil_tumani
+              user-pick-able: true
+              name:
+                ru: Учкызыл
+                uz-lat: Uchqizil
+                uz-kir: Учқизил
+                lat: 37.3432742
+                lng: 67.2149562
+                z = 14
+            - key: termiz_tumani
+              user-pick-able: true
+              name:
+                ru: Термез
+                uz-lat: Termiz
+                uz-kir: Термиз
+                lat: 37.247099
+                lng: 67.2449085
+                z = 12
+            - key: uzun_tumani
+              user-pick-able: true
+              name:
+                ru: Узун
+                uz-lat: Uzun
+                uz-kir: Узун
+                lat: 38.3684689
+                lng: 67.9917347
+                z = 15
+            - key: xalqobod_tumani
+              user-pick-able: true
+              name:
+                ru: Халкабад
+                uz-lat: Xalqobod
+                uz-kir: Халқобод
+                lat: 37.4616677
+                lng: 66.9173658
+                z = 15
+
+
+        - key: namangan_obl
+          user-pick-able: false
+          name:
+            ru: Наманганская область
+            uz-lat: Namangan viloyati
+            uz-kir: Наманган вилояти
+          regions:
+            - key: chortoq_tumani
+              user-pick-able: true
+              name:
+                ru: Чартак
+                uz-lat: Chortoq
+                uz-kir: Чортоқ
+                lat: 41.0713293
+                lng: 71.7894309
+                z = 13
+
+            - key: chust_tumani
+              user-pick-able: true
+              name:
+                ru: Чуст
+                uz-lat: Chust
+                uz-kir: Чуст
+                lat: 41.0418096
+                lng: 71.0354417
+                z = 11
+
+            - key: jomashoy_tumani
+              user-pick-able: true
+              name:
+                ru: Джумашуй
+                uz-lat: Jomashoʻy
+                uz-kir: Жомашўй
+                lat: 40.766947
+                lng: 71.0887117
+                z = 14
+
+            - key: kosonsoy_tumani
+              user-pick-able: true
+              name:
+                ru: Касансай
+                uz-lat: Kosonsoy
+                uz-kir: Касансай
+                lat: 41.2558843
+                lng: 71.5050355
+                z = 13
+
+            - key: toshbuloq_tumani
+              user-pick-able: true
+              name:
+                ru: Ташбулак
+                uz-lat: Toshbuloq
+                uz-kir: Тошбулоқ
+                lat: 40.9706421
+                lng: 71.5045366
+                z = 11
+
+
+            - key: xaqqulobod_tumani
+              user-pick-able: true
+              name:
+                ru: Хаккулабад
+                uz-lat: Xaqqulobod
+                uz-kir: Хаққулобод
+                lat: 40.9139742
+                lng: 72.0934866
+                z = 14
+
+            - key: namangan_tumani
+              user-pick-able: true
+              name:
+                ru: Наманган
+                uz-lat: Namangan
+                uz-kir: Наманган
+                lat: 40.9706421
+                lng: 71.5045366
+                z = 11
+
+            - key: pop_tumani
+              user-pick-able: true
+              name:
+                ru: Пап
+                uz-lat: Pop
+                uz-kir: Поп
+                lat: 41.0929658
+                lng: 70.3018672
+                z = 9
+
+            - key: toraqorgon_tumani
+              user-pick-able: true
+              name:
+                ru: Туракурган
+                uz-lat: To'raqo'rg'on
+                uz-kir: Тўракўрғон
+                lat: 40.9996975
+                lng: 71.3022034
+                z = 11
+
+            - key: uchqorgon_tumani
+              user-pick-able: true
+              name:
+                ru: Учкурган
+                uz-lat: Uchqo'rg'on
+                uz-kir: Учқўрғон
+                lat: 41.1211605
+                lng: 72.057008
+                z = 13
+
+
+        - key: navoi_obl
+          user-pick-able: false
+          name:
+            ru: Навоийская область
+            uz-lat: Navoiy viloyati
+            uz-kir: Навоий вилояти
+          regions:
+            - key: beshrobot_tumani
+              user-pick-able: true
+              name:
+                ru: Бешрабат
+                uz-lat: Beshrobot
+                uz-kir: Бешработ
+                lat: 40.2222198
+                lng: 65.28589
+                z = 14
+
+            - key: konimex_tumani
+              user-pick-able: true
+              name:
+                ru: Канимех
+                uz-lat: Konimex
+                uz-kir: Канимех
+                lat: 40.2744475
+                lng: 65.1225326
+                z = 14
+
+            - key: navoiy_tumani
+              user-pick-able: true
+              name:
+                ru: Навои
+                uz-lat: Navoiy
+                uz-kir: Навоий
+                lat: 40.0980699
+                lng: 65.336594
+                z = 13
+
+            - key: karmana_tumani
+              user-pick-able: true
+              name:
+                ru: Кармана
+                uz-lat: Karmana
+                uz-kir: Кармана
+                lat: 40.1401145
+                lng: 65.3323561
+                z = 13
+
+            - key: yangirobot_tumani
+              user-pick-able: true
+              name:
+                ru: Янгирабат
+                uz-lat: Yangirobot
+                uz-kir: Янгиробот
+                lat: 40.0343476
+                lng: 65.9487174
+                z = 14
+
+            - key: nurota_tumani
+              user-pick-able: true
+              name:
+                ru: Нурата
+                uz-lat: Nurota
+                uz-kir:Нурота
+                lat: 40.5646522
+                lng: 65.6831787
+                z = 14
+
+            - key: qiziltepa_tumani
+              user-pick-able: true
+              name:
+                ru: Кызылтепа
+                uz-lat: Qiziltepa
+                uz-kir: Қизилтепа
+                lat: 40.0575347
+                lng: 64.7923844
+                z = 13
+
+            - key: zarafshon_tumani
+              user-pick-able: true
+              name:
+                ru: Зарафшан
+                uz-lat: Zarafshon
+                uz-kir: Зарафшон
+                lat: 41.5742784
+                lng: 64.156894
+                z = 13
+
+            - key: tomdibuloq_tumani
+              user-pick-able: true
+              name:
+                ru: Тамдыбулак
+                uz-lat: Tomdibuloq
+                uz-kir: Томдибулоқ
+                lat: 41.7548871
+                lng: 64.6111964
+                z = 14
+
+            - key: uchquduq_tumani
+              user-pick-able: true
+              name:
+                ru: Учкудук
+                uz-lat: Uchquduq
+                uz-kir: Учкқудук
+                lat: 42.1526794
+                lng: 63.539128
+                z = 14
+
+
+
+
+        - key: karshi_obl
+          user-pick-able: false
+          name:
+            ru: Кашкадарьинская область
+            uz-lat: Qashqadaryo viloyati
+            uz-kir: Қашқадарё вилояти
+          regions:
+            - key: beshkent_tumani
+              user-pick-able: true
+              name:
+                ru: Бешкент
+                uz-lat: Beshkent
+                uz-kir: Бешкент
+                lat: 38.8137664
+                lng: 65.6157152
+                z = 13
+
+            - key: qamashi_tumani
+              user-pick-able: true
+              name:
+                ru: Камаши
+                uz-lat: Qamashi
+                uz-kir: Қамаши
+                lat: 38.8109788
+                lng: 66.4490884
+                z = 13
+
+            - key: karashina_tumani
+              user-pick-able: true
+              name:
+                ru: Карашина
+                uz-lat: Karashina
+                uz-kir: Карашина
+                lat: 38.3392087
+                lng: 66.5507341
+                z = 15
+
+            - key: dehqonobod_tumani
+              user-pick-able: true
+              name:
+                ru: Дехканабад
+                uz-lat: Dehqonobod
+                uz-kir: Деҳқонобод
+                lat: 38.3537398
+                lng: 66.4375656
+                z = 13
+
+            - key: guzor_tumani
+              user-pick-able: true
+              name:
+                ru: Гузар
+                uz-lat: G'uzor
+                uz-kir: Ғузор
+                lat: 38.5972436
+                lng: 66.1834927
+                z = 12
+
+            - key: chiroqchi_tumani
+              user-pick-able: true
+              name:
+                ru: Чиракчи
+                uz-lat: Chiroqchi
+                uz-kir: Чироқчи
+                lat: 39.0382681
+                lng: 66.5524715
+                z = 13
+
+            - key: yangi-nishon_tumani
+              user-pick-able: true
+              name:
+                ru: Янги-Нишан
+                uz-lat: Yangi-Nishon
+                uz-kir: Янги-Нишон
+                lat: 38.6356341
+                lng: 65.6572187
+                z = 13
+
+            - key: muborak_tumani
+              user-pick-able: true
+              name:
+                ru: Мубарек
+                uz-lat: Muborak
+                uz-kir: Муборак
+                lat: 39.2487375
+                lng: 65.1083701
+                z = 13
+
+            - key: qarshi_tumani
+              user-pick-able: true
+              name:
+                ru: Карши
+                uz-lat: Qarshi
+                uz-kir: Қарши
+                lat: 38.8583673
+                lng: 65.7217571
+                z = 12
+
+            - key: talimarjon_tumani
+              user-pick-able: true
+              name:
+                ru: Талимарджан
+                uz-lat: Talimarjon
+                uz-kir: Талимаржон
+                lat: 38.2896472
+                lng: 65.5302929
+                z = 14
+
+            - key: koson_tumani
+              user-pick-able: true
+              name:
+                ru: Касан
+                uz-lat: Koson
+                uz-kir: Косон
+                lat: 39.0278407
+                lng: 65.5256575
+                z = 12
+
+            - key: Kasbi
+              user-pick-able: true
+              name:
+                ru: Касби
+                uz-lat: Kasbi
+                uz-kir: Касби
+                lat: 38.9102986
+                lng: 65.1550636
+                z = 10
+
+            - key: kitob_tumani
+              user-pick-able: true
+              name:
+                ru: Китаб
+                uz-lat: Kitob
+                uz-kir: Китоб
+                lat: 39.1262751
+                lng: 66.8441671
+                z = 13
+
+            - key: shahrisabz_tumani
+              user-pick-able: true
+              name:
+                ru:  Шахрисабз
+                uz-lat:  Shahrisabz
+                uz-kir:  Шахрисабз
+                lat: 39.0530583
+                lng: 66.7962735
+                z = 13
+
+            - key: mirishkor_tumani
+              user-pick-able: true
+              name:
+                ru:  Янги Миришкор
+                uz-lat:  Yangi Mirishkor
+                uz-kir:  Янги Миришкор
+                lat: 38.847577
+                lng: 65.2618359
+                z = 14
+
+            - key: ykkabog_tumani
+              user-pick-able: true
+              name:
+                ru:  Яккабаг
+                uz-lat:  Yakkabog'
+                uz-kir:  Яккабоғ
+                lat: 38.9770853
+                lng: 66.6552915
+                z = 13
+
+            - key: muglon_tumani
+              user-pick-able: true
+              name:
+                ru: Муглан
+                uz-lat: Mugʻlon
+                uz-kir: Муғлон
+                lat: 38.9231242
+                lng: 65.3940088
+                z = 14
+
+
+        - key: karakalpak
+          user-pick-able: false
+          name:
+            ru: Каракалпакстан
+            uz-lat: Qoraqalpog'iston
+            uz-kir: Қорақалпоғистон
+          regions:
+            - key: qqmangit_tumani
+              user-pick-able: true
+              name:
+                ru: Акмангит
+                uz-lat: Oqmangʻit
+                uz-kir: Оқманғит
+                lat: 42.5890022
+                lng: 59.5122951
+                z = 13
+            
+            - key: qanlikol_tumani
+              user-pick-able: true
+              name:
+                ru: Канлыкуль
+                uz-lat: Qanlikoʻl
+                uz-kir: Қанликўл
+                lat: 42.8326391
+                lng: 58.9867542
+                z = 14
+
+       
+            - key:  xojayli_tumani
+              user-pick-able: true
+              name:
+                ru: Ходжейли
+                uz-lat: Xo'jayli
+                uz-kir: Хўджайли
+                lat: 42.416473
+                lng: 59.4154994
+                z = 13
+
+
+            - key: taxtakopir_tumani
+              user-pick-able: true
+              name:
+                ru: Тахтакупыр
+                uz-lat: Taxtakoʻpir
+                uz-kir: Тахтакўпир
+                lat: 43.019029
+                lng: 60.2666611
+                z = 13
+     
+            - key: tortkol_tumani
+              user-pick-able: true
+              name:
+                ru: Турткуль
+                uz-lat: To'rtko'l
+                uz-kir: Тўрткўл
+                lat: 41.550606
+                lng: 60.9628765
+                z = 13
+     
+            - key: taxiatosh_tumani
+              user-pick-able: true
+              name:
+                ru: Тахиаташ
+                uz-lat: Taxiatosh
+                uz-kir: Тахиатош
+                lat: 42.6367977
+                lng:58.9124677
+                z = 14
+ 
+            - key: shumanay_tumani
+              user-pick-able: true
+              name:
+                ru: Шуманай
+                uz-lat: Shumanay
+                uz-kir: Шуманай
+                lat: 40.7955804
+                lng: 66.3803826
+                z = 9
+      
+            - key: moynoq_tumani
+              user-pick-able: true
+              name:
+                ru: Муйнак
+                uz-lat: Mo'ynoq
+                uz-kir: Муйнок
+                lat: 43.7710092
+                lng: 58.9882988
+                z = 13
+
+
+            - key: nukus_tumani
+              user-pick-able: true
+              name:
+                ru: Нукус
+                uz-lat: Nukus
+                uz-kir: Нукус
+                lat: 42.4715434
+                lng: 59.463744
+                z = 11
+
+     
+            - key: mangit_tumani
+              user-pick-able: true
+              name:
+                ru: Мангит
+                uz-lat: Mang'it
+                uz-kir: Манғит
+                lat: 42.1024495
+                lng: 60.0326223
+                z = 13
+
+            - key: qongirot_tumani
+              user-pick-able: true
+              name:
+                ru: Кунград
+                uz-lat: Qo'ng'irot
+                uz-kir: Қунғирот
+                lat: 43.0555205
+                lng: 58.837108
+                z = 13
+
+     
+            - key: kegeyli_tumani
+              user-pick-able: true
+              name:
+                ru: Кегейли
+                uz-lat: Kegeyli
+                uz-kir: Кегейли
+                lat: 42.7759115
+                lng: 59.5926444
+                z = 14
+     
+            - key: chimboy_tumani
+              user-pick-able: true
+              name:
+                ru: Чимбай
+                uz-lat: Chimboy
+                uz-kir: Чимбой
+                lat: 42.9366355
+                lng: 59.7412454
+                z = 13
+    
+            - key: boston_tumani
+              user-pick-able: true
+              name:
+                ru: Бустан
+                uz-lat: Bo'ston
+                uz-kir: Бўстон
+                lat: 41.7147502
+                lng: 60.8431857
+                z = 13
+   
+            - key: qoraozak_tumani
+              user-pick-able: true
+              name:
+                ru: Караузяк
+                uz-lat: Qoraoʻzak
+                uz-kir: Караўзак
+                lat: 43.0189386
+                lng: 59.981746
+                z = 13
+  
+            - key: beruniy_tumani
+              user-pick-able: true
+              name:
+                ru: Беруни
+                uz-lat: Beruniy
+                uz-kir: Беруний
+                lat: 41.6812546
+                lng: 60.6856845
+                z = 12
+
+
+
+
+
+        - key: jizzax_obl
+          user-pick-able: false
+          name:
+            ru: Джизакская область
+            uz-lat: Jizzax viloyati
+            uz-kir: Жиззах вилояти
+          regions:
+            - key: aydarkol_tumani
+              user-pick-able: true
+              name:
+                ru: Айдаркуль
+                uz-lat: Aydarko'l
+                uz-kir: Айдаркўл
+                lat: 40.7955804
+                lng: 66.3803826
+                z = 9
+
+            - key: balandchaqir_tumani
+              user-pick-able: true
+              name:
+                ru: Баландчакир
+                uz-lat: Balandchaqir
+                uz-kir: Баландчақир
+                lat: 39.9128926
+                lng: 68.7759802
+                z = 14
+
+            - key: dashtobod_tumani
+              user-pick-able: true
+              name:
+                ru: Даштобод
+                uz-lat: Dashtobod
+                uz-kir: Даштобод
+                lat: 40.1290474
+                lng: 68.4706914
+                z = 14
+
+            - key: uchtepa_tumani
+              user-pick-able: true
+              name:
+                ru: Учтепа
+                uz-lat: Uchtepa
+                uz-kir: Учтепа
+                lat: 40.2058327
+                lng: 67.8883622
+                z = 14
+
+            - key: dostlik_tumani
+              user-pick-able: true
+              name:
+                ru: Дустлик
+                uz-lat: Do'stlik
+                uz-kir: Дўстлик
+                lat: 40.5234031
+                lng: 68.0154775
+                z = 14
+
+
+
+            - key: gagarin_tumani
+              user-pick-able: true
+              name:
+                ru: Гагарин
+                uz-lat: Gagarin
+                uz-kir: Гагарин
+                lat: 40.6617888
+                lng: 68.1365139
+                z = 14
+
+            - key: jizzax_tumani
+              user-pick-able: true
+              name:
+                ru: Джизак
+                uz-lat: Jizzax
+                uz-kir: Жиззах
+                lat: 40.1189145
+                lng: 67.7843545
+                z = 12
+
+            - key: yangiqishloq_tumani
+              user-pick-able: true
+              name:
+                ru: Янгикишлак
+                uz-lat: Yangiqishloq
+                uz-kir: Янгикишлоқ
+                lat: 40.403191
+                lng: 67.1312493
+                z = 13
+
+
+            - key: zarbdor_tumani
+              user-pick-able: true
+              name:
+                ru: Зарбдар
+                uz-lat: Zarbdor
+                uz-kir: Зарбдор
+                lat: 40.0938196
+                lng: 68.1354039
+                z = 13
+
+
+            - key: gallaorol_tumani
+              user-pick-able: true
+              name:
+                ru: Галлаарал
+                uz-lat: G'allaorol
+                uz-kir: Ғаллаорол
+                lat: 40.0278655
+                lng: 67.571942
+                z = 14
+
+
+            - key: zafarobod_tumani
+              user-pick-able: true
+              name:
+                ru: Зафарабад
+                uz-lat: Zafarobod
+                uz-kir: Зафаробод
+                lat: 40.3250328
+                lng: 67.8554033
+                z = 14
+
+
+            - key: paxtakor_tumani
+              user-pick-able: true
+              name:
+                ru: Пахтакор
+                uz-lat: Paxtakor
+                uz-kir: Пахтакор
+                lat: 40.3168387
+                lng: 667.9293888
+                z = 13
+
+            - key: marjonbuloq_tumani
+              user-pick-able: true
+              name:
+                ru: Марджанбулак
+                uz-lat: Marjonbuloq
+                uz-kir: Маржонбулоқ
+                lat: 39.9365412
+                lng: 67.4009297
+                z = 14
+
+            - key: goliblar_tumani
+              user-pick-able: true
+              name:
+                ru: Голиблар
+                uz-lat: Gʻoliblar
+                uz-kir: Ғолиблар
+                lat: 40.4947724
+                lng: 67.8571989
+                z = 14
+
+            - key: osmat_tumani
+              user-pick-able: true
+              name:
+                ru: Усмат
+                uz-lat: Oʻsmat
+                uz-kir: Ўсмат
+                lat: 39.7398159
+                lng: 67.6099055
+                z = 13
+
+            - key: zomin_tumani
+              user-pick-able: true
+              name:
+                ru: Заамин
+                uz-lat: Zomin
+                uz-kir: Зомин
+                lat: 39.9669561
+                lng: 68.3740893
+                z = 14
+
+
+        - key: buxara_obl
+          user-pick-able: false
+          name:
+            ru: Бухарская область
+            uz-lat: Buxoro viloyati
+            uz-kir: Бухоро вилояти
+          regions:
+            - key: olot_tumani
+              user-pick-able: true
+              name:
+                ru: Алат
+                uz-lat: Olot
+                uz-kir: Олот
+                lat: 39.2619674
+                lng: 63.8263409
+                z = 10
+
+            - key: buxoro_tumani
+              user-pick-able: true
+              name:
+                ru: Бухара
+                uz-lat: Buxoro
+                uz-kir: Бухоро
+                lat: 39.6372
+                lng: 64.0634941
+                z= 10
+
+            - key: gazli_tumani
+              user-pick-able: true
+              name:
+                ru: Газли
+                uz-lat: Gazli
+                uz-kir: Ғазли
+                lat: 40.1304038
+                lng: 63.4396503
+                z= 14
+
+            - key: kogon_tumani
+              user-pick-able: true
+              name:
+                ru: Каган
+                uz-lat: Kogon
+                uz-kir: Когон
+                lat: 39.7221659
+                lng: 64.5161384
+                z= 13
+
+            - key: gijduvon_tumani
+              user-pick-able: true
+              name:
+                ru: Гиждуван
+                uz-lat: G'ijduvon
+                uz-kir: Ғиждувон
+                lat: 40.0881447
+                lng: 64.5793508
+                z = 12
+
+            - key: qorakol_tumani
+              user-pick-able: true
+              name:
+                ru: Каракуль
+                uz-lat: Qorako'l
+                uz-kir: Коракўл
+                lat: 39.4959567
+                lng: 63.8479652
+                z= 15
+
+            - key: romitan_tumani
+              user-pick-able: true
+              name:
+                ru: Ромитан
+                uz-lat: Romitan
+                uz-kir: Ромитан
+                lat: 39.9373063
+                lng: 64.3435758
+                z= 13
+
+            - key: qorovulbozor_tumani
+              user-pick-able: true
+              name:
+                ru: Караулбазар
+                uz-lat: Qorovulbozor
+                uz-kir: Қороулбозор
+                lat: 39.4937859
+                lng: 64.7465508
+                z= 13
+
+            - key: shofirkon_tumani
+              user-pick-able: true
+              name:
+                ru: Шафиркан
+                uz-lat: Shofirkon
+                uz-kir: Шофиркон
+                lat: 40.1253421
+                lng: 64.4488901
+                z= 13
+
+            - key: vobkent_tumani
+              user-pick-able: true
+              name:
+                ru: Вабкент
+                uz-lat: Vobkent
+                uz-kir: Вобкент
+                lat: 40.0276193
+                lng: 64.4863551
+                z= 13
+
+            - key: jondor_tumani
+              user-pick-able: true
+              name:
+                ru: Жондор
+                uz-lat: Jondor
+                uz-kir: Жондор
+                lat: 39.7441686
+                lng: 64.1564654
+                z= 14
+
+            - key: galaosiyo_tumani
+              user-pick-able: true
+              name:
+                ru: Галаасия
+                uz-lat: Galaosiyo
+                uz-kir: Галаосиё
+                lat: 39.8585925
+                lng: 64.4334195
+                z= 14
+
+        - key: andijan_obl
+          user-pick-able: false
+          name:
+            ru: Андижанская область
+            uz-lat: Andijon viloyati
+            uz-kir: Андижон вилояти
+          regions:
+            - key: oqoltin_tumani
+              user-pick-able: true
+              name:
+                ru: Акалтын
+                uz-lat: Oqoltin
+                uz-kir: Оқолтин
+                lat: 40.4997514
+                lng: 68.3349936
+                z= 11
+
+            - key: Oltinkol_tumani
+              user-pick-able: true
+              name:
+                ru: Алтынкуль
+                uz-lat: Oltinkoʻl
+                uz-kir: Олтинкўл
+                lat: 40.797344
+                lng: 72.1487401
+                z= 14
+
+            - key: oxunboboyev_tumani
+              user-pick-able: true
+              name:
+                ru: Ахунбабаев
+                uz-lat: Oxunboboyev
+                uz-kir: Охунбобоев
+                lat: 123.234234
+                lng: 62.23423
+                z= 11
+
+            - key:  boz_tumani
+              user-pick-able: true
+              name:
+                ru: Боз
+                uz-lat: Boʻz
+                uz-kir: Бўз
+                lat: 40.7100534
+                lng: 72.6005738
+                z= 13
+
+            - key: baliqchi_tumani
+              user-pick-able: true
+              name:
+                ru: Балыкчи
+                uz-lat: Baliqchi
+                uz-kir: Балиқчи
+                lat: 40.8488861
+                lng: 71.8362653
+                z= 11
+
+            - key: qorasuv_tumani
+              user-pick-able: true
+              name:
+                ru: Карасу
+                uz-lat: Qorasuv
+                uz-kir: Қорасув
+                lat: 40.729245
+                lng: 72.869265
+                z= 11
+
+            - key: buloqboshi_tumani
+              user-pick-able: true
+              name:
+                ru: Булакбаши
+                uz-lat: Buloqboshi
+                uz-kir: Булоқбоши
+                lat: 40.6196466
+                lng: 72.3850511
+                z= 12
+
+            - key: kuyganyor_tumani
+              user-pick-able: true
+              name:
+                ru: Куйганъяр
+                uz-lat: Kuyganyor
+                uz-kir: Куйганёр
+                lat: 40.8611067
+                lng: 72.3020417
+                z= 15
+
+            - key: qorgontepa_tumani
+              user-pick-able: true
+              name:
+                ru: Кургантепа
+                uz-lat: Qo'rg'ontepa
+                uz-kir: Қўрғонтепа
+                lat: 40.7328257
+                lng: 72.7217452
+                z= 13
+
+            - key: marhamat_tumani
+              user-pick-able: true
+              name:
+                ru: Мархамат
+                uz-lat: Marhamat
+                uz-kir: Марҳамат
+                lat: 40.5000155
+                lng: 72.3079122
+                z= 15
+
+            - key: poytug_tumani
+              user-pick-able: true
+              name:
+                ru: Пайтуг
+                uz-lat: Poytug'
+                uz-kir: Пайтуғ
+                lat: 40.8947357
+                lng: 72.2155374
+                z= 13
+
+            - key: paxtaobod_tumani
+              user-pick-able: true
+              name:
+                ru: Пахтаабад
+                uz-lat: Paxtaobod
+                uz-kir: Пахтаобод
+                lat: 40.973449
+                lng: 72.2852437
+                z= 11
+
+            - key: shahrixon_tumani
+              user-pick-able: true
+              name:
+                ru: Шахрихан
+                uz-lat: Shahrixon
+                uz-kir: Шаҳрихон
+                lat: 40.6934251
+                lng: 71.8888722
+                z= 11
+
+            - key: xonobod_tumani
+              user-pick-able: true
+              name:
+                ru: Ханабад
+                uz-lat: Xonobod
+                uz-kir: Хонобод
+                lat: 40.8048725
+                lng: 72.9732083
+                z= 14
+
+            - key: xojaobod_tumani
+              user-pick-able: true
+              name:
+                ru: Ходжаабад
+                uz-lat: Xo'jaobod
+                uz-kir: Хўжаобод
+                lat: 40.6591578
+                lng: 72.541694
+                z= 13
+
+            - key: asaka_tumani
+              user-pick-able: true
+              name:
+                ru: Асака
+                uz-lat: Asaka
+                uz-kir: Асака
+                lat: 40.6601935
+                lng: 72.1986288
+                z= 13
+
+            - key: andijon_tumani
+              user-pick-able: true
+              name:
+                ru: Андижан
+                uz-lat: Andijon
+                uz-kir: Андижон
+                lat: 40.7795396
+                lng: 72.1795595
+                z= 11
+
+
+
+
+
