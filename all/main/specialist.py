@@ -13,6 +13,9 @@ def spec(request):
     zayavka = PageFormsuz()
     forming = PageForms()
 
+
+
+
     study  = Study_form.objects.all()
     faculty = Faculty.objects.all()
 
@@ -29,6 +32,7 @@ def spec(request):
         'zayavka': zayavka,
         'forming':forming,
         'formuz':formuz,
+
 
 
 

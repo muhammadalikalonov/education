@@ -37,19 +37,19 @@
                                     <li class="uni__item card-tmp__item card-tmp__item">{{ j.name }}</li>
                                 {% endfor %}
                             </ul>
-                            <ul class="uni__list uni__list_2 card-tmp__list card-tmp__list_book">
 
+                            <ul  style="display: block!important;" class="uni__list uni__list_2 card-tmp__list card-tmp__list_book">
+                                    {% for j in  i.faculty.all %}
+                                        <li style="display: block; margin-bottom: 5px" class="uni__item card-tmp__item card-tmp__item">{{ forloop.counter }}. {{ j.name }}
+                                        </li>
 
-                                {% for j in  i.faculty.all %}
+                                    {% endfor %}
 
-
-                                    <li class="uni__item card-tmp__item card-tmp__item">{{ j.name }}</li>
-                                {% endfor %}
-
-                                <li class="uni__item card-tmp__item card-tmp__item"><a
+                                <li  class="uni__item card-tmp__item card-tmp__item"><a
                                         href="{% url 'uninfo' i.slug %}"
                                         class="uni__next-link">{% trans 'Подробнее...' %}<span class="all-count"></span>
-                                    </a></li>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <ul class="uni__list uni__list_3 card-tmp__list card-tmp__list_flag">

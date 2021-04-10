@@ -143,7 +143,7 @@ msgstr "Nimaga aynan biz?"
 #: .\templates\base\index.html:206 .\templates\blog\univers.html:43
 #: .\templates\others\universtate.html:35
 msgid "Страны"
-msgstr "Shaharlar"
+msgstr "Davlatlar"
 
 #: .\templates\base\index.html:210
 msgid "В нашем каталоге вы найдете более"

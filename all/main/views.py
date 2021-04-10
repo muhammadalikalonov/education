@@ -61,10 +61,13 @@ def filter_data(request):
         allProducts=allProducts.filter(study_form__name__in=study).distinct()
 
 
+    univer = University.objects.all()
+    if univer:
+        for i in univer:
+            k = i.faculty.all()[:5]
+            print(k)
 
-
-
-    t = render_to_string('blog/ajax/univers.html',{'univer':allProducts, 'search_text': search_text })
+    t = render_to_string('blog/ajax/univers.html',{'univer':allProducts, 'search_text': search_text, 'k':k })
 
 
     return JsonResponse({'univer':t})
@@ -81,8 +84,6 @@ def index(request):
 
     testimonials = Testimonials.objects.all()
     faq = FAQ.objects.all()
-
-
     advantage = Advantage.objects.all()
 
 

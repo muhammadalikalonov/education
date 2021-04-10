@@ -18,23 +18,10 @@ def error_404_view(request,exception):
 def country_view(request):
 
 
-    univer = University.objects.all().order_by('-id').all()
-    if request.method =='POST':
-        univer = University.objects.all().order_by('-id').all()
-        active = False
-
-    active = False
-    if univer.count() > 10:
-        active = True
-
+    univer = University.objects.all()
     countries = Country.objects.all()
     faculty = Faculty.objects.all()
     study = Study_form.objects.all()
-    if univer:
-        for i in univer:
-            k= i.faculty.all()[:5]
-
-
 
     context = {
 
@@ -43,8 +30,8 @@ def country_view(request):
         'countries': countries,
         'study':study,
         'univer':univer,
-        'k':k,
-        'active':active,
+
+
 
     }
     return render(request, 'blog/univers.html', context)
@@ -72,45 +59,46 @@ def uninfo(request, slug):
 
     return render(request, 'blog/uninfo.html', context)
 
-def universtate(request, country_slug):
-
-    c = Country.objects.get(slug=country_slug)
-    country = Country.objects.all()
-    univer = University.objects.filter(country=c)[:10]
-    active =False
-    if univer.count() >10:
-        active =True
-
-    if request.method == 'GET':
-        cou = request.GET.get('country_1')
-        country_view= request.GET.get('country_view')
-        print(country_view)
-        print('hello')
-    if request.method == 'POST':
-        univer = univer = University.objects.filter(country=c).all()
-        active = False
-
-    document = Document.objects.all()
-    study_form = Study_form.objects.all()
-    k=None
-    if univer.exists():
-        print('----')
-        print(univer)
-        for i in univer:
-            k= i.faculty.all()[:5]
-
-
-    context={
-        'univer':univer,
-        'country':country,
-        'study_form': study_form,
-        'document': document,
-        'active':active,
-        'k':k,
-        'c':c
-
-    }
-    return render(request, 'others/universtate.html', context)
+# def universtate(request, country_slug):
+#
+#     c = Country.objects.get(slug=country_slug)
+#     country = Country.objects.all()
+#     univer = University.objects.filter(country=c)[:10]
+#     active =False
+#     if univer.count() >10:
+#         active =True
+#
+#     if request.method == 'GET':
+#         cou = request.GET.get('country_1')
+#         country_view= request.GET.get('country_view')
+#         print(country_view)
+#         print('hello')
+#     if request.method == 'POST':
+#         univer = univer = University.objects.filter(country=c).all()
+#         active = False
+#
+#     document = Document.objects.all()
+#     study_form = Study_form.objects.all()
+#     k=None
+#     if univer.exists():
+#         print('----')
+#         print(univer)
+#         for i in univer:
+#             k= i.faculty.all()[:5]
+#             print(k)
+#
+#
+#     context={
+#         'univer':univer,
+#         'country':country,
+#         'study_form': study_form,
+#         'document': document,
+#         'active':active,
+#         'k':k,
+#         'c':c
+#
+#     }
+#     return render(request, 'others/universtate.html', context)
 
 
 

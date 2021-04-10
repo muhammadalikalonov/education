@@ -45,12 +45,13 @@
                             {% for j in  i.faculty.all %}
 
 
-                                <li class="uni__item card-tmp__item card-tmp__item">{{ j.name }}</li>
-                            {% endfor %}
-
+                                <li class="uni__item card-tmp__item card-tmp__item">{{ forloop.counter }}. {{ j.name }}</li>
+                                <br>{% endfor %}
+                            <br>
+                            <hr>
                             <li class="uni__item card-tmp__item card-tmp__item"><a
                                     href="{% url 'uninfo' i.slug %}"
-                                    class="uni__next-link">{% trans 'Подробнее...' %} <span class="all-count"></span>
+                                    class="uni__next-link"><br> {% trans 'Подробнее...' %} <span class="all-count"></span>
                                 </a></li>
                         </ul>
                     </div>
