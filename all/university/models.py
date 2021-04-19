@@ -61,7 +61,7 @@ class Rating(models.Model):
 
 
 
-
+cur = (('$', '$'), ("£", "£"), ('€', '€'), ('₽', '₽') )
 class University(models.Model):
     name = models.CharField(max_length=100, verbose_name='Название', blank=True)
     university_city = models.CharField(max_length=100, verbose_name='Город', blank=True)
@@ -70,16 +70,17 @@ class University(models.Model):
     language = models.CharField('Язык обучения' , max_length=200 , null=True)
     year = models.CharField('Университет основан' , max_length=200 , null=True)
     rating = models.ForeignKey(Rating, on_delete=models.CASCADE , null =True, blank=True)
-    faculty = models.ManyToManyField(Faculty, related_name='faculting',verbose_name='Факультет', blank=True)
+    faculty = models.ManyToManyField(Faculty, related_name='faculting',verbose_name='Факультет(выберите основные 4-5 факультета)', blank=True)
     content = models.TextField(blank=True, verbose_name='Описание')
     intake = models.CharField(max_length=100, verbose_name='Месяцы приема', blank=True)
     gallery1 = models.ImageField(upload_to='university_images/images', blank=True, verbose_name='University_Image1')
     image2 = models.ImageField(upload_to='university_images/images', blank=True, verbose_name='University_Image2')
     image3 = models.ImageField(upload_to='university_images/images', blank=True, verbose_name='University_Image3')
     image4 = models.ImageField(upload_to='university_images/images', blank=True, verbose_name='University_Image4')
-    year_tuition_fee = models.PositiveBigIntegerField(verbose_name='Цена/семестр', blank=True,null=True)
+    year_tuition_fee = models.PositiveBigIntegerField(verbose_name='Цена/год', blank=True,null=True)
     on_campus_yearly = models.PositiveBigIntegerField(verbose_name='Цена/проживание', blank=True,null=True)
     slug = models.SlugField(unique=True)
+    currency = models.CharField('Валюта', choices=cur, max_length=200, null=True)
     top_universities = models.BooleanField(verbose_name='Top Университет', default=False)
     logo = models.ImageField(upload_to='university_images/images', blank=True, verbose_name='University_LOGO')
 

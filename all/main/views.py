@@ -50,8 +50,8 @@ def filter_data(request):
     if len(facultys)>0:
 
         allProducts=allProducts.filter(faculty__name__in=facultys).distinct()
-        print(facultys)
-        print(allProducts)
+        # print(facultys)
+        # print(allProducts)
 
     if len(countrys)>0:
         allProducts=allProducts.filter(country__name__in =countrys).distinct()
