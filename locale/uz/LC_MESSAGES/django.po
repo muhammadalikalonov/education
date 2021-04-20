@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-06 12:52+0500\n"
+"POT-Creation-Date: 2021-04-20 07:14+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,32 +38,32 @@ msgstr ""
 "Ma'lumotlaringizni qoldiring, shunda mutaxassisimiz kun davomida albatta siz "
 "bilan bog'lanadi"
 
-#: .\templates\base\inc\aloqa.html:27 .\templates\base\inc\callback.html:21
-#: .\templates\others\cons.html:84
+#: .\templates\base\inc\aloqa.html:38 .\templates\base\inc\callback.html:31
+#: .\templates\others\cons.html:115 .\templates\others\cons.html:196
 msgid "Отправить"
 msgstr "Jo'natish"
 
-#: .\templates\base\inc\aloqa.html:38
+#: .\templates\base\inc\aloqa.html:49
 msgid "Остались вопросы?"
 msgstr "Savolingiz bormi?"
 
-#: .\templates\base\inc\aloqa.html:41 .\templates\others\contacts.html:28
+#: .\templates\base\inc\aloqa.html:52 .\templates\others\contacts.html:28
 msgid "Свяжитесь с нами и мы ответим на все ваши вопросы"
 msgstr "Biz bilan bog'laning va barcha savollaringizga javob oling"
 
-#: .\templates\base\inc\aloqa.html:47 .\templates\others\contacts.html:47
+#: .\templates\base\inc\aloqa.html:58 .\templates\others\contacts.html:47
 msgid "Телефоны"
 msgstr "Aloqa"
 
-#: .\templates\base\inc\aloqa.html:52
+#: .\templates\base\inc\aloqa.html:63
 msgid "Адрес"
 msgstr "Manzil"
 
-#: .\templates\base\inc\aloqa.html:56 .\templates\others\contacts.html:52
+#: .\templates\base\inc\aloqa.html:67 .\templates\others\contacts.html:52
 msgid "Время работы"
 msgstr "Ish vaqti"
 
-#: .\templates\base\inc\aloqa.html:59 .\templates\base\index.html:151
+#: .\templates\base\inc\aloqa.html:70 .\templates\base\index.html:151
 #: .\templates\blog\uninfo.html:95 .\templates\others\contacts.html:55
 msgid "Связаться с нами"
 msgstr "Bog'lanish"
@@ -145,55 +145,42 @@ msgstr "Nimaga aynan biz?"
 msgid "Страны"
 msgstr "Davlatlar"
 
-#: .\templates\base\index.html:210
-msgid "В нашем каталоге вы найдете более"
-msgstr "Bizning katalogimizda siz"
-
-#: .\templates\base\index.html:210
-msgid "университетов"
-msgstr "dan"
-
-#: .\templates\base\index.html:210
-msgid "из более чем"
-msgstr "ortiq mamlakatlarning"
-
-#: .\templates\base\index.html:210
-msgid " стран "
-msgstr "dan ortiq universitetlarini topasiz"
-
-#: .\templates\base\index.html:213
+#: .\templates\base\index.html:217
 msgid " Смотреть все "
 msgstr "Xammasini ko'rish"
 
-#: .\templates\base\index.html:226
+#: .\templates\base\index.html:230
 msgid "вузов"
 msgstr "universitet"
 
-#: .\templates\base\index.html:240
+#: .\templates\base\index.html:244
 msgid "Отзывы наших студентов"
 msgstr "Bizni o'quvchilarimizning izohlari"
 
-#: .\templates\base\index.html:278
+#: .\templates\base\index.html:282
 msgid "Смотреть все"
 msgstr "Xammasini ko'rish"
 
-#: .\templates\base\index.html:281
+#: .\templates\base\index.html:285
 msgid "Фотографии наших студентов"
 msgstr "O'quvchilarimizning foto-surati"
 
-#: .\templates\base\index.html:319
+#: .\templates\base\index.html:323
 msgid "Вопросы и ответы"
 msgstr "Savol va javoblar"
 
-#: .\templates\blog\ajax\univers.html:51 .\templates\blog\search.html:53
-#: .\templates\blog\univers.html:189
+#: .\templates\blog\ajax\univers.html:51 .\templates\blog\search.html:54
+#: .\templates\blog\univers.html:191
 msgid "Подробнее..."
 msgstr "Batafsil..."
 
-#: .\templates\blog\ajax\univers.html:156 .\templates\blog\search.html:157
-#: .\templates\blog\univers.html:293 .\templates\others\universtate.html:267
-msgid "за семестр"
-msgstr "semestrga"
+#: .\templates\blog\ajax\univers.html:156 .\templates\blog\univers.html:294
+msgid "от"
+msgstr "dan"
+
+#: .\templates\blog\ajax\univers.html:157 .\templates\blog\univers.html:295
+msgid "за год"
+msgstr "yiliga"
 
 #: .\templates\blog\article.html:55
 msgid "Похожие новости"
@@ -207,10 +194,13 @@ msgstr "O'qish vaqti"
 msgid " минут"
 msgstr "daqiqa"
 
-#: .\templates\blog\news.html:65 .\templates\blog\univers.html:321
-#: .\templates\others\students.html:72 .\templates\others\universtate.html:295
+#: .\templates\blog\news.html:65 .\templates\others\universtate.html:295
 msgid "Еще"
 msgstr "Yana"
+
+#: .\templates\blog\search.html:158 .\templates\others\universtate.html:267
+msgid "за семестр"
+msgstr "semestrga"
 
 #: .\templates\blog\uninfo.html:68
 msgid "Расположение"
@@ -229,12 +219,12 @@ msgid "К-во intake"
 msgstr "Topshiri voqtlari"
 
 #: .\templates\blog\uninfo.html:84
-msgid "Средняя цена за семестр"
-msgstr "O'rtacha narxi/semestga"
+msgid "Средняя цена за учебу/год"
+msgstr "O'rtacha o'qish narxi/yiliga"
 
 #: .\templates\blog\uninfo.html:88
-msgid "Средняя цена за проживание"
-msgstr "O'rtacha yashash/semestga"
+msgid "Средняя цена за проживание/год"
+msgstr "O'rtacha yashash narxi/yiliga"
 
 #: .\templates\blog\uninfo.html:100
 msgid "О ВУЗе"
@@ -296,27 +286,27 @@ msgstr "Konsultatsiya"
 msgid "Назад"
 msgstr "Orqaga"
 
-#: .\templates\others\cons.html:35
+#: .\templates\others\cons.html:40 .\templates\others\cons.html:121
 msgid "ФИО"
 msgstr "FIO"
 
-#: .\templates\others\cons.html:41
+#: .\templates\others\cons.html:48 .\templates\others\cons.html:129
 msgid "Дата рождения"
 msgstr "Tug'ilgan san'a"
 
-#: .\templates\others\cons.html:48
+#: .\templates\others\cons.html:59 .\templates\others\cons.html:140
 msgid "Контактные данные"
 msgstr "Aloqa"
 
-#: .\templates\others\cons.html:56
+#: .\templates\others\cons.html:76 .\templates\others\cons.html:157
 msgid "Уровень английского"
 msgstr "Ingliz tili darajasi"
 
-#: .\templates\others\cons.html:66
+#: .\templates\others\cons.html:87 .\templates\others\cons.html:168
 msgid "Предпочтительная программа"
 msgstr "Yo'nalish"
 
-#: .\templates\others\cons.html:75
+#: .\templates\others\cons.html:99 .\templates\others\cons.html:180
 msgid "Сроки"
 msgstr "Muddat"
 
@@ -324,5 +314,3 @@ msgstr "Muddat"
 msgid "г. Ташкент"
 msgstr "sh.Toshkent"
 
-#~ msgid " Свяжитесь с нами и мы ответим на все ваши вопросы"
-#~ msgstr "Biz bilan bog'laning va barcha savollaringizga mening javobim"

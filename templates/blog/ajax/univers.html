@@ -2,6 +2,7 @@
 {% load i18n %}
 
 {% if univer %}
+    <p style="text-align: center" class="ajaxLoader"> <img src="/static/7plQ.gif" alt=""></p>
 
     {% for i in univer %}
         <div href="{% url 'uninfo' i.slug %}" class="uni__card card-tmp post-box">
@@ -152,8 +153,8 @@
 
                     </div>
                     <div class="uni__price">
-                        от <span class="uni__price-num ">{{ i.year_tuition_fee }}{{i.currency}} </span>
-                        <span class="uni__price-period">{% trans 'за семестр' %}</span>
+                        {% trans 'от' %} <span class="uni__price-num ">{{ i.year_tuition_fee }}{{i.currency}} </span>
+                        <span class="uni__price-period">{% trans 'за год' %}</span>
                     </div>
                 </a>
 
