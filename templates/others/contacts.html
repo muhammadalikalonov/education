@@ -1,1 +1,79 @@
-{% extends 'base/base.html' %}{% load i18n %}{%block title%}        <title>Контакты</title>{%endblock title%}{%block content%}    <div class="wrapper">        {%include 'base/inc/header.html'%}        <main class="page">            <div class="breadcrumbs-content _container">                <ul class="breadcrumbs">                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="{% url 'index' %}">{% trans 'Главная'%}</a></li>                    <li class="breadcrumbs__item breadcrumbs__item_active">{% trans 'Контакты'%}</li>                </ul>            </div>            <section class="ccontacts" >    <div class="ccontacts__content _container">        <h2 class="reviews__title t">          {%trans 'Контакты'%}        </h2>        <div class="ccontacts__subtitle">{%trans 'Свяжитесь с нами и мы ответим на все ваши вопросы'%}</div>        <div class="ccontacts__body">            <div class="ccontacts__card gtc__card">                <div class="gtc__adres">                    <div class="ccontacts__item gtc__item-title gtc__item-title_map"><span class="ccontacts__point">1</span>{% trans 'г. Ташкент'%}</div>                    <a href="#" class="gtc__phones-adress mapgo" data-geo="55.77436263566244, 37.48421218534724">{{ contact.address }}</a>                </div>                  <div class="gtc__adres">                    <div class="ccontacts__item gtc__item-title gtc__item-title_map"><span class="ccontacts__point">2</span>{% trans 'г. Ташкент'%}</div>                    <a href="#" class="gtc__phones-adress mapgo" data-geo="55.77436263566245, 37.48421218534743">{{ contact.address1 }}</a>                </div>            </div>            <div class="ccontacts__card2 gtc__card">                <div class="gtc__phones">                    <div class="gtc__item-title gtc__item-title_tel">{% trans 'Телефоны'%}</div>                    <a href="tel:{{ contact.phone}}" class="gtc__phones-tel">{{ contact.phone}}</a>                    <a href="tel:{{ contact.phone1}}" class="gtc__phones-tel">{{ contact.phone1}}</a>                </div>                <div class="gtc__time">                    <div class="gtc__item-title gtc__item-title_time">{% trans 'Время работы'%}</div>                    <div class="gtc__phones-time">{{ contact.working_time}}</div>                </div>                <a href="#callback" class="gtc__btn btn big _popup-link"><span class="btn__icon _call"></span><span class="btn__dec"></span><span class="btn__txt">{% trans 'Связаться с нами'%}</span></a>            </div>        </div>    </div>    <div id="map" class="ccontacts__map">         <div class="map-point map-point_1"><span class="ccontacts__point ccontacts__pointa ">1</span></div>         <div class="map-point map-point_2"><span class="ccontacts__point  ccontacts__pointa">2</span></div>         <div class="map-point map-point_3"><span class="ccontacts__point  ccontacts__pointa">3</span></div>     </div></section>        </main>         {%include 'base/inc/footer.html'%}    </div>        <script async        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5TG6vGt-yjgCFBqtJ1sYUijRoYtamKwc&map_ids=5deee1e64511f506&callback=initMap">    </script> {%endblock content%}
+
+{% extends 'base/base.html' %}
+{% load i18n %}
+{%block title%}
+        <title>Контакты</title>
+{%endblock title%}
+
+
+{%block content%}
+
+
+    <div class="wrapper">
+        {%include 'base/inc/header.html'%}
+        <main class="page">
+            <div class="breadcrumbs-content _container">
+                <ul class="breadcrumbs">
+
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="{% url 'index' %}">{% trans 'Главная'%}</a></li>
+                    <li class="breadcrumbs__item breadcrumbs__item_active">{% trans 'Контакты'%}</li>
+                </ul>
+            </div>
+            <section class="ccontacts" >
+
+    <div class="ccontacts__content _container">
+        <h2 class="reviews__title t">
+          {%trans 'Контакты'%}
+        </h2>
+        <div class="ccontacts__subtitle">{%trans 'Свяжитесь с нами и мы ответим на все ваши вопросы'%}</div>
+        <div class="ccontacts__body">
+            <div class="ccontacts__card gtc__card">
+
+
+
+
+                <div class="gtc__adres">
+                    <div class="ccontacts__item gtc__item-title gtc__item-title_map"><span class="ccontacts__point">1</span>{% trans 'г. Ташкент'%}</div>
+                    <a href="#" class="gtc__phones-adress mapgo" data-geo="41.30201495297471, 69.2709104184377">{{ contact.address }}</a>
+                </div>
+
+                  <div class="gtc__adres">
+                    <div class="ccontacts__item gtc__item-title gtc__item-title_map"></div>
+                    <a href="#" class="gtc__phones-adress mapgo" data-geo="41.30201495297471, 69.2709104184377"></a>
+                </div>
+             <br>
+               <br>
+               <br>
+               <br> <br>
+               <br>
+               <br>
+            </div>
+            <div class="ccontacts__card2 gtc__card">
+                <div class="gtc__phones">
+                    <div class="gtc__item-title gtc__item-title_tel">{% trans 'Телефоны'%}</div>
+                    <a href="tel:{{ contact.phone}}" class="gtc__phones-tel">{{ contact.phone}}</a>
+                    <a href="tel:{{ contact.phone1}}" class="gtc__phones-tel">{{ contact.phone1}}</a>
+                </div>
+                <div class="gtc__time">
+                    <div class="gtc__item-title gtc__item-title_time">{% trans 'Время работы'%}</div>
+                    <div class="gtc__phones-time">{{ contact.working_time}}</div>
+                </div>
+                <a href="#callback" class="gtc__btn btn big _popup-link"><span class="btn__icon _call"></span><span class="btn__dec"></span><span class="btn__txt">{% trans 'Связаться с нами'%}</span></a>
+            </div>
+        </div>
+    </div>
+    <div id="map" class="ccontacts__map">
+         <div class="map-point map-point_1"><span class="ccontacts__point ccontacts__pointa ">1</span></div>
+         <div class="map-point map-point_2"><span class="ccontacts__point  ccontacts__pointa">2</span></div>
+         <div class="map-point map-point_3"><span class="ccontacts__point  ccontacts__pointa">3</span></div>
+     </div>
+</section>
+        </main>
+         {%include 'base/inc/footer.html'%}
+    </div>
+
+    
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5TG6vGt-yjgCFBqtJ1sYUijRoYtamKwc&map_ids=5deee1e64511f506&callback=initMap">
+    </script>
+ {%endblock content%}
