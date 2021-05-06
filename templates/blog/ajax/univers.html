@@ -40,7 +40,7 @@
                             </ul>
 
                             <ul  style="display: block!important;" class="uni__list uni__list_2 card-tmp__list card-tmp__list_book">
-                                    {% for j in  i.faculty.all %}
+                                    {% for j in  i.faculty.all|slice:":4" %}
                                         <li style="display: block; margin-bottom: 5px" class="uni__item card-tmp__item card-tmp__item">{{ forloop.counter }}. {{ j.name }}
                                         </li>
 
