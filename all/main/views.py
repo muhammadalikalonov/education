@@ -70,7 +70,7 @@ def filter_data(request):
     t = render_to_string('blog/ajax/univers.html',{'univer':allProducts, 'search_text': search_text, 'k':k })
 
 
-    return JsonResponse({'univer':t})
+    return JsonResponse({'page_obj':t})
 
 
 
