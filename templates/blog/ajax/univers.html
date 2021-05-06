@@ -1,10 +1,10 @@
 {% load static %}
 {% load i18n %}
 
-{% if univer %}
+{% if page_obj %}
     <p style="text-align: center" class="ajaxLoader"> <img src="/static/7plQ.gif" alt=""></p>
 
-    {% for i in univer %}
+    {% for i in page_obj %}
         <div href="{% url 'uninfo' i.slug %}" class="uni__card card-tmp post-box">
             <div class="uni__lbox card-tmp__lbox">
                 <div class="uni__slider card-tmp__slider _swiper">
