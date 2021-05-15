@@ -53,7 +53,7 @@ def filter_data(request):
     if len(study)>0:
         univer=univer.filter(study_form__name__in=study).distinct()
 
-    paginator = Paginator(univer, 10)
+    paginator = Paginator(univer, 20)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     print(page_obj)
