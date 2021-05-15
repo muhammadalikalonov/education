@@ -7,6 +7,7 @@ from ..students.models import *
 # Create your views here.
 from ..news.models import *
 from .models import *
+from django.core.paginator import Paginator
 from django.core.serializers import serialize
 from django.http import JsonResponse
 from django.template.loader import render_to_string
@@ -19,18 +20,14 @@ def error_404_view(request,exception):
 
 
 def filter_data(request):
-    allProducts = University.objects.all()
 
+
+    univer = University.objects.get_queryset().order_by('id')
 
     search_text = request.GET.get('search_text')
 
     if search_text:
-        allProducts = University.objects.filter(name__icontains=search_text)
-
-
-    if allProducts.count() > 5:
-        active = True
-
+        univer = University.objects.filter(name__icontains=search_text)
 
     countrys =request.GET.getlist('country[]')
     study =request.GET.getlist('study[]')
@@ -38,39 +35,39 @@ def filter_data(request):
 
 
     if request.GET.get('minPrice') == 'true':
-        allProducts = allProducts.order_by('year_tuition_fee')
+        univer = univer.order_by('year_tuition_fee')
 
     if request.GET.get('maxPrice') == 'true':
-        allProducts = allProducts.order_by('-year_tuition_fee')
+        univer = univer.order_by('-year_tuition_fee')
 
     if request.GET.get('popPrice') == 'true':
-        allProducts = allProducts.order_by('-rating_id')
-
+        univer = univer.order_by('-rating_id')
 
     if len(facultys)>0:
 
-        allProducts=allProducts.filter(faculty__name__in=facultys).distinct()
-        # print(facultys)
-        # print(allProducts)
+        univer=univer.filter(faculty__name__in=facultys).distinct()
 
     if len(countrys)>0:
-        allProducts=allProducts.filter(country__name__in =countrys).distinct()
-
+        univer=univer.filter(country__name__in =countrys).distinct()
 
     if len(study)>0:
-        allProducts=allProducts.filter(study_form__name__in=study).distinct()
+        univer=univer.filter(study_form__name__in=study).distinct()
+
+    paginator = Paginator(univer, 10)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    print(page_obj)
 
 
-    univer = University.objects.all()
-    if univer:
-        for i in univer:
-            k = i.faculty.all()[:5]
-            print(k)
+    data={
+        'page_obj': page_obj,
+        'univer': univer,
+        'search_text': search_text
+    }
 
-    t = render_to_string('blog/ajax/univers.html',{'univer':allProducts, 'search_text': search_text, 'k':k })
-
-
-    return JsonResponse({'page_obj':t})
+    t = render_to_string('blog/ajax/univers.html', data)
+    # print(t)
+    return JsonResponse({'univer':t})
 
 
 
@@ -90,8 +87,7 @@ def index(request):
     context = {
 
         'students': students,
-        'faq':faq,
-
+        'faq': faq,
         'advantage': advantage,
         'top_university':top_university,
         'university':university,

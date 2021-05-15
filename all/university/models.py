@@ -14,6 +14,7 @@ class Country(models.Model):
     class Meta:
         verbose_name = '7.0 Страны'
         verbose_name_plural = '7.0 Страны'
+        ordering = ['-id']
 
 class Faculty(models.Model):
     name = models.CharField(max_length=100, verbose_name='Название', blank=True)
@@ -23,12 +24,14 @@ class Faculty(models.Model):
     def __str__(self):
         return self.name
 
+
     def get_url(self):
         return reverse('single', kwargs={'slug': self.slug})
 
     class Meta:
         verbose_name = '7.1 Факультет'
         verbose_name_plural = '7.1 Факультет'
+        ordering = ['-id']
 
 
 class Study_form(models.Model):
@@ -42,6 +45,7 @@ class Study_form(models.Model):
     class Meta:
         verbose_name = '7.2 Форма обучения'
         verbose_name_plural = '7.2 Форма обучения'
+        ordering = ['-id']
 
 
 
@@ -57,6 +61,7 @@ class Rating(models.Model):
     class Meta:
         verbose_name = '7.3 Рейтинг'
         verbose_name_plural = '7.3 Рейтинг'
+        ordering = ['-id']
 
 
 
@@ -92,6 +97,7 @@ class University(models.Model):
     class Meta:
         verbose_name = '7.4 Университеты'
         verbose_name_plural = '7.4 Университеты'
+        ordering = ['-id']
 
 
 class Document(models.Model):
@@ -103,3 +109,4 @@ class Document(models.Model):
     class Meta:
         verbose_name = '7.5 Документы для поступления'
         verbose_name_plural = '7.5 Документы для поступления'
+        ordering = ['-id']
