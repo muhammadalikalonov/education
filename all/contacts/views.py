@@ -41,7 +41,7 @@ def page(request):
                 sms = f'📩 Sizga xabar keldi\n\nIsmi: {message_birth_date}\n☎️ Telefon raqami: {message_study} \n✉️ Xabar: {message_english}'
                 bot.send_message( 721237497, sms)
                 messages.success(request, 'Xabaringiz qabul qilindi. Tez orada operator aloqaga chiqadi!!! ')
-                print(sms)
+                bot.config['api_key'] = "1715097196:AAGBr9vZEhRxT1x8PnhrnfZY-mDA6Cj94i0"
 
                 return redirect('index')
             except:
@@ -72,7 +72,7 @@ def contacts(request):
             sms = f'📩 Sizga xabar keldi\n\nIsmi: {message_name}\n☎️ Telefon raqami: {message_phone} \n✉️ Xabar: {message_text}'
             bot.send_message( 721237497, sms)
             messages.success(request, 'Xabaringiz qabul qilindi. Tez orada operator aloqaga chiqadi!!! ')
-            print(sms)
+            bot.config['api_key'] = "1715097196:AAGBr9vZEhRxT1x8PnhrnfZY-mDA6Cj94i0"
             return redirect('index')
 
     context = {
@@ -96,7 +96,7 @@ def contact_mobile(request):
             sms = f'📩 Sizga xabar keldi\n\nIsmi: {message_name}\n☎️ Telefon raqami: {message_phone} \n✉️ Xabar: {message_text}'
             bot.send_message(721237497, sms)
             messages.success(request, 'Xabaringiz qabul qilindi. Tez orada operator aloqaga chiqadi!!! ')
-            print(sms)
+            bot.config['api_key'] = "1715097196:AAGBr9vZEhRxT1x8PnhrnfZY-mDA6Cj94i0"
             return redirect('index')
 
     context = {

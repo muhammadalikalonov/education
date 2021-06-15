@@ -25,9 +25,9 @@ SECRET_KEY = '%1@_aj)6pawq+u5i39pqx1)qvt=o&97p_)8-7-4o^ia3=5@=)l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 import os
-# ALLOWED_HOSTS = [ ]
+ALLOWED_HOSTS = [ ]
 
-ALLOWED_HOSTS = ['www.callan.uz','callan.uz']
+# ALLOWED_HOSTS = ['www.callan.uz','callan.uz']
 #
 
 # Application definition
@@ -90,23 +90,23 @@ WSGI_APPLICATION = 'education.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-# }
-
-
 DATABASES = {
-     'default': {
-         'ENGINE': 'django.db.backends.mysql',
-         'NAME': 'u1253120_edu_base',
-         'USER': 'u1253120_default',
-         'PASSWORD': 'PXk7sx_R',
-         'HOST': 'localhost'
-     }
+   'default': {
+       'ENGINE': 'django.db.backends.sqlite3',
+       'NAME': BASE_DIR / 'db.sqlite3',
+   }
 }
+
+
+# DATABASES = {
+#      'default': {
+#          'ENGINE': 'django.db.backends.mysql',
+#          'NAME': 'u1253120_edu_base',
+#          'USER': 'u1253120_default',
+#          'PASSWORD': 'PXk7sx_R',
+#          'HOST': 'localhost'
+#      }
+# }
 
 
 

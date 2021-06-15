@@ -1,12 +1,12 @@
 {% load static %}
 {% load i18n %}
 
-{% if page_obj %}
+{% if univer %}
 
 
     <p style="text-align: center" class="ajaxLoader"> <img src="/static/7plQ.gif" alt=""></p>
 
-    {% for i in page_obj %}
+    {% for i in univer %}
         <div href="{% url 'uninfo' i.slug %}" class="uni__card card-tmp post-box">
             <div class="uni__lbox card-tmp__lbox">
                 <div class="uni__slider card-tmp__slider _swiper">
@@ -165,26 +165,29 @@
         </div>
     {% endfor %}
 
-    <center>
+<!--<center>-->
 
-<div class="pagination">
-    <span class="step-links">
-        {% if page_obj.has_previous %}
-{#            <a href="?page=1">first</a>#}
-            <a href="?page={{ page_obj.previous_page_number }}">&laquo; &laquo; &laquo; </a>
-        {% endif %}
 
-        <span class="current">
-            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
-        </span>
 
-        {% if page_obj.has_next %}
-            <a href="?page={{ page_obj.next_page_number }}"> &raquo; &raquo; &raquo;</a>
-{#            <a href="?page={{ page_obj.paginator.num_pages }}">last</a>#}
-        {% endif %}
-    </span>
-</div>
-</center>
+<!-- {% if users.has_other_pages %}-->
+<!--<div class="pagination">-->
+<!--    <span class="step-links">-->
+
+<!--{% for i in users.paginator.page_range %}-->
+
+<!--         {% if users.number == i %}-->
+<!--                               <a href="?page={{ i }}"><div class="nav-item active">{{ i }}</div></a>-->
+<!--                            {% else %}-->
+<!--                                <a href="?page={{ i }}"><div style="color: red">{{ i }}</div></a>-->
+
+<!--         {% endif %}-->
+
+<!--{%endfor%}-->
+
+<!--    </span>-->
+<!--</div>-->
+<!--    {%endif%}-->
+<!--</center>-->
 {%else%}
 
     <center><h1>Sorry no universities </h1></center>

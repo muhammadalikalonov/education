@@ -18,10 +18,11 @@ def error_404_view(request,exception):
 
 
 
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 def filter_data(request):
 
-
+    filter_all = True
     univer = University.objects.get_queryset().order_by('id')
 
     search_text = request.GET.get('search_text')
@@ -53,20 +54,27 @@ def filter_data(request):
     if len(study)>0:
         univer=univer.filter(study_form__name__in=study).distinct()
 
-    paginator = Paginator(univer, 20)
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
-    print(page_obj)
+
+    # page = request.GET.get('page', 1)
+    #
+    # paginator = Paginator(univer, 1)
+    # try:
+    #     users = paginator.page(page)
+    # except PageNotAnInteger:
+    #     users = paginator.page(1)
+    # except EmptyPage:
+    #     users = paginator.page(paginator.num_pages)
+
 
 
     data={
-        'page_obj': page_obj,
-        'univer': univer,
-        'search_text': search_text
+
+
+        'search_text': search_text,
+        'univer':univer
     }
 
     t = render_to_string('blog/ajax/univers.html', data)
-    # print(t)
     return JsonResponse({'univer':t})
 
 
