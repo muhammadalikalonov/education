@@ -6,14 +6,14 @@ from modeltranslation.admin import TranslationAdmin
 from ckeditor_uploader.widgets import CKEditorUploadingWidget
 from django import forms
 
-# class UniversityAdminForm(forms.ModelForm):
-#     content_ru = forms.CharField(label='Описание на русском', widget=CKEditorUploadingWidget())
-#     content_uz = forms.CharField(label='Описание на узбекском', widget=CKEditorUploadingWidget())
-#
-#
-#     class Meta:
-#         model = University
-#         fields = '__all__'
+class UniversityAdminForm(forms.ModelForm):
+    content_ru = forms.CharField(label='Описание на русском', widget=CKEditorUploadingWidget())
+    content_uz = forms.CharField(label='Описание на узбекском', widget=CKEditorUploadingWidget())
+    
+    
+    class Meta:
+        model = University 
+        fields = '__all__'
 
 
 
@@ -22,7 +22,7 @@ admin.site.register(Rating)
 
 @admin.register(University)
 class UniversityAdmin(TranslationAdmin):
-    # form = UniversityAdminForm
+    form = UniversityAdminForm
     list_display = ('name', 'university_city', 'language', 'year', 'rating', 'intake','year_tuition_fee','on_campus_yearly','top_universities')
     list_filter =('name','university_city','language', 'year', 'rating', 'intake','year_tuition_fee','on_campus_yearly' )
     prepopulated_fields = {'slug':('name',)}

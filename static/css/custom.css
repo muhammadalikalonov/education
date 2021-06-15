@@ -33,3 +33,9 @@
 }
 
 
+*, :after, :before {
+    line-height: 20px;
+}
+
+
+
